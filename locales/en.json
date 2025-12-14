@@ -1,0 +1,30 @@
+{
+  "pair": {
+    "modbus": {
+      "title": "Connect to Modbus device",
+      "device_settings": "Connection settings",
+      "ip": "IP address:",
+      "port": "Port:",
+      "id": "Modbus device ID",
+      "device_name": "Modbus device"
+    },
+    "title": "Add Eastron Energy Meter",
+    "title_sdm630": "Eastron SDM630",
+    "title_sdm230": "Eastron SDM230",
+    "nosettings": "Please fill in all the required fields.",
+    "intro": "Enter the IP address and port of your Modbus TCP or Energy Meter.",
+    "address": "IP Address",
+    "port": "Port",
+    "polling": "Polling Frequency",
+    "connect": "Connect"
+  },
+  "Unreachable": "Unreachable",
+  "Device_unavailable": "The device is not available",
+  "Off": "Off",
+  "NA": "Information not available",
+  "device": {
+    "modbus": {
+      "device_info": "Use flow actions to interact with this device."
+    }
+  }
+}

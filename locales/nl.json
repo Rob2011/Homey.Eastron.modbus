@@ -1,0 +1,25 @@
+{
+  "pair": {
+    "modbus": {
+      "title": "Verbind met Modbus TCP apparaat",
+      "device_settings": "verbindingsinstellingen",
+      "ip": "IP adres:",
+      "port": "Poort:",
+      "id": "Modbus device ID",
+      "device_name": "Modbus device"
+    },
+    "title": "Voeg Eastron Energiemeter toe",
+    "title_sdm630": "Eastron SDM630",
+    "title_sdm230": "Eastron SDM230",
+    "nosettings": "Vul hier alle benodigde gegevens in.",
+    "intro": "Geef het IP-adres en poort nr van de Modbus TCP gateway.",
+    "address": "IP Adres",
+    "port": "Poort",
+    "polling": "Polling interval",
+    "connect": "Connect"
+  },
+  "Unreachable": "niet bereikbaar",
+  "Device_unavailable": "De energiemeter is niet beschikbaar, controleer de verbinding.",
+  "Off": "uit",
+  "NA": "Informatie niet beschikbaar"
+}

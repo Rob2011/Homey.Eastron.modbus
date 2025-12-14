@@ -1,0 +1,222 @@
+{
+  "name": {
+    "en": "Eastron SDM630",
+    "nl": "Eastron SDM630"
+  },
+  "class": "sensor",
+  "vendor": "Eastron",
+  "model": "SDM630",
+  "capabilities": [
+    "measure_power",
+    "meter_l1_power",
+    "meter_l2_power",
+    "meter_l3_power",
+    "meter_frequency",
+    "meter_l1_current",
+    "meter_l2_current",
+    "meter_l3_current",
+    "meter_current",
+    "meter_l1_voltage",
+    "meter_l2_voltage",
+    "meter_l3_voltage",
+    "meter_power.exported",
+    "meter_power_export_daily",
+    "meter_power.imported",
+    "meter_power_import_daily",
+    "meter_power",
+    "measure_tot_power_factor",
+    "measure_tot_phase_angle"
+  ],
+  "energy": {
+    "cumulative": true,
+    "cumulativeImportedCapability": "meter_power.imported",
+    "cumulativeExportedCapability": "meter_power.exported"
+  },
+  "capabilitiesOptions": {
+    "meter_frequency": {
+      "decimals": 2,
+      "title": {
+        "en": "Frequency"
+      }
+    },
+     "meter_power": {
+      "decimals": 0,
+      "title": {
+        "en": "Net energy used",
+        "nl": "Netto verbruikt vermogen"
+      }
+    },
+    "meter_power.exported": {
+      "decimals": 0,
+      "title": {
+        "en": "Total exported energy",
+        "nl": "Totaal geëxporteerd vermogen"
+      }
+    },
+    "meter_power_export_daily": {
+      "decimals": 2,
+      "title": {
+        "en": "Today exported energy",
+        "nl": "Vandaag geëxporteerd vermogen"
+      }
+    },
+    "meter_power.imported": {
+      "decimals": 0,
+      "title": {
+        "en": "Total imported energy",
+        "nl": "Totaal geïmporteerd vermogen"
+      }
+    },
+    "meter_power_import_daily": {
+      "decimals": 2,
+      "title": {
+        "en": "Today imported energy",
+        "nl": "Vandaag geïmporteerd vermogen"
+      }
+    },
+    "meter_l1_power": {
+      "decimals": 0,
+      "title": {
+        "en": "Phase 1 Power",
+        "nl": "Vermogen fase 1"
+      }
+    },
+    "meter_l2_power": {
+      "decimals": 0,
+      "title": {
+        "en": "Phase 2 Power",
+        "nl": "Vermogen fase 2"
+      }
+    },
+    "meter_l3_power": {
+      "decimals": 0,
+      "title": {
+        "en": "Phase 3 Power",
+        "nl": "Vermogen fase 3"
+      }
+    },
+    "meter_l1_voltage": {
+      "decimals": 0,
+      "title": {
+        "en": "Phase 1 Voltage",
+        "nl": "Spanning fase 1"
+      }
+    },
+    "meter_l2_voltage": {
+      "decimals": 0,
+      "title": {
+        "en": "Phase 2 Voltage",
+        "nl": "Spanning fase 2"
+      }
+    },
+    "meter_l3_voltage": {
+      "decimals": 0,
+      "title": {
+        "en": "Phase 3 Voltage",
+        "nl": "Spanning fase 3"
+      }
+    },
+    "meter_l1_current": {
+      "title": {
+        "en": "Current phase1",
+        "nl": "Stroom fase 1"
+      }
+    },
+    "meter_l2_current": {
+      "title": {
+        "en": "Current phase2",
+        "nl": "Stroom fase 2"
+      }
+    },
+    "meter_l3_current": {
+      "title": {
+        "en": "Current phase3",
+        "nl": "Stroom fase 3"
+      }
+    },
+    "meter_current": {
+      "title": {
+        "en": "Total Current",
+        "nl": "Totale Stroom"
+      }
+    },
+    "measure_power": {
+      "title": {
+        "en": "Daily Yield",
+        "nl": "Huidig vermogen"
+      }
+    },
+    "measure_tot_power_factor": {
+      "title": {
+        "en": "Power Factor",
+        "nl": "Arbeidsfactor"
+      }
+    },
+    "measure_tot_phase_angle": {
+      "title": {
+        "en": "Phase Angle",
+        "nl": "Fasehoek"
+      }
+    }
+  },
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "lan"
+  ],
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "xlarge": "{{driverAssetsPath}}/images/xlarge.png"
+  },
+  "pair": [
+  {
+    "id": "start"
+  }
+],
+"settings": [
+  {
+    "type": "group",
+    "label": {
+      "en": "Powermeter settings",
+      "nl": "Powermeter Instellingen"
+    },
+    "children": [
+      {
+        "id": "address",
+        "type": "text",
+        "value": "0.0.0.0",
+        "label": {
+          "en": "IP Address",
+          "nl": "IP-adres"
+        }
+      },
+      {
+        "id": "port",
+        "type": "number",
+        "value": 502,
+        "step": 1,
+        "label": {
+          "en": "Port",
+          "nl": "Poort"
+        }
+      },
+      {
+        "id": "id",
+        "type": "number",
+        "value": 1,
+        "step": 1,
+        "attr": {
+          "min": 0,
+          "max": 50
+        },
+        "label": {
+          "en": "Powermeter ID",
+          "nl": "Powermeter ID"
+        }
+      }
+    ]
+  }
+]
+}

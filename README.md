@@ -17,6 +17,7 @@ Supported devices at this moment:
 - Eastron SDM630 V3
 
 Link to the Eastron Homey Pro app: https://homey.app/nl-nl/app/eastron.modbus/Eastron/
+
 Link to Homey Community with info / support for this app: https://community.homey.app/t/app-pro-eastron-app-to-support-eastron-sdm-energy-meters-in-homey-pro/147339
 
 

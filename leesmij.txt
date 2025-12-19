@@ -1,6 +1,6 @@
+Breng nauwkeurige energie-monitoring van de Eastron SDM630 meter met Modbus TCP interface naar Homey Pro voor realtime inzicht en slimme flows.
 
-“Breng nauwkeurige energie-monitoring van de Eastron SDM630 meter met Modbus TCP interface naar Homey Pro voor ‘realtime’ inzicht en slimme flows.”
+Met Eastron - Modbus haal je betrouwbare energie-metingen uit nauwkeurige energie meters met een Modbus-TCP interface direct in Homey Pro. Of je nu de totale stroomconsumptie, per-fase vermogen of energieproductie wilt volgen, deze app brengt je meetwaarden √îrealtime√ï naar je Homey- Energy dashboard en flows.
 
-Met ‘Energy Meter – Modbus’ haal je betrouwbare energie-metingen uit nauwkeurige energie meters met een Modbus-TCP interface direct in Homey Pro. Of je nu de totale stroomconsumptie, per-fase vermogen of energieproductie wilt volgen, deze app brengt je meetwaarden ‘realtime’ naar je Homey- Energy dashboard en ‘flows’.
+Maak slimme flows gebaseerd op actuele energie-data, visualiseer verbruik in je Homey Energy dashboard en verbeter je energiebeheer. √îEnergy Meter √ê Modbus√ï maakt je Modbus Energiemeter een krachtig onderdeel van je slimme woning. Huidige versie heeft ondersteuning voor de Eastron SDM630, meer meters zullen volgen.
 
-Creëer slimme flows gebaseerd op actuele energie-data, visualiseer verbruik in je Homey Energy dashboard en verbeter je energiebeheer. ‘Energy Meter – Modbus’ maakt je Modbus Energiemeter een krachtig onderdeel van je slimme woning. Huidige versie heeft ondersteuning voor de Eastron SDM630, meer meters zullen volgen.

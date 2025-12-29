@@ -14,6 +14,9 @@ Requirements:
 
 
 Supported devices at this moment:
+- Eastron SDM72D-M
+- Eastron SDM120CT
+- Eastron SDM230
 - Eastron SDM630 V3
 
 Link to the Eastron Homey Pro app: https://homey.app/nl-nl/app/eastron.modbus/Eastron/

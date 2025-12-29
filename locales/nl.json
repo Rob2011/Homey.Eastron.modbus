@@ -6,20 +6,55 @@
       "ip": "IP adres:",
       "port": "Poort:",
       "id": "Modbus device ID",
-      "device_name": "Modbus device"
+      "device_name": "Modbus device",
+      "intro": "Vul de verbindingsinstellingen in voor uw Modbus apparaat.",
+      "error_no_device": "Geen Modbus apparaat gevonden op het opgegeven adres en poort.",
+      "error_connection": "Kan geen verbinding maken met het Modbus apparaat. Controleer de instellingen en probeer het opnieuw.",
+      "error_timeout": "Verbinding met het Modbus apparaat is verlopen. Controleer de instellingen en probeer het opnieuw.",
+      "error_unknown": "Er is een onbekende fout opgetreden bij het proberen verbinding te maken met het Modbus apparaat.",
+      "checking": "Verbinding met Modbus apparaat wordt gecontroleerd...",
+      "check_success": "Succesvol verbonden met Modbus apparaat!",
+      "check_fail": "Kan geen verbinding maken met het Modbus apparaat. Controleer de instellingen.",
+      "saving": "Modbus TCP apparaat wordt opgeslagen...",
+      "success": "Modbus TCP apparaat succesvol toegevoegd!",
+      "fail": "Toevoegen van Modbus TCP apparaat mislukt. Probeer het opnieuw."
     },
     "title": "Voeg Eastron Energiemeter toe",
     "title_sdm630": "Eastron SDM630",
+    "title_sdm120": "Eastron SDM120CT",
+    "title_sdm72": "Eastron SDM72D",
+    "title_sdm220": "Eastron SDM220",
     "title_sdm230": "Eastron SDM230",
     "nosettings": "Vul hier alle benodigde gegevens in.",
     "intro": "Geef het IP-adres en poort nr van de Modbus TCP gateway.",
     "address": "IP Adres",
     "port": "Poort",
     "polling": "Polling interval",
-    "connect": "Connect"
+    "connect": "Verbind",
+    "name_error": "Ongeldige tekens in apparaatsnaam",
+    "id_error": "Ongeldige Modbus ID (1-247)",
+    "ip_error": "Ongeldig IP adres",
+    "port_error": "Ongeldig poort nummer (1-65535)",
+    "connect_error": "Kan geen verbinding maken met het apparaat",
+    "timeout_error": "Verbindingspoging met apparaat is verlopen",
+    "unknown_error": "Onbekende fout opgetreden",
+    "duplicate_error": "Apparaat met hetzelfde IP adres en Modbus ID bestaat al",
+    "saving": "Apparaat wordt opgeslagen...",
+    "success": "Apparaat succesvol toegevoegd!",
+    "fail": "Apparaat toevoegen mislukt. Probeer het opnieuw.",
+    "checking": "Verbinding met apparaat wordt gecontroleerd...",
+    "check_success": "Verbinding met apparaat succesvol!",
+    "check_fail": "Kan geen verbinding maken met het apparaat. Controleer de instellingen.",
+    "invalid_settings": "Ongeldige instellingen, controleer a.u.b.",
+    "device_unreachable": "Apparaat niet bereikbaar, controleer de verbinding."
   },
   "Unreachable": "niet bereikbaar",
-  "Device_unavailable": "De energiemeter is niet beschikbaar, controleer de verbinding.",
+  "device_unreachable": "Apparaat niet bereikbaar, controleer de verbinding.",
   "Off": "uit",
-  "NA": "Informatie niet beschikbaar"
+  "NA": "Informatie niet beschikbaar",
+  "device": {
+    "modbus": {
+      "device_info": "Gebruik flow acties om met dit apparaat te communiceren."
+    }
+  }
 }

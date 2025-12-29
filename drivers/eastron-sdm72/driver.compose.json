@@ -1,0 +1,220 @@
+{
+  "name": {
+    "en": "Eastron SDM72D",
+    "nl": "Eastron SDM72D",
+    "de": "Eastron SDM72D"
+  },
+  "class": "sensor",
+  "capabilities": [
+    "measure_power",
+    "meter_power",
+    "meter_power.imported",
+    "meter_power.exported",
+    "meter_power_import_daily",
+    "meter_power_export_daily",
+    "meter_l1_voltage",
+    "meter_l2_voltage",
+    "meter_l3_voltage",
+    "meter_l1_current",
+    "meter_l2_current",
+    "meter_l3_current",
+    "meter_l1_power",
+    "meter_l2_power",
+    "meter_l3_power",
+    "meter_current",
+    "meter_frequency",
+    "measure_tot_power_factor",
+    "meter_neutral_current"
+  ],
+  "capabilitiesOptions": {
+    "measure_power": {
+      "title": {
+        "en": "Total System Power",
+        "nl": "Totaal systeemvermogen",
+        "de": "Gesamt Systemleistung"
+      }
+    },
+    "meter_power": {
+      "title": {
+        "en": "Net Energy",
+        "nl": "Netto Energie",
+        "de": "Netto Energie"
+      }
+    },
+    "meter_power.imported": {
+      "title": {
+        "en": "Total Import Energy",
+        "nl": "Totaal geïmporteerd energie",
+        "de": "Insgesamt importierte Energie"
+      }
+    },
+    "meter_power.exported": {
+      "title": {
+        "en": "Total Export Energy",
+        "nl": "Totaal geëxporteerd energie",
+        "de": "Insgesamt exportierte Energie"
+      }
+    },
+    "meter_power_import_daily": {
+      "title": {
+        "en": "Daily Import Energy",
+        "nl": "Dagelijks geïmporteerd energie",
+        "de": "Täglich importierte Energie"
+      }
+    },
+    "meter_power_export_daily": {
+      "title": {
+        "en": "Daily Export Energy",
+        "nl": "Dagelijks geëxporteerd energie",
+        "de": "Täglich exportierte Energie"
+      }
+    },
+    "meter_l1_voltage": {
+      "title": {
+        "en": "L1 Voltage",
+        "nl": "L1 Spanning",
+        "de": "L1 Spannung"
+      }
+    },
+    "meter_l2_voltage": {
+      "title": {
+        "en": "L2 Voltage",
+        "nl": "L2 Spanning",
+        "de": "L2 Spannung"
+      }
+    },
+    "meter_l3_voltage": {
+      "title": {
+        "en": "L3 Voltage",
+        "nl": "L3 Spanning",
+        "de": "L3 Spannung"
+      }
+    },
+    "meter_l1_current": {
+      "title": {
+        "en": "L1 Current",
+        "nl": "L1 Stroom",
+        "de": "L1 Strom"
+      }
+    },
+    "meter_l2_current": {
+      "title": {
+        "en": "L2 Current",
+        "nl": "L2 Stroom",
+        "de": "L2 Strom"
+      }
+    },
+    "meter_l3_current": {
+      "title": {
+        "en": "L3 Current",
+        "nl": "L3 Stroom",
+        "de": "L3 Strom"
+      }
+    },
+    "meter_l1_power": {
+      "title": {
+        "en": "L1 Active Power",
+        "nl": "L1 Actief Vermogen",
+        "de": "L1 Wirkleistung"
+      }
+    },
+    "meter_l2_power": {
+      "title": {
+        "en": "L2 Active Power",
+        "nl": "L2 Actief Vermogen",
+        "de": "L2 Wirkleistung"
+      }
+    },
+    "meter_l3_power": {
+      "title": {
+        "en": "L3 Active Power",  
+        "nl": "L3 Actief Vermogen",
+        "de": "L3 Wirkleistung"
+      }
+    },
+    "meter_frequency": {
+      "title": {
+        "en": "Grid Frequency",
+        "nl": "Netfrequentie",
+        "de": "Netzfrequenz"
+      }
+    },
+    "measure_tot_power_factor": {
+      "title": {
+        "en": "Total Power Factor",
+        "nl": "Totale Vermogensfactor",
+        "de": "Gesamt Leistungsfaktor"
+      }
+    },
+    "meter_neutral_current": {
+      "title": {
+        "en": "Neutral Current",
+        "nl": "Nul Stroom",
+        "de": "Neutralstrom"
+      }
+    }
+  },
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "lan"
+  ],
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png"
+  },
+  "pair": [
+  {
+    "id": "start"
+  }
+],
+"settings": [
+  {
+    "type": "group",
+    "label": {
+      "en": "Modbus TCP settings",
+      "nl": "Modbus TCP instellingen",
+      "de": "Modbus TCP Einstellungen"
+    },
+    "children": [
+      {
+        "id": "address",
+        "type": "text",
+        "value": "0.0.0.0",
+        "label": {
+          "en": "IP Address",
+          "nl": "IP-adres",
+          "de": "IP-Adresse"
+        }
+      },
+      {
+        "id": "port",
+        "type": "number",
+        "value": 502,
+        "step": 1,
+        "label": {
+          "en": "Port",
+          "nl": "Poort",
+          "de": "Port"
+        }
+      },
+      {
+        "id": "id",
+        "type": "number",
+        "value": 1,
+        "step": 1,
+        "attr": {
+          "min": 0,
+          "max": 50
+        },
+        "label": {
+          "en": "Modbus device ID",
+          "nl": "Modbus apparaat ID",
+          "de": "Modbus Geräte-ID"
+        }
+      }
+    ]
+  }
+]
+}

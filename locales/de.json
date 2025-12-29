@@ -1,0 +1,60 @@
+{
+  "pair": {
+    "modbus": {
+      "title": "Modbus-Gerät verbinden",
+      "device_settings": "Verbindungseinstellungen",
+      "ip": "IP-Adresse:",
+      "port": "Port:",
+      "id": "Modbus-Geräte-ID",
+      "device_name": "Modbus-Gerät",
+      "intro": "Bitte geben Sie die Verbindungseinstellungen für Ihr Modbus-Gerät ein.",
+      "error_no_device": "Kein Modbus-Gerät unter der angegebenen Adresse und dem angegebenen Port gefunden.",
+      "error_connection": "Verbindung zum Modbus-Gerät konnte nicht hergestellt werden. Bitte überprüfen Sie die Einstellungen und versuchen Sie es erneut.",
+      "error_timeout": "Verbindung zum Modbus-Gerät hat überschritten. Bitte überprüfen Sie die Einstellungen und versuchen Sie es erneut.",
+      "error_unknown": "Ein unbekannter Fehler ist beim Verbindungsversuch mit dem Modbus-Gerät aufgetreten.",
+      "checking": "Verbindung zum Modbus-Gerät wird überprüft...",
+      "check_success": "Erfolgreich mit Modbus-Gerät verbunden!",
+      "check_fail": "Verbindung zum Modbus-Gerät konnte nicht hergestellt werden. Bitte überprüfen Sie die Einstellungen.",
+      "saving": "Modbus-TCP-Gerät wird gespeichert...",
+      "success": "Modbus-TCP-Gerät erfolgreich hinzugefügt!",
+      "fail": "Modbus-TCP-Gerät konnte nicht hinzugefügt werden. Bitte versuchen Sie es erneut."
+    },
+    "title": "Eastron-Energiemessgerät hinzufügen",
+    "title_sdm630": "Eastron SDM630",
+    "title_sdm120": "Eastron SDM120CT",
+    "title_sdm72": "Eastron SDM72D",
+    "title_sdm220": "Eastron SDM220",
+    "title_sdm230": "Eastron SDM230",
+    "nosettings": "Bitte füllen Sie alle erforderlichen Felder aus.",
+    "intro": "Geben Sie die IP-Adresse und den Port Ihres Modbus-TCP- oder Energiemessgeräts ein.",
+    "address": "IP-Adresse",
+    "port": "Port",
+    "polling": "Abfragehäufigkeit",
+    "connect": "Verbinden",
+    "name_error": "Ungültige Zeichen im Gerätenamen",
+    "id_error": "Ungültige Modbus-ID (1-247)",
+    "ip_error": "Ungültige IP-Adresse",
+    "port_error": "Ungültige Portnummer (1-65535)",
+    "connect_error": "Verbindung zum Gerät konnte nicht hergestellt werden",
+    "timeout_error": "Verbindungsversuch mit Gerät hat überschritten",
+    "unknown_error": "Ein unbekannter Fehler ist aufgetreten",
+    "duplicate_error": "Ein Gerät mit derselben IP-Adresse und Modbus-ID existiert bereits",
+    "saving": "Gerät wird gespeichert...",
+    "success": "Gerät erfolgreich hinzugefügt!",
+    "fail": "Gerät konnte nicht hinzugefügt werden. Bitte versuchen Sie es erneut.",
+    "checking": "Verbindung zum Gerät wird überprüft...",
+    "check_success": "Erfolgreich mit Gerät verbunden!",
+    "check_fail": "Verbindung zum Gerät konnte nicht hergestellt werden. Bitte überprüfen Sie die Einstellungen.",
+    "invalid_settings": "Ungültige Einstellungen, bitte überprüfen Sie diese.",
+    "device_unreachable": "Das Gerät ist nicht erreichbar, bitte überprüfen Sie die Verbindung."
+  },
+  "Unreachable": "Nicht erreichbar",
+  "Device_unavailable": "Das Gerät ist nicht verfügbar",
+  "Off": "Aus",
+  "NA": "Informationen nicht verfügbar",
+  "device": {
+    "modbus": {
+      "device_info": "Verwenden Sie Flow-Aktionen, um mit diesem Gerät zu interagieren."
+    }
+  }
+}

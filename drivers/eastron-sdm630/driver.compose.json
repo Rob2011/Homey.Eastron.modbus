@@ -1,7 +1,8 @@
 {
   "name": {
     "en": "Eastron SDM630",
-    "nl": "Eastron SDM630"
+    "nl": "Eastron SDM630",
+    "de": "Eastron SDM630"
   },
   "class": "sensor",
   "vendor": "Eastron",
@@ -36,126 +37,146 @@
     "meter_frequency": {
       "decimals": 2,
       "title": {
-        "en": "Frequency"
+        "en": "Grid Frequency",
+        "nl": "Netfrequentie",
+        "de": "Netzfrequenz"
       }
     },
      "meter_power": {
       "decimals": 0,
       "title": {
         "en": "Net energy used",
-        "nl": "Netto verbruikt vermogen"
+        "nl": "Netto verbruikt vermogen",
+        "de": "Netto verbrauchtes elektrisches Leistung"
       }
     },
     "meter_power.exported": {
       "decimals": 0,
       "title": {
         "en": "Total exported energy",
-        "nl": "Totaal geëxporteerd vermogen"
+        "nl": "Totaal geëxporteerd vermogen",
+        "de": "Insgesamt exportierte Energie"
       }
     },
     "meter_power_export_daily": {
       "decimals": 2,
       "title": {
         "en": "Today exported energy",
-        "nl": "Vandaag geëxporteerd vermogen"
+        "nl": "Vandaag geëxporteerd vermogen",
+        "de": "Heute exportierte Energie"
       }
     },
     "meter_power.imported": {
       "decimals": 0,
       "title": {
         "en": "Total imported energy",
-        "nl": "Totaal geïmporteerd vermogen"
+        "nl": "Totaal geïmporteerd vermogen",
+        "de": "Insgesamt importierte Energie"
       }
     },
     "meter_power_import_daily": {
       "decimals": 2,
       "title": {
         "en": "Today imported energy",
-        "nl": "Vandaag geïmporteerd vermogen"
+        "nl": "Vandaag geïmporteerd vermogen",
+        "de": "Heute importierte Energie"
       }
     },
     "meter_l1_power": {
       "decimals": 0,
       "title": {
         "en": "Phase 1 Power",
-        "nl": "Vermogen fase 1"
+        "nl": "Vermogen fase 1",
+        "de": "Leistung Phase 1"
       }
     },
     "meter_l2_power": {
       "decimals": 0,
       "title": {
         "en": "Phase 2 Power",
-        "nl": "Vermogen fase 2"
+        "nl": "Vermogen fase 2",
+        "de": "Leistung Phase 2"
       }
     },
     "meter_l3_power": {
       "decimals": 0,
       "title": {
         "en": "Phase 3 Power",
-        "nl": "Vermogen fase 3"
+        "nl": "Vermogen fase 3",
+        "de": "Leistung Phase 3"
       }
     },
     "meter_l1_voltage": {
       "decimals": 0,
       "title": {
         "en": "Phase 1 Voltage",
-        "nl": "Spanning fase 1"
+        "nl": "Spanning fase 1",
+        "de": "Spannung Phase 1"
       }
     },
     "meter_l2_voltage": {
       "decimals": 0,
       "title": {
         "en": "Phase 2 Voltage",
-        "nl": "Spanning fase 2"
+        "nl": "Spanning fase 2",
+        "de": "Spannung Phase 2"
       }
     },
     "meter_l3_voltage": {
       "decimals": 0,
       "title": {
         "en": "Phase 3 Voltage",
-        "nl": "Spanning fase 3"
+        "nl": "Spanning fase 3",
+        "de": "Spannung Phase 3"
       }
     },
     "meter_l1_current": {
       "title": {
         "en": "Current phase1",
-        "nl": "Stroom fase 1"
+        "nl": "Stroom fase 1",
+        "de": "Strom Phase 1"
       }
     },
     "meter_l2_current": {
       "title": {
         "en": "Current phase2",
-        "nl": "Stroom fase 2"
+        "nl": "Stroom fase 2",
+        "de": "Strom Phase 2"
       }
     },
     "meter_l3_current": {
       "title": {
         "en": "Current phase3",
-        "nl": "Stroom fase 3"
+        "nl": "Stroom fase 3",
+        "de": "Strom Phase 3"
       }
     },
     "meter_current": {
       "title": {
         "en": "Total Current",
-        "nl": "Totale Stroom"
+        "nl": "Totale Stroom",
+        "de": "Gesamtstrom"
       }
     },
     "measure_power": {
       "title": {
         "en": "Daily Yield",
-        "nl": "Huidig vermogen"
+        "nl": "Huidig vermogen",
+        "de": "Tagesertrag"
       }
     },
     "measure_tot_power_factor": {
       "title": {
         "en": "Power Factor",
-        "nl": "Arbeidsfactor"
+        "nl": "Arbeidsfactor",
+        "de": "Leistungsfaktor"
       }
     },
     "measure_tot_phase_angle": {
       "title": {
         "en": "Phase Angle",
-        "nl": "Fasehoek"
+        "nl": "Fasehoek",
+        "de": "Phasenwinkel"
       }
     }
   },
@@ -167,8 +188,7 @@
   ],
   "images": {
     "small": "{{driverAssetsPath}}/images/small.png",
-    "large": "{{driverAssetsPath}}/images/large.png",
-    "xlarge": "{{driverAssetsPath}}/images/xlarge.png"
+    "large": "{{driverAssetsPath}}/images/large.png"
   },
   "pair": [
   {
@@ -179,8 +199,9 @@
   {
     "type": "group",
     "label": {
-      "en": "Powermeter settings",
-      "nl": "Powermeter Instellingen"
+      "en": "Modbus TCP settings",
+      "nl": "Modbus TCP instellingen",
+      "de": "Modbus TCP Einstellungen"
     },
     "children": [
       {
@@ -189,7 +210,8 @@
         "value": "0.0.0.0",
         "label": {
           "en": "IP Address",
-          "nl": "IP-adres"
+          "nl": "IP-adres",
+          "de": "IP-Adresse"
         }
       },
       {
@@ -199,7 +221,8 @@
         "step": 1,
         "label": {
           "en": "Port",
-          "nl": "Poort"
+          "nl": "Poort",
+          "de": "Port"
         }
       },
       {
@@ -212,8 +235,9 @@
           "max": 50
         },
         "label": {
-          "en": "Powermeter ID",
-          "nl": "Powermeter ID"
+          "en": "Modbus device ID",
+          "nl": "Modbus apparaat ID",
+          "de": "Modbus Geräte-ID"
         }
       }
     ]

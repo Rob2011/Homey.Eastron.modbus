@@ -49,24 +49,24 @@ export class Energymeter extends Powermeter {
     l2_power: [14, 2, 'FLOAT32', 'Phase 2 Power', 0],
     l3_power: [16, 2, 'FLOAT32', 'Phase 3 Power', 0],
 
-   // l1_powerVA: [18, 2, 'FLOAT32', 'Phase 1 Apparent Power', 0],
-   // l2_powerVA: [20, 2, 'FLOAT32', 'Phase 2 Apparent Power', 0],
-   // l3_powerVA: [22, 2, 'FLOAT32', 'Phase 3 Apparent Power', 0],
+    // l1_powerVA: [18, 2, 'FLOAT32', 'Phase 1 Apparent Power', 0],
+    // l2_powerVA: [20, 2, 'FLOAT32', 'Phase 2 Apparent Power', 0],
+    // l3_powerVA: [22, 2, 'FLOAT32', 'Phase 3 Apparent Power', 0],
 
-   // l1_powerVAr: [24, 2, 'FLOAT32', 'Phase 1 Reactive Power', 0],
-   // l2_powerVAr: [26, 2, 'FLOAT32', 'Phase 2 Reactive Power', 0],
-   // l3_powerVAr: [28, 2, 'FLOAT32', 'Phase 3 Reactive Power', 0],
+    // l1_powerVAr: [24, 2, 'FLOAT32', 'Phase 1 Reactive Power', 0],
+    // l2_powerVAr: [26, 2, 'FLOAT32', 'Phase 2 Reactive Power', 0],
+    // l3_powerVAr: [28, 2, 'FLOAT32', 'Phase 3 Reactive Power', 0],
 
-   // l1_powerfact: [30, 2, 'FLOAT32', 'Phase 1 Power Factor', 0],
-   // l2_powerfact: [32, 2, 'FLOAT32', 'Phase 2 Power Factor', 0],
-   // l3_powerfact: [34, 2, 'FLOAT32', 'Phase 3 Power Factor', 0],
+    // l1_powerfact: [30, 2, 'FLOAT32', 'Phase 1 Power Factor', 0],
+    // l2_powerfact: [32, 2, 'FLOAT32', 'Phase 2 Power Factor', 0],
+    // l3_powerfact: [34, 2, 'FLOAT32', 'Phase 3 Power Factor', 0],
 
-   // l1_angle: [36, 2, 'FLOAT32', 'Phase 1 Phase Angle', 0],
-   // l2_angle: [38, 2, 'FLOAT32', 'Phase 2 Phase Angle', 0],
-   // l3_angle: [40, 2, 'FLOAT32', 'Phase 3 Phase Angle', 0],
+    // l1_angle: [36, 2, 'FLOAT32', 'Phase 1 Phase Angle', 0],
+    // l2_angle: [38, 2, 'FLOAT32', 'Phase 2 Phase Angle', 0],
+    // l3_angle: [40, 2, 'FLOAT32', 'Phase 3 Phase Angle', 0],
 
-   // avglinevolt: [42, 2, 'FLOAT32', 'Average L-N Voltage', 0],
-   // avglineamp: [46, 2, 'FLOAT32', 'Average Line Current', 0],
+    // avglinevolt: [42, 2, 'FLOAT32', 'Average L-N Voltage', 0],
+    // avglineamp: [46, 2, 'FLOAT32', 'Average Line Current', 0],
     sumlineamp: [48, 2, 'FLOAT32', 'Sum of Line Currents', 0],
 
     totsyspower: [52, 2, 'FLOAT32', 'Total System Power', 0],
@@ -222,6 +222,7 @@ export class Energymeter extends Powermeter {
 
   // Constants for daily calculation
   protected static readonly STORE_KEY_LAST_RESET_DATE = 'lastDailyResetDate';
+  protected static readonly STORE_KEY_LAST_RESET_DATE_EXPORT = 'lastDailyResetDateExport';
   protected static readonly STORE_KEY_EXPORT_BASELINE = 'dailyExportBaseline';
   protected static readonly STORE_KEY_IMPORT_BASELINE = 'dailyImportBaseline';
 
@@ -251,62 +252,74 @@ export class Energymeter extends Powermeter {
   }
 
   // Checks if the current date is different from the last reset date
-  private isNewDay(lastResetDate: string | null, currentDate: Date): boolean {
-    if (lastResetDate == null) {
-      return true;
-    }
-    const lastReset = new Date(lastResetDate);
-    return (
-      currentDate.getFullYear() !== lastReset.getFullYear() ||
-      currentDate.getMonth() !== lastReset.getMonth() ||
-      currentDate.getDate() !== lastReset.getDate()
-    );
+private isNewDay(lastResetDate: string | null, currentDate: Date): boolean {
+  if (lastResetDate == null) {
+    return true;
   }
+  
+  const lastReset = new Date(lastResetDate);
+  
+  // Compare dates at midnight local time to avoid timezone issues
+  const lastMidnight = new Date(lastReset.getFullYear(), lastReset.getMonth(), lastReset.getDate());
+  const currentMidnight = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate());
+  
+  return currentMidnight.getTime() > lastMidnight.getTime();
+}
 
-  // Calculates and updates daily power (export or import)
-  private async calculateDailyPower(
-    measurement: Measurement,
-    capabilityName: string,
-    baselineStoreKey: string,
-    type: 'export' | 'import',
-  ): Promise<void> {
-    try {
-      const total = this.convertMeasurement(measurement);
-      const currentDate = new Date();
-      const lastResetDate = this.getStoreValue(Energymeter.STORE_KEY_LAST_RESET_DATE);
-      const dailyBaseline = this.getStoreValue(baselineStoreKey);
+// Calculates and updates daily power (export or import)
+private async calculateDailyPower(
+  measurement: Measurement,
+  capabilityName: string,
+  baselineStoreKey: string,
+  type: 'export' | 'import',
+): Promise<void> {
+  try {
+    const total = this.convertMeasurement(measurement);
+    
+    // Get current date at midnight in local timezone
+    const now = new Date();
+    const currentDate = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+    
+    // Use separate reset date keys for import and export
+    const resetDateKey = type === 'import' 
+      ? Energymeter.STORE_KEY_LAST_RESET_DATE 
+      : Energymeter.STORE_KEY_LAST_RESET_DATE_EXPORT;
+    
+    const lastResetDate = this.getStoreValue(resetDateKey);
+    const dailyBaseline = this.getStoreValue(baselineStoreKey);
 
-      // Ensure capability exists
-      if (!this.hasCapability(capabilityName)) {
-        await this.addCapability(capabilityName);
-      }
-
-      // Check if we need to reset (new day detected)
-      const shouldReset = this.isNewDay(lastResetDate, currentDate);
-
-      if (shouldReset) {
-        this.log(`Daily reset: new day detected, setting ${type} baseline to`, total);
-        this.setStoreValue(baselineStoreKey, total);
-        this.setStoreValue(Energymeter.STORE_KEY_LAST_RESET_DATE, currentDate.toISOString());
-        // On new day, daily value starts at 0
-        await this.setCapabilityValue(capabilityName, 0);
-      } else if (dailyBaseline != null) {
-        // Calculate daily value: current total minus baseline from start of day
-        const dailyPower = Number((total - dailyBaseline).toFixed(2));
-        this.log(`Daily ${type}: ${dailyPower} (total: ${total}, baseline: ${dailyBaseline})`);
-
-        // Only update if value changed (to avoid unnecessary updates)
-        const currentDailyValue = this.getCapabilityValue(capabilityName);
-        if (currentDailyValue !== dailyPower) {
-          // Ensure value is not negative (shouldn't happen, but safety check)
-          const finalValue = dailyPower > 0 ? dailyPower : 0;
-          await this.setCapabilityValue(capabilityName, finalValue);
-        }
-      }
-    } catch (error) {
-      this.error(`Error calculating daily power ${type}:`, error);
+    // Ensure capability exists
+    if (!this.hasCapability(capabilityName)) {
+      await this.addCapability(capabilityName);
     }
+    
+    // Check if we need to reset (new day detected)
+    const shouldReset = this.isNewDay(lastResetDate, currentDate);
+    
+    if (shouldReset) {
+      this.log(`Daily reset: new day detected, setting ${type} baseline to`, total);
+      this.setStoreValue(baselineStoreKey, total);
+      this.setStoreValue(resetDateKey, currentDate.toISOString());
+      
+      // On new day, daily value starts at 0
+      await this.setCapabilityValue(capabilityName, 0);
+    } else if (dailyBaseline != null) {
+      // Calculate daily value: current total minus baseline from start of day
+      const dailyPower = Number((total - dailyBaseline).toFixed(2));
+      this.log(`Daily ${type}: ${dailyPower} (total: ${total}, baseline: ${dailyBaseline})`);
+      
+      // Only update if value changed (to avoid unnecessary updates)
+      const currentDailyValue = this.getCapabilityValue(capabilityName);
+      if (currentDailyValue !== dailyPower) {
+        // Ensure value is not negative (shouldn't happen, but safety check)
+        const finalValue = dailyPower > 0 ? dailyPower : 0;
+        await this.setCapabilityValue(capabilityName, finalValue);
+      }
+    }
+  } catch (error) {
+    this.error(`Error calculating daily power ${type}:`, error);
   }
+}
 
   // Helper method to get mapping and register definition
   getMappingAndRegister(
@@ -424,7 +437,7 @@ export class Energymeter extends Powermeter {
       }
     }
 
-       // Calculate NET power usage: total import minus total export
+    // Calculate NET power usage: total import minus total export
     if (result['totalImEnergy']?.value !== INVALID_VALUE && result['totalExEnergy']?.value !== INVALID_VALUE) {
       const totalIm = this.convertMeasurement(result['totalImEnergy']);
       const totalEx = this.convertMeasurement(result['totalExEnergy']);
@@ -433,8 +446,8 @@ export class Energymeter extends Powermeter {
       this.setCapabilityValue('meter_power', netPower).catch(this.error);
       this.log(`Net power: ${netPower} (import: ${totalIm}, export: ${totalEx})`);
     }
-  
-     // Calculate daily power import: current total import minus value from start of day
+
+    // Calculate daily power import: current total import minus value from start of day
     if (result['totalImEnergy']?.value !== INVALID_VALUE) {
       await this.calculateDailyPower(
         result['totalImEnergy'],
@@ -455,6 +468,5 @@ export class Energymeter extends Powermeter {
       );
       this.log('Calculated daily power export updated');
     }
-   
   }
 }

@@ -1,0 +1,179 @@
+{
+  "name": {
+    "en": "Eastron SDM120CT",
+    "nl": "Eastron SDM120CT",
+    "de": "Eastron SDM120CT"
+  },
+  "class": "sensor",
+  "capabilities": [
+    "measure_power",
+    "measure_voltage",
+    "measure_current",
+    "meter_power",
+    "meter_power.imported",
+    "meter_power.exported",
+    "meter_power_import_daily",
+    "meter_power_export_daily",
+    "meter_frequency",
+    "measure_power_factor",
+    "measure_phase_angle",
+    "measure_apparent_power",
+    "measure_reactive_power"
+  ],
+  "capabilitiesOptions": {
+    "measure_power": {
+      "title": {
+        "en": "Power",
+        "nl": "Vermogen",
+        "de": "Leistung"
+      }
+    },
+    "measure_voltage": {
+      "title": {
+        "en": "Voltage",
+        "nl": "Spanning",
+        "de": "Spannung"
+      }
+    },
+    "measure_current": {
+      "title": {
+        "en": "Current",
+        "nl": "Stroom",
+        "de": "Strom"
+      }
+    },
+    "meter_power": {
+      "title": {
+        "en": "Net Energy",
+        "nl": "Netto Energie",
+        "de": "Netto Energie"
+      }
+    },
+    "meter_power.imported": {
+      "title": {
+        "en": "Total Import Energy",
+        "nl": "Totaal geïmporteerd energie",
+        "de": "Insgesamt importierte Energie"
+      }
+    },
+    "meter_power.exported": {
+      "title": {
+        "en": "Total Export Energy",
+        "nl": "Totaal geëxporteerd energie",
+        "de": "Insgesamt exportierte Energie"
+      }
+    },
+    "meter_power_import_daily": {
+      "title": {
+        "en": "Daily Import Energy",
+        "nl": "Dagelijkse geïmporteerd energie",
+        "de": "Tägliche importierte Energie"
+      }
+    },
+    "meter_power_export_daily": {
+      "title": {
+        "en": "Daily Export Energy",
+        "nl": "Dagelijkse geëxporteerd energie",
+        "de": "Tägliche exportierte Energie"
+      }
+    },
+    "meter_frequency": {
+      "title": {
+        "en": "Grid Frequency",
+        "nl": "Netfrequentie",
+        "de": "Netzfrequenz"
+      }
+    },
+    "measure_power_factor": {
+      "title": {
+        "en": "Power Factor",
+        "nl": "Vermogensfactor",
+        "de": "Leistungsfaktor"
+      }
+    },
+    "measure_phase_angle": {
+      "title": {
+        "en": "Phase Angle",
+        "nl": "Fasehoek",
+        "de": "Phasenwinkel"
+      }
+    },
+    "measure_apparent_power": {
+      "title": {
+        "en": "Apparent Power",
+        "nl": "Schijnbaar vermogen",
+        "de": "Scheinleistung"
+      }
+    },
+    "measure_reactive_power": {
+      "title": {
+        "en": "Reactive Power",
+        "nl": "Blindvermogen",
+        "de": "Blindleistung"
+      }
+    }
+  },
+  "platforms": [
+    "local"
+  ],
+  "connectivity": [
+    "lan"
+  ],
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png"
+  },
+  "pair": [
+    {
+      "id": "start"
+    }
+  ],
+  "settings": [
+    {
+      "type": "group",
+      "label": {
+      "en": "Modbus TCP settings",
+      "nl": "Modbus TCP instellingen",
+      "de": "Modbus TCP Einstellungen"
+      },
+      "children": [
+        {
+          "id": "address",
+          "type": "text",
+          "value": "0.0.0.0",
+          "label": {
+            "en": "IP Address",
+            "nl": "IP-adres",
+            "de": "IP-Adresse"
+          }
+        },
+        {
+          "id": "port",
+          "type": "number",
+          "value": 502,
+          "step": 1,
+          "label": {
+            "en": "Port",
+            "nl": "Poort",
+            "de": "Port"
+          }
+        },
+        {
+          "id": "id",
+          "type": "number",
+          "value": 1,
+          "step": 1,
+          "attr": {
+            "min": 0,
+            "max": 50
+          },
+          "label": {
+          "en": "Modbus device ID",
+          "nl": "Modbus apparaat ID",
+          "de": "Modbus Geräte-ID"
+          }
+        }
+      ]
+    }
+  ]
+}

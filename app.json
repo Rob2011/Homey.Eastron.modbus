@@ -1,0 +1,1551 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "eastron.modbus",
+  "version": "1.2.3",
+  "compatibility": ">=12.4.0",
+  "sdk": 3,
+  "brandColor": "#003399",
+  "icon": {
+    "light": "/assets/images/icon-light.png",
+    "dark": "/assets/images/icon-dark.png"
+  },
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Eastron",
+    "nl": "Eastron",
+    "de": "Eastron"
+  },
+  "description": {
+    "en": "Advanced Energy Monitoring with DIN Rail Meters over Modbus TCP",
+    "nl": "Geavanceerde energie monitoring met DIN rail meters via Modbus TCP",
+    "de": "Erweiterte Energieüberwachung mit Hutschienenmessgeräten über Modbus TCP"
+  },
+  "category": [
+    "energy"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Rob Hagemann",
+    "email": "rob@hagemann.nl"
+  },
+  "bugs": {
+    "url": "https://github.com/Rob2011/Homey.Eastron.modbus/issues"
+  },
+  "source": "https://github.com/Rob2011/Homey.Eastron.modbus",
+  "support": "https://community.homey.app/t/app-pro-eastron-advanced-energy-monitoring-with-din-rail-meters-over-modbus-tcp/147339",
+  "homeyCommunityTopicId": 147339,
+  "flow": {
+    "triggers": [
+      {
+        "title": {
+          "en": "Yield changed",
+          "nl": "Energieverbruik is veranderd",
+          "de": "Gesamtertrag hat sich geändert"
+        },
+        "tokens": [
+          {
+            "name": "measure_power",
+            "title": {
+              "en": "Energy",
+              "nl": "Energie",
+              "de": "Energie"
+            },
+            "type": "number",
+            "example": 250
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": {
+              "capabilities": [
+                "measure_power"
+              ]
+            }
+          }
+        ],
+        "id": "measure_power_changed"
+      },
+      {
+        "title": {
+          "en": "Meter Power Export Day Changed",
+          "nl": "Energie export kWh per dag is veranderd",
+          "de": "Tagesertrag Export geändert"
+        },
+        "hint": {
+          "en": "Daily Export changed",
+          "nl": "Energie export is veranderd",
+          "de": "Tagesertrag Export geändert"
+        },
+        "tokens": [
+          {
+            "name": "meter_power_export_daily",
+            "title": {
+              "en": "Energy",
+              "nl": "Energie",
+              "de": "Energie"
+            },
+            "type": "number",
+            "example": 25
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": {
+              "capabilities": [
+                "meter_power_export_daily"
+              ]
+            }
+          }
+        ],
+        "id": "meter_power_export_day_changed"
+      },
+      {
+        "title": {
+          "en": "Meter Power Import Day Changed",
+          "nl": "Energie import kWh per dag is veranderd",
+          "de": "Tagesertrag Import geändert"
+        },
+        "hint": {
+          "en": "Daily Import changed",
+          "nl": "Energie import is veranderd",
+          "de": "Tagesertrag Import geändert"
+        },
+        "tokens": [
+          {
+            "name": "meter_power_import_daily",
+            "title": {
+              "en": "Energy",
+              "nl": "Energie",
+              "de": "Energie"
+            },
+            "type": "number",
+            "example": 25
+          }
+        ],
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "filter": {
+              "capabilities": [
+                "meter_power_import_daily"
+              ]
+            }
+          }
+        ],
+        "id": "meter_power_import_day_changed"
+      }
+    ]
+  },
+  "drivers": [
+    {
+      "name": {
+        "en": "Eastron SDM120CT",
+        "nl": "Eastron SDM120CT",
+        "de": "Eastron SDM120CT"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "measure_power",
+        "measure_voltage",
+        "measure_current",
+        "meter_power",
+        "meter_power.imported",
+        "meter_power.exported",
+        "meter_power_import_daily",
+        "meter_power_export_daily",
+        "meter_frequency",
+        "measure_power_factor",
+        "measure_phase_angle",
+        "measure_apparent_power",
+        "measure_reactive_power"
+      ],
+      "capabilitiesOptions": {
+        "measure_power": {
+          "title": {
+            "en": "Power",
+            "nl": "Vermogen",
+            "de": "Leistung"
+          }
+        },
+        "measure_voltage": {
+          "title": {
+            "en": "Voltage",
+            "nl": "Spanning",
+            "de": "Spannung"
+          }
+        },
+        "measure_current": {
+          "title": {
+            "en": "Current",
+            "nl": "Stroom",
+            "de": "Strom"
+          }
+        },
+        "meter_power": {
+          "title": {
+            "en": "Net Energy",
+            "nl": "Netto Energie",
+            "de": "Netto Energie"
+          }
+        },
+        "meter_power.imported": {
+          "title": {
+            "en": "Total Import Energy",
+            "nl": "Totaal geïmporteerd energie",
+            "de": "Insgesamt importierte Energie"
+          }
+        },
+        "meter_power.exported": {
+          "title": {
+            "en": "Total Export Energy",
+            "nl": "Totaal geëxporteerd energie",
+            "de": "Insgesamt exportierte Energie"
+          }
+        },
+        "meter_power_import_daily": {
+          "title": {
+            "en": "Daily Import Energy",
+            "nl": "Dagelijkse geïmporteerd energie",
+            "de": "Tägliche importierte Energie"
+          }
+        },
+        "meter_power_export_daily": {
+          "title": {
+            "en": "Daily Export Energy",
+            "nl": "Dagelijkse geëxporteerd energie",
+            "de": "Tägliche exportierte Energie"
+          }
+        },
+        "meter_frequency": {
+          "title": {
+            "en": "Grid Frequency",
+            "nl": "Netfrequentie",
+            "de": "Netzfrequenz"
+          }
+        },
+        "measure_power_factor": {
+          "title": {
+            "en": "Power Factor",
+            "nl": "Vermogensfactor",
+            "de": "Leistungsfaktor"
+          }
+        },
+        "measure_phase_angle": {
+          "title": {
+            "en": "Phase Angle",
+            "nl": "Fasehoek",
+            "de": "Phasenwinkel"
+          }
+        },
+        "measure_apparent_power": {
+          "title": {
+            "en": "Apparent Power",
+            "nl": "Schijnbaar vermogen",
+            "de": "Scheinleistung"
+          }
+        },
+        "measure_reactive_power": {
+          "title": {
+            "en": "Reactive Power",
+            "nl": "Blindvermogen",
+            "de": "Blindleistung"
+          }
+        }
+      },
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "lan"
+      ],
+      "images": {
+        "small": "/drivers/eastron-sdm120/assets/images/small.png",
+        "large": "/drivers/eastron-sdm120/assets/images/large.png"
+      },
+      "pair": [
+        {
+          "id": "start"
+        }
+      ],
+      "settings": [
+        {
+          "id": "address",
+          "type": "text",
+          "label": {
+            "en": "IP address",
+            "nl": "IP-adres",
+            "de": "IP-Adresse"
+          },
+          "value": "192.168.1.100",
+          "hint": {
+            "en": "The IP address of the Modbus gateway",
+            "nl": "Het IP-adres van de Modbus gateway",
+            "de": "Die IP-Adresse des Modbus-Gateways"
+          }
+        },
+        {
+          "id": "port",
+          "type": "number",
+          "label": {
+            "en": "Port",
+            "nl": "Poort",
+            "de": "Port"
+          },
+          "value": 502,
+          "hint": {
+            "en": "Modbus TCP port (typically 502)",
+            "nl": "Modbus TCP-poort (meestal 502)",
+            "de": "Modbus TCP-Port (typischerweise 502)"
+          }
+        },
+        {
+          "id": "id",
+          "type": "number",
+          "label": {
+            "en": "Modbus device ID",
+            "nl": "Modbus apparaat ID",
+            "de": "Modbus Geräte ID"
+          },
+          "value": 1,
+          "min": 1,
+          "max": 247,
+          "hint": {
+            "en": "Modbus device ID (client address)",
+            "nl": "Modbus-apparaat-ID (clientadres)",
+            "de": "Modbus-Geräte-ID (Client-Adresse)"
+          }
+        },
+        {
+          "id": "polling_interval",
+          "type": "number",
+          "label": {
+            "en": "Polling Interval (seconds)",
+            "nl": "Polling interval (seconden)",
+            "de": "Abfrageintervall (Sekunden)"
+          },
+          "hint": {
+            "en": "How often to poll the device for new data (recommended: 15-60 seconds)",
+            "nl": "Hoe vaak het apparaat te controleren op nieuwe gegevens (aanbevolen: 15-60 seconden)",
+            "de": "Wie oft das Gerät auf neue Daten abgefragt werden soll (empfohlen: 15-60 Sekunden)"
+          },
+          "value": 20,
+          "min": 5,
+          "max": 300
+        }
+      ],
+      "id": "eastron-sdm120"
+    },
+    {
+      "name": {
+        "en": "Eastron SDM230",
+        "nl": "Eastron SDM230",
+        "de": "Eastron SDM230"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "measure_power",
+        "measure_voltage",
+        "measure_current",
+        "meter_power",
+        "meter_power.imported",
+        "meter_power.exported",
+        "meter_power_import_daily",
+        "meter_power_export_daily",
+        "meter_frequency",
+        "measure_tot_power_factor"
+      ],
+      "capabilitiesOptions": {
+        "measure_power": {
+          "title": {
+            "en": "Power",
+            "nl": "Vermogen",
+            "de": "Leistung"
+          }
+        },
+        "measure_voltage": {
+          "title": {
+            "en": "Voltage",
+            "nl": "Spanning",
+            "de": "Spannung"
+          }
+        },
+        "measure_current": {
+          "title": {
+            "en": "Current",
+            "nl": "Stroom",
+            "de": "Strom"
+          }
+        },
+        "meter_power": {
+          "title": {
+            "en": "Net Energy",
+            "nl": "Netto Energie",
+            "de": "Netto Energie"
+          }
+        },
+        "meter_power.imported": {
+          "title": {
+            "en": "Total Import",
+            "nl": "Totaal geïmporteerd",
+            "de": "Insgesamt importierte Energie"
+          }
+        },
+        "meter_power.exported": {
+          "title": {
+            "en": "Total Export",
+            "nl": "Totaal geëxporteerd",
+            "de": "Insgesamt exportierte Energie"
+          }
+        },
+        "meter_power_import_daily": {
+          "title": {
+            "en": "Daily Import",
+            "nl": "Dagelijkse Import",
+            "de": "Tägliche Importe"
+          }
+        },
+        "meter_power_export_daily": {
+          "title": {
+            "en": "Daily Export",
+            "nl": "Dagelijkse Export",
+            "de": "Tägliche Exporte"
+          }
+        },
+        "meter_frequency": {
+          "title": {
+            "en": "Grid Frequency",
+            "nl": "Netfrequentie",
+            "de": "Netzfrequenz"
+          }
+        },
+        "measure_tot_power_factor": {
+          "title": {
+            "en": "Power Factor",
+            "nl": "Vermogensfactor",
+            "de": "Leistungsfaktor"
+          }
+        }
+      },
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "lan"
+      ],
+      "images": {
+        "small": "/drivers/eastron-sdm230/assets/images/small.png",
+        "large": "/drivers/eastron-sdm230/assets/images/large.png"
+      },
+      "pair": [
+        {
+          "id": "start"
+        }
+      ],
+      "settings": [
+        {
+          "id": "address",
+          "type": "text",
+          "label": {
+            "en": "IP address",
+            "nl": "IP-adres",
+            "de": "IP-Adresse"
+          },
+          "value": "192.168.1.100",
+          "hint": {
+            "en": "The IP address of the Modbus gateway",
+            "nl": "Het IP-adres van de Modbus gateway",
+            "de": "Die IP-Adresse des Modbus-Gateways"
+          }
+        },
+        {
+          "id": "port",
+          "type": "number",
+          "label": {
+            "en": "Port",
+            "nl": "Poort",
+            "de": "Port"
+          },
+          "value": 502,
+          "hint": {
+            "en": "Modbus TCP port (typically 502)",
+            "nl": "Modbus TCP-poort (meestal 502)",
+            "de": "Modbus TCP-Port (typischerweise 502)"
+          }
+        },
+        {
+          "id": "id",
+          "type": "number",
+          "label": {
+            "en": "Modbus device ID",
+            "nl": "Modbus apparaat ID",
+            "de": "Modbus Geräte ID"
+          },
+          "value": 1,
+          "min": 1,
+          "max": 247,
+          "hint": {
+            "en": "Modbus device ID (client address)",
+            "nl": "Modbus-apparaat-ID (clientadres)",
+            "de": "Modbus-Geräte-ID (Client-Adresse)"
+          }
+        },
+        {
+          "id": "polling_interval",
+          "type": "number",
+          "label": {
+            "en": "Polling Interval (seconds)",
+            "nl": "Polling interval (seconden)",
+            "de": "Abfrageintervall (Sekunden)"
+          },
+          "hint": {
+            "en": "How often to poll the device for new data (recommended: 15-60 seconds)",
+            "nl": "Hoe vaak het apparaat te controleren op nieuwe gegevens (aanbevolen: 15-60 seconden)",
+            "de": "Wie oft das Gerät auf neue Daten abgefragt werden soll (empfohlen: 15-60 Sekunden)"
+          },
+          "value": 20,
+          "min": 5,
+          "max": 300
+        }
+      ],
+      "id": "eastron-sdm230"
+    },
+    {
+      "name": {
+        "en": "Eastron SDM630",
+        "nl": "Eastron SDM630",
+        "de": "Eastron SDM630"
+      },
+      "class": "sensor",
+      "vendor": "Eastron",
+      "model": "SDM630",
+      "capabilities": [
+        "measure_power",
+        "meter_l1_power",
+        "meter_l2_power",
+        "meter_l3_power",
+        "meter_frequency",
+        "meter_l1_current",
+        "meter_l2_current",
+        "meter_l3_current",
+        "meter_current",
+        "meter_l1_voltage",
+        "meter_l2_voltage",
+        "meter_l3_voltage",
+        "meter_power.exported",
+        "meter_power_export_daily",
+        "meter_power.imported",
+        "meter_power_import_daily",
+        "meter_power",
+        "measure_tot_power_factor",
+        "measure_tot_phase_angle"
+      ],
+      "energy": {
+        "cumulative": true,
+        "cumulativeImportedCapability": "meter_power.imported",
+        "cumulativeExportedCapability": "meter_power.exported"
+      },
+      "capabilitiesOptions": {
+        "meter_frequency": {
+          "decimals": 2,
+          "title": {
+            "en": "Grid Frequency",
+            "nl": "Netfrequentie",
+            "de": "Netzfrequenz"
+          }
+        },
+        "meter_power": {
+          "decimals": 0,
+          "title": {
+            "en": "Net energy used",
+            "nl": "Netto verbruikt vermogen",
+            "de": "Netto verbrauchtes elektrisches Leistung"
+          }
+        },
+        "meter_power.exported": {
+          "decimals": 0,
+          "title": {
+            "en": "Total exported energy",
+            "nl": "Totaal geëxporteerd vermogen",
+            "de": "Insgesamt exportierte Energie"
+          }
+        },
+        "meter_power_export_daily": {
+          "decimals": 2,
+          "title": {
+            "en": "Today exported energy",
+            "nl": "Vandaag geëxporteerd vermogen",
+            "de": "Heute exportierte Energie"
+          }
+        },
+        "meter_power.imported": {
+          "decimals": 0,
+          "title": {
+            "en": "Total imported energy",
+            "nl": "Totaal geïmporteerd vermogen",
+            "de": "Insgesamt importierte Energie"
+          }
+        },
+        "meter_power_import_daily": {
+          "decimals": 2,
+          "title": {
+            "en": "Today imported energy",
+            "nl": "Vandaag geïmporteerd vermogen",
+            "de": "Heute importierte Energie"
+          }
+        },
+        "meter_l1_power": {
+          "decimals": 0,
+          "title": {
+            "en": "Phase 1 Power",
+            "nl": "Vermogen fase 1",
+            "de": "Leistung Phase 1"
+          }
+        },
+        "meter_l2_power": {
+          "decimals": 0,
+          "title": {
+            "en": "Phase 2 Power",
+            "nl": "Vermogen fase 2",
+            "de": "Leistung Phase 2"
+          }
+        },
+        "meter_l3_power": {
+          "decimals": 0,
+          "title": {
+            "en": "Phase 3 Power",
+            "nl": "Vermogen fase 3",
+            "de": "Leistung Phase 3"
+          }
+        },
+        "meter_l1_voltage": {
+          "decimals": 0,
+          "title": {
+            "en": "Phase 1 Voltage",
+            "nl": "Spanning fase 1",
+            "de": "Spannung Phase 1"
+          }
+        },
+        "meter_l2_voltage": {
+          "decimals": 0,
+          "title": {
+            "en": "Phase 2 Voltage",
+            "nl": "Spanning fase 2",
+            "de": "Spannung Phase 2"
+          }
+        },
+        "meter_l3_voltage": {
+          "decimals": 0,
+          "title": {
+            "en": "Phase 3 Voltage",
+            "nl": "Spanning fase 3",
+            "de": "Spannung Phase 3"
+          }
+        },
+        "meter_l1_current": {
+          "title": {
+            "en": "Current phase1",
+            "nl": "Stroom fase 1",
+            "de": "Strom Phase 1"
+          }
+        },
+        "meter_l2_current": {
+          "title": {
+            "en": "Current phase2",
+            "nl": "Stroom fase 2",
+            "de": "Strom Phase 2"
+          }
+        },
+        "meter_l3_current": {
+          "title": {
+            "en": "Current phase3",
+            "nl": "Stroom fase 3",
+            "de": "Strom Phase 3"
+          }
+        },
+        "meter_current": {
+          "title": {
+            "en": "Total Current",
+            "nl": "Totale Stroom",
+            "de": "Gesamtstrom"
+          }
+        },
+        "measure_power": {
+          "title": {
+            "en": "Daily Yield",
+            "nl": "Huidig vermogen",
+            "de": "Tagesertrag"
+          }
+        },
+        "measure_tot_power_factor": {
+          "title": {
+            "en": "Power Factor",
+            "nl": "Arbeidsfactor",
+            "de": "Leistungsfaktor"
+          }
+        },
+        "measure_tot_phase_angle": {
+          "title": {
+            "en": "Phase Angle",
+            "nl": "Fasehoek",
+            "de": "Phasenwinkel"
+          }
+        }
+      },
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "lan"
+      ],
+      "images": {
+        "small": "/drivers/eastron-sdm630/assets/images/small.png",
+        "large": "/drivers/eastron-sdm630/assets/images/large.png"
+      },
+      "pair": [
+        {
+          "id": "start"
+        }
+      ],
+      "settings": [
+        {
+          "id": "address",
+          "type": "text",
+          "label": {
+            "en": "IP address",
+            "nl": "IP-adres",
+            "de": "IP-Adresse"
+          },
+          "value": "192.168.1.100",
+          "hint": {
+            "en": "The IP address of the Modbus gateway",
+            "nl": "Het IP-adres van de Modbus gateway",
+            "de": "Die IP-Adresse des Modbus-Gateways"
+          }
+        },
+        {
+          "id": "port",
+          "type": "number",
+          "label": {
+            "en": "Port",
+            "nl": "Poort",
+            "de": "Port"
+          },
+          "value": 502,
+          "hint": {
+            "en": "Modbus TCP port (typically 502)",
+            "nl": "Modbus TCP-poort (meestal 502)",
+            "de": "Modbus TCP-Port (typischerweise 502)"
+          }
+        },
+        {
+          "id": "id",
+          "type": "number",
+          "label": {
+            "en": "Modbus device ID",
+            "nl": "Modbus apparaat ID",
+            "de": "Modbus Geräte ID"
+          },
+          "value": 1,
+          "min": 1,
+          "max": 247,
+          "hint": {
+            "en": "Modbus device ID (client address)",
+            "nl": "Modbus-apparaat-ID (clientadres)",
+            "de": "Modbus-Geräte-ID (Client-Adresse)"
+          }
+        },
+        {
+          "id": "polling_interval",
+          "type": "number",
+          "label": {
+            "en": "Polling Interval (seconds)",
+            "nl": "Polling interval (seconden)",
+            "de": "Abfrageintervall (Sekunden)"
+          },
+          "hint": {
+            "en": "How often to poll the device for new data (recommended: 15-60 seconds)",
+            "nl": "Hoe vaak het apparaat te controleren op nieuwe gegevens (aanbevolen: 15-60 seconden)",
+            "de": "Wie oft das Gerät auf neue Daten abgefragt werden soll (empfohlen: 15-60 Sekunden)"
+          },
+          "value": 20,
+          "min": 5,
+          "max": 300
+        }
+      ],
+      "id": "eastron-sdm630"
+    },
+    {
+      "name": {
+        "en": "Eastron SDM72D",
+        "nl": "Eastron SDM72D",
+        "de": "Eastron SDM72D"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "measure_power",
+        "meter_power",
+        "meter_power.imported",
+        "meter_power.exported",
+        "meter_power_import_daily",
+        "meter_power_export_daily",
+        "meter_l1_voltage",
+        "meter_l2_voltage",
+        "meter_l3_voltage",
+        "meter_l1_current",
+        "meter_l2_current",
+        "meter_l3_current",
+        "meter_l1_power",
+        "meter_l2_power",
+        "meter_l3_power",
+        "meter_current",
+        "meter_frequency",
+        "measure_tot_power_factor",
+        "meter_neutral_current"
+      ],
+      "capabilitiesOptions": {
+        "measure_power": {
+          "title": {
+            "en": "Total System Power",
+            "nl": "Totaal systeemvermogen",
+            "de": "Gesamt Systemleistung"
+          }
+        },
+        "meter_power": {
+          "title": {
+            "en": "Net Energy",
+            "nl": "Netto Energie",
+            "de": "Netto Energie"
+          }
+        },
+        "meter_power.imported": {
+          "title": {
+            "en": "Total Import Energy",
+            "nl": "Totaal geïmporteerd energie",
+            "de": "Insgesamt importierte Energie"
+          }
+        },
+        "meter_power.exported": {
+          "title": {
+            "en": "Total Export Energy",
+            "nl": "Totaal geëxporteerd energie",
+            "de": "Insgesamt exportierte Energie"
+          }
+        },
+        "meter_power_import_daily": {
+          "title": {
+            "en": "Daily Import Energy",
+            "nl": "Dagelijks geïmporteerd energie",
+            "de": "Täglich importierte Energie"
+          }
+        },
+        "meter_power_export_daily": {
+          "title": {
+            "en": "Daily Export Energy",
+            "nl": "Dagelijks geëxporteerd energie",
+            "de": "Täglich exportierte Energie"
+          }
+        },
+        "meter_l1_voltage": {
+          "title": {
+            "en": "L1 Voltage",
+            "nl": "L1 Spanning",
+            "de": "L1 Spannung"
+          }
+        },
+        "meter_l2_voltage": {
+          "title": {
+            "en": "L2 Voltage",
+            "nl": "L2 Spanning",
+            "de": "L2 Spannung"
+          }
+        },
+        "meter_l3_voltage": {
+          "title": {
+            "en": "L3 Voltage",
+            "nl": "L3 Spanning",
+            "de": "L3 Spannung"
+          }
+        },
+        "meter_l1_current": {
+          "title": {
+            "en": "L1 Current",
+            "nl": "L1 Stroom",
+            "de": "L1 Strom"
+          }
+        },
+        "meter_l2_current": {
+          "title": {
+            "en": "L2 Current",
+            "nl": "L2 Stroom",
+            "de": "L2 Strom"
+          }
+        },
+        "meter_l3_current": {
+          "title": {
+            "en": "L3 Current",
+            "nl": "L3 Stroom",
+            "de": "L3 Strom"
+          }
+        },
+        "meter_l1_power": {
+          "title": {
+            "en": "L1 Active Power",
+            "nl": "L1 Actief Vermogen",
+            "de": "L1 Wirkleistung"
+          }
+        },
+        "meter_l2_power": {
+          "title": {
+            "en": "L2 Active Power",
+            "nl": "L2 Actief Vermogen",
+            "de": "L2 Wirkleistung"
+          }
+        },
+        "meter_l3_power": {
+          "title": {
+            "en": "L3 Active Power",
+            "nl": "L3 Actief Vermogen",
+            "de": "L3 Wirkleistung"
+          }
+        },
+        "meter_frequency": {
+          "title": {
+            "en": "Grid Frequency",
+            "nl": "Netfrequentie",
+            "de": "Netzfrequenz"
+          }
+        },
+        "measure_tot_power_factor": {
+          "title": {
+            "en": "Total Power Factor",
+            "nl": "Totale Vermogensfactor",
+            "de": "Gesamt Leistungsfaktor"
+          }
+        },
+        "meter_neutral_current": {
+          "title": {
+            "en": "Neutral Current",
+            "nl": "Nul Stroom",
+            "de": "Neutralstrom"
+          }
+        }
+      },
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "lan"
+      ],
+      "images": {
+        "small": "/drivers/eastron-sdm72/assets/images/small.png",
+        "large": "/drivers/eastron-sdm72/assets/images/large.png"
+      },
+      "pair": [
+        {
+          "id": "start"
+        }
+      ],
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "Device Settings",
+            "nl": "Apparaatinstellingen",
+            "de": "Geräteeinstellungen"
+          },
+          "children": [
+            {
+              "id": "address",
+              "type": "text",
+              "label": {
+                "en": "IP address",
+                "nl": "IP-adres",
+                "de": "IP-Adresse"
+              },
+              "value": "192.168.1.100",
+              "hint": {
+                "en": "The IP address of the Modbus gateway",
+                "nl": "Het IP-adres van de Modbus gateway",
+                "de": "Die IP-Adresse des Modbus-Gateways"
+              }
+            },
+            {
+              "id": "port",
+              "type": "number",
+              "label": {
+                "en": "Port"
+              },
+              "value": 502,
+              "hint": {
+                "en": "Modbus TCP port (typically 502)",
+                "nl": "Modbus TCP-poort (meestal 502)",
+                "de": "Modbus TCP-Port (typischerweise 502)"
+              }
+            },
+            {
+              "id": "id",
+              "type": "number",
+              "label": {
+                "en": "Modbus device ID",
+                "nl": "Modbus apparaat ID",
+                "de": "Modbus Geräte ID"
+              },
+              "value": 1,
+              "min": 1,
+              "max": 247,
+              "hint": {
+                "en": "Modbus device ID (client address)",
+                "nl": "Modbus-apparaat-ID (clientadres)",
+                "de": "Modbus-Geräte-ID (Client-Adresse)"
+              }
+            },
+            {
+              "id": "polling_interval",
+              "type": "number",
+              "label": {
+                "en": "Polling Interval (seconds)",
+                "nl": "Polling interval (seconden)",
+                "de": "Abfrageintervall (Sekunden)"
+              },
+              "hint": {
+                "en": "How often to poll the device for new data (recommended: 15-60 seconds)",
+                "nl": "Hoe vaak het apparaat te controleren op nieuwe gegevens (aanbevolen: 15-60 seconden)",
+                "de": "Wie oft das Gerät auf neue Daten abgefragt werden soll (empfohlen: 15-60 Sekunden)"
+              },
+              "value": 20,
+              "min": 5,
+              "max": 300
+            }
+          ]
+        }
+      ],
+      "id": "eastron-sdm72"
+    }
+  ],
+  "capabilities": {
+    "measure_apparent_power": {
+      "type": "number",
+      "title": {
+        "en": "Apparent Power",
+        "nl": "Schijnbaar vermogen",
+        "de": "Leistung"
+      },
+      "units": {
+        "en": "VA"
+      },
+      "insights": true,
+      "desc": {
+        "en": "Apparent Power in volt-ampere (VA)",
+        "nl": "Schijnbaar vermogen in voltampère (VA)",
+        "de": "Leistung in Voltampere (VA)"
+      },
+      "chartType": "stepLine",
+      "decimals": 0,
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/measure_power.svg"
+    },
+    "measure_phase_angle": {
+      "type": "number",
+      "title": {
+        "en": "Phase Angle",
+        "nl": "Fasehoek",
+        "de": "Phasenwinkel"
+      },
+      "getable": true,
+      "setable": false,
+      "units": {
+        "en": "Degrees",
+        "nl": "Graden",
+        "de": "Grad"
+      },
+      "decimals": 1,
+      "uiComponent": "sensor",
+      "icon": "/assets/measure_factor.svg"
+    },
+    "measure_power": {
+      "type": "number",
+      "title": {
+        "en": "Power",
+        "nl": "Vermogen",
+        "de": "Leistung"
+      },
+      "units": {
+        "en": "W"
+      },
+      "insights": true,
+      "desc": {
+        "en": "Power in watt (W)",
+        "nl": "Vermogen in watt (W)",
+        "de": "Leistung in Watt (W)"
+      },
+      "chartType": "stepLine",
+      "decimals": 2,
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/measure_power.svg"
+    },
+    "measure_power_factor": {
+      "type": "number",
+      "title": {
+        "en": "Power Factor",
+        "nl": "Arbeidsfactor",
+        "de": "Leistungsfaktor"
+      },
+      "getable": true,
+      "setable": false,
+      "units": {
+        "en": "",
+        "nl": "",
+        "de": ""
+      },
+      "decimals": 1,
+      "icon": "/assets/measure_factor.svg"
+    },
+    "measure_reactive_power": {
+      "type": "number",
+      "title": {
+        "en": "Reactive Power",
+        "nl": "Blind vermogen",
+        "de": "Blindleistung"
+      },
+      "units": {
+        "en": "VAr"
+      },
+      "insights": true,
+      "desc": {
+        "en": "Reactive Power in volt-ampere reactive (VAr)",
+        "nl": "Blind vermogen in voltampère blind (VAr)",
+        "de": "Blindleistung in Voltampere Blind (VAr)"
+      },
+      "chartType": "stepLine",
+      "decimals": 0,
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/measure_power.svg"
+    },
+    "measure_tot_phase_angle": {
+      "type": "number",
+      "title": {
+        "en": "Phase Angle",
+        "nl": "Fasehoek",
+        "de": "Phasenwinkel"
+      },
+      "getable": true,
+      "setable": false,
+      "units": {
+        "en": "Degrees",
+        "nl": "Graden",
+        "de": "Grad"
+      },
+      "decimals": 1,
+      "icon": "/assets/measure_factor.svg"
+    },
+    "measure_tot_power_factor": {
+      "type": "number",
+      "title": {
+        "en": "Power Factor",
+        "nl": "Arbeidsfactor",
+        "de": "Leistungsfaktor"
+      },
+      "getable": true,
+      "setable": false,
+      "units": {
+        "en": "",
+        "nl": "",
+        "de": ""
+      },
+      "decimals": 1,
+      "icon": "/assets/measure_factor.svg"
+    },
+    "meter_current": {
+      "type": "number",
+      "title": {
+        "en": "Current",
+        "nl": "Stroom",
+        "de": "Strom"
+      },
+      "units": {
+        "en": "A"
+      },
+      "insights": true,
+      "desc": {
+        "en": "Electric current (A)",
+        "nl": "Elektrische stroom (A)",
+        "de": "Elektrischer Strom (A)"
+      },
+      "chartType": "stepLine",
+      "decimals": 2,
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/measure_current.svg"
+    },
+    "meter_frequency": {
+      "type": "number",
+      "title": {
+        "en": "Phase frequency"
+      },
+      "getable": true,
+      "setable": false,
+      "units": {
+        "en": "Hz"
+      },
+      "decimals": 2,
+      "icon": "/assets/measure_frequency.svg"
+    },
+    "meter_l1_current": {
+      "type": "number",
+      "title": {
+        "en": "Current",
+        "nl": "Stroom",
+        "de": "Strom"
+      },
+      "units": {
+        "en": "A"
+      },
+      "insights": true,
+      "desc": {
+        "en": "Electric current (A)",
+        "nl": "Elektrische stroom (A)",
+        "de": "Elektrischer Strom (A)"
+      },
+      "chartType": "stepLine",
+      "decimals": 2,
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/measure_current.svg"
+    },
+    "meter_l1_power": {
+      "type": "number",
+      "title": {
+        "en": "Power",
+        "nl": "Vermogen",
+        "de": "Leistung"
+      },
+      "units": {
+        "en": "W"
+      },
+      "insights": true,
+      "desc": {
+        "en": "Power in watt (W)",
+        "nl": "Vermogen in watt (W)",
+        "de": "Leistung in Watt (W)"
+      },
+      "chartType": "stepLine",
+      "decimals": 2,
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/measure_power.svg"
+    },
+    "meter_l1_voltage": {
+      "type": "number",
+      "title": {
+        "en": "Voltage",
+        "nl": "Spanning",
+        "de": "Spannung"
+      },
+      "units": {
+        "en": "V"
+      },
+      "desc": {
+        "en": "Voltage (V)",
+        "nl": "Spanning (V)",
+        "de": "Spannung (V)"
+      },
+      "insights": true,
+      "chartType": "stepLine",
+      "decimals": 2,
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/measure_voltage.svg"
+    },
+    "meter_l2_current": {
+      "type": "number",
+      "title": {
+        "en": "Current",
+        "nl": "Stroom",
+        "de": "Strom"
+      },
+      "units": {
+        "en": "A"
+      },
+      "insights": true,
+      "desc": {
+        "en": "Electric current (A)",
+        "nl": "Elektrische stroom (A)",
+        "de": "Elektrischer Strom (A)"
+      },
+      "chartType": "stepLine",
+      "decimals": 2,
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/measure_current.svg"
+    },
+    "meter_l2_power": {
+      "type": "number",
+      "title": {
+        "en": "Power",
+        "nl": "Vermogen",
+        "de": "Leistung"
+      },
+      "units": {
+        "en": "W"
+      },
+      "insights": true,
+      "desc": {
+        "en": "Power in watt (W)",
+        "nl": "Vermogen in watt (W)",
+        "de": "Leistung in Watt (W)"
+      },
+      "chartType": "stepLine",
+      "decimals": 2,
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/measure_power.svg"
+    },
+    "meter_l2_voltage": {
+      "type": "number",
+      "title": {
+        "en": "Voltage",
+        "nl": "Spanning",
+        "de": "Spannung"
+      },
+      "units": {
+        "en": "V"
+      },
+      "desc": {
+        "en": "Voltage (V)",
+        "nl": "Spanning (V)",
+        "de": "Spannung (V)"
+      },
+      "insights": true,
+      "chartType": "stepLine",
+      "decimals": 2,
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/measure_voltage.svg"
+    },
+    "meter_l3_current": {
+      "type": "number",
+      "title": {
+        "en": "Current",
+        "nl": "Stroom",
+        "de": "Strom"
+      },
+      "units": {
+        "en": "A"
+      },
+      "insights": true,
+      "desc": {
+        "en": "Electric current (A)",
+        "nl": "Elektrische stroom (A)",
+        "de": "Elektrischer Strom (A)"
+      },
+      "chartType": "stepLine",
+      "decimals": 2,
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/measure_current.svg"
+    },
+    "meter_l3_power": {
+      "type": "number",
+      "title": {
+        "en": "Power",
+        "nl": "Vermogen",
+        "de": "Leistung"
+      },
+      "units": {
+        "en": "W"
+      },
+      "insights": true,
+      "desc": {
+        "en": "Power in watt (W)",
+        "nl": "Vermogen in watt (W)",
+        "de": "Leistung in Watt (W)"
+      },
+      "chartType": "stepLine",
+      "decimals": 2,
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/measure_power.svg"
+    },
+    "meter_l3_voltage": {
+      "type": "number",
+      "title": {
+        "en": "Voltage",
+        "nl": "Spanning",
+        "de": "Spannung"
+      },
+      "units": {
+        "en": "V"
+      },
+      "desc": {
+        "en": "Voltage (V)",
+        "nl": "Spanning (V)",
+        "de": "Spannung (V)"
+      },
+      "insights": true,
+      "chartType": "stepLine",
+      "decimals": 2,
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/measure_voltage.svg"
+    },
+    "meter_neutral_current": {
+      "type": "number",
+      "title": {
+        "en": "Neutral Current",
+        "nl": "Nulstroom",
+        "de": "Neutralstrom"
+      },
+      "decimals": 2,
+      "units": {
+        "en": "A"
+      },
+      "desc": {
+        "en": "Neutral Current in Amperes (A)",
+        "nl": "Nulstroom in Amperes (A)"
+      },
+      "chartType": "spline",
+      "insights": true,
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/measure_current.svg"
+    },
+    "meter_power": {
+      "type": "number",
+      "title": {
+        "en": "Net used Yield",
+        "nl": "Netto gebruikt vermogen"
+      },
+      "decimals": 2,
+      "units": {
+        "en": "kWh"
+      },
+      "desc": {
+        "en": "Net Energy used in kilowatt-hour (kWh)",
+        "nl": "Netto gebruikt vermogen in kilowattuur (kWh)"
+      },
+      "chartType": "spline",
+      "insights": true,
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/powergrid_feed_ex.svg"
+    },
+    "meter_power_export_daily": {
+      "type": "number",
+      "title": {
+        "en": "Daily Yield",
+        "nl": "Dagelijks terug geleverd vermogen"
+      },
+      "decimals": 2,
+      "units": {
+        "en": "kWh"
+      },
+      "desc": {
+        "en": "Energy returned daily in kilowatt-hour (kWh)",
+        "nl": "Terug geleverd vermogen per dag in kilowattuur (kWh)"
+      },
+      "chartType": "spline",
+      "insights": true,
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/powergrid_feed_ex.svg"
+    },
+    "meter_power_exported": {
+      "type": "number",
+      "title": {
+        "en": "Total Yield",
+        "nl": "Terug geleverd vermogen"
+      },
+      "decimals": 2,
+      "units": {
+        "en": "kWh"
+      },
+      "desc": {
+        "en": "Energy returned in kilowatt-hour (kWh)",
+        "nl": "Terug geleverd vermogen in kilowattuur (kWh)"
+      },
+      "chartType": "spline",
+      "insights": true,
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/powergrid_feed_ex.svg"
+    },
+    "meter_power_import_daily": {
+      "type": "number",
+      "title": {
+        "en": "Daily Yield",
+        "nl": "Dagelijks verbruik",
+        "de": "Gesamtertrag"
+      },
+      "decimals": 2,
+      "units": {
+        "en": "kWh"
+      },
+      "desc": {
+        "en": "Energy usage Daily in kilowatt-hour (kWh)",
+        "nl": "Energie verbruik per dag in kilowattuur (kWh)",
+        "de": "Verbrauchte Energie per tag in Kilowattstunden (kWh)"
+      },
+      "chartType": "spline",
+      "insights": true,
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/powergrid_feed_in.svg"
+    },
+    "meter_power_imported": {
+      "type": "number",
+      "title": {
+        "en": "Total Yield",
+        "nl": "Totaal verbruik",
+        "de": "Gesamtertrag"
+      },
+      "decimals": 2,
+      "units": {
+        "en": "kWh"
+      },
+      "desc": {
+        "en": "Energy usage in kilowatt-hour (kWh)",
+        "nl": "Energie verbruik in kilowattuur (kWh)",
+        "de": "Verbrauchte Energie in Kilowattstunden (kWh)"
+      },
+      "chartType": "spline",
+      "insights": true,
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/powergrid_feed_in.svg"
+    }
+  }
+}

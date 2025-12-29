@@ -55,36 +55,13 @@ export class Powermeter extends Homey.Device {
         const daily_power = Number(result['totsyspower'].value) * Math.pow(10, Number(result['totsyspower'].scale));
         this.setCapabilityValue('measure_power', daily_power);
       }
-      // nodig? of verwijderen?
-      if (this.validResultRecord(result['l1_voltage']) && this.validResultScaleRecord(result['l1_voltage']) && result['l1_voltage'].value !== INVALID_NUMERIC_VALUE) {
-        if (this.hasCapability('meter_l1_voltage') === false) {
-          await this.addCapability('meter_l1_voltage');
-        }
-        const voltagel1 = Number(result['l1_voltage'].value) * Math.pow(10, Number(result['l1_voltage'].scale));
-        this.setCapabilityValue('meter_l1_voltage', voltagel1);
-      }
-      if (this.validResultRecord(result['l2_voltage']) && this.validResultScaleRecord(result['l2_voltage']) && result['l2_voltage'].value !== INVALID_NUMERIC_VALUE) {
-        if (this.hasCapability('meter_l2_voltage') === false) {
-          await this.addCapability('meter_l2_voltage');
-        }
-        const voltagel2 = Number(result['l2_voltage'].value) * Math.pow(10, Number(result['l2_voltage'].scale));
-        this.setCapabilityValue('meter_l2_voltage', voltagel2);
-      }
-      if (this.validResultRecord(result['l3_voltage']) && this.validResultScaleRecord(result['l3_voltage']) && result['l3_voltage'].value !== INVALID_NUMERIC_VALUE) {
-        if (this.hasCapability('meter_l3_voltage') === false) {
-          await this.addCapability('meter_l3_voltage');
-        }
-        const voltagel3 = Number(result['l3_voltage'].value) * Math.pow(10, Number(result['l3_voltage'].scale));
-        this.setCapabilityValue('meter_l3_voltage', voltagel3);
-      }
 
     }
   }
 
   // Helper method to get register address for a capability
-  // This can be overridden by subclasses that have getMappingAndRegister method
   protected getRegisterAddressForCapability(capability: string): number | undefined {
-    // Try to use getMappingAndRegister if it exists (from Sdm630/Sdm230)
+    // Try to use getMappingAndRegister if it exists
     const getMappingAndRegister = (this as any).getMappingAndRegister;
     if (getMappingAndRegister && this.holdingRegistersBase) {
       const result = getMappingAndRegister.call(this, capability, this.holdingRegistersBase);
@@ -96,9 +73,8 @@ export class Powermeter extends Homey.Device {
   }
 
   // Method to process register value for a capability
-  // This can be overridden by subclasses that have processRegisterValueCommon method
   protected processRegisterValue(capability: string, registerValue: number): number | null {
-    // Try to use processRegisterValueCommon if it exists (from Sdm630/Sdm230)
+    // Try to use processRegisterValueCommon if it exists
     const processRegisterValueCommon = (this as any).processRegisterValueCommon;
     if (processRegisterValueCommon && this.holdingRegistersBase) {
       return processRegisterValueCommon.call(this, capability, registerValue, this.holdingRegistersBase);
@@ -113,7 +89,7 @@ export class Powermeter extends Homey.Device {
       return;
     }
 
-    this.log('pollPowermeter started');
+    this.log(`[${new Date().toISOString()}] pollPowermeter started`);
     this.log(this.getSetting('address'));
 
     const modbusOptions = {
@@ -294,7 +270,7 @@ export class Powermeter extends Homey.Device {
 }
 
 
-// functions to read registers from different meters => verplaatsen naar powermeter
+// ### functions to read registers from different meters ###
 
 // Read input registers from Modbus client and return measurements = SDM630
 export async function checkRegisterPower(registers: Object, client: InstanceType<typeof Modbus.client.TCP>) {

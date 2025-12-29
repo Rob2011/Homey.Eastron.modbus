@@ -1,9 +1,8 @@
-Bring accurate energy monitoring from Eastron SDM V3 meter with Modbus into Homey Pro for real-time insights and smart flows.
+Bring accurate energy monitoring from Eastron Modbus Energy meters into Homey Pro for real-time insights and smart flows.
 
 'Eastron – Modbus' brings reliable energy measurements from Energy Meters with Modbus TCP directly into Homey Pro. Whether you want to monitor total power consumption, per-phase values, or energy production, this app delivers real-time data to your Homey Energy dashboard and ‘flows’.
 
 Build smart flows based on live energy data, visualize consumption within the Homey Energy dashboard and optimize your energy management. ‘Energy Meter – Modbus’ turns Energy Meter with Modbus TCP gateway into a powerful part of your smart home.
-Current version supports the Eastron SDM630 Modbus Energy Meter, more will follow.
 
 
 Requirements:

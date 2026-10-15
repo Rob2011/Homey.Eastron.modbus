@@ -16,10 +16,18 @@ Requirements
 - Homey and meter/gateway on the same local network (or routable between Homey and gateway)
 
 Supported devices
-- Eastron SDM72D-M
-- Eastron SDM120CT
-- Eastron SDM230
-- Eastron SDM630 V3
+- Eastron SDM120 / SDM120CT (single phase)
+- Eastron SDM220 (single phase)
+- Eastron SDM230 (single phase)
+- Eastron SDM72D-M-2 (three phase)
+- Eastron SDM630 V2 / V3 (three phase)
+- Eastron SDM630MCT, incl. SDM630MCT-40mA (three phase, CT operated)
+- Eastron SDM630MCT-RC (three phase, Rogowski coil)
+
+Meters with built-in Modbus TCP (such as the SDM630-TCP / SDM630MCT-TCP) can be added directly with the matching SDM630 driver; no gateway needed.
+
+Languages
+- English, Dutch, German, Norwegian, Swedish, Polish, French, Spanish, Portuguese, Italian and Slovenian
 
 Quick Install
 1. Install the "Eastron – Modbus" app from the Homey App Store: https://homey.app/nl-nl/app/eastron.modbus/Eastron/
@@ -37,7 +45,7 @@ Example settings:
 IP: 192.168.1.50
 Port: 502
 Unit ID: 1
-Polling interval: 5s
+Polling interval: 20s
 ```
 
 Notes
@@ -47,6 +55,10 @@ What the app provides
 - Live sensor values exposed in Homey (e.g., total power, per-phase power, voltage, current, energy totals)
 - Ability to use energy data in Homey Flows for automation
 - Integration with the Homey Energy dashboard where supported
+- Daily imported/exported energy and net energy, reset at midnight
+- Flow triggers for power and daily import/export changes (with a minimum change per flow)
+- CT meters (SDM630MCT / -RC) also report line-to-line voltages, neutral current and apparent/reactive power
+- The device is marked unavailable when the meter cannot be reached for several polls
 
 Troubleshooting
 - No data / connection error:

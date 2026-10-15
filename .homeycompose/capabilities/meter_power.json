@@ -2,7 +2,14 @@
   "type": "number",
   "title": {
     "en": "Net used Yield",
-    "nl": "Netto gebruikt vermogen"
+    "nl": "Netto gebruikt vermogen",
+    "no": "Netto forbruk",
+    "pl": "Zużycie netto",
+    "fr": "Consommation nette",
+    "es": "Consumo neto",
+    "pt": "Consumo líquido",
+    "it": "Consumo netto",
+    "sl": "Neto poraba"
   },
   "decimals": 2,
   "units": {
@@ -10,7 +17,14 @@
   },
   "desc": {
     "en": "Net Energy used in kilowatt-hour (kWh)",
-    "nl": "Netto gebruikt vermogen in kilowattuur (kWh)"
+    "nl": "Netto gebruikt vermogen in kilowattuur (kWh)",
+    "no": "Netto energiforbruk i kilowattimer (kWh)",
+    "pl": "Zużycie energii netto w kilowatogodzinach (kWh)",
+    "fr": "Énergie nette consommée en kilowattheures (kWh)",
+    "es": "Energía neta consumida en kilovatios hora (kWh)",
+    "pt": "Energia líquida consumida em quilowatt-hora (kWh)",
+    "it": "Energia netta consumata in chilowattora (kWh)",
+    "sl": "Neto porabljena energija v kilovatnih urah (kWh)"
   },
   "chartType": "spline",
   "insights": true,

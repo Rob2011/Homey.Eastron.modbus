@@ -48,7 +48,8 @@
     "invalid_settings": "Ongeldige instellingen, controleer a.u.b.",
     "device_unreachable": "Apparaat niet bereikbaar, controleer de verbinding.",
     "title_sdm630mct": "Eastron SDM630MCT",
-    "title_sdm630mct_rc": "Eastron SDM630MCT-RC (Rogowski)"
+    "title_sdm630mct_rc": "Eastron SDM630MCT-RC (Rogowski)",
+    "deviceid": "Modbus apparaat ID"
   },
   "Unreachable": "niet bereikbaar",
   "device_unreachable": "Apparaat niet bereikbaar, controleer de verbinding.",

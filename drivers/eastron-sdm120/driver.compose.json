@@ -25,91 +25,182 @@
       "title": {
         "en": "Power",
         "nl": "Vermogen",
-        "de": "Leistung"
+        "de": "Leistung",
+        "no": "Effekt",
+        "pl": "Moc",
+        "fr": "Puissance",
+        "es": "Potencia",
+        "pt": "Potência",
+        "it": "Potenza",
+        "sl": "Moč"
       }
     },
     "measure_voltage": {
       "title": {
         "en": "Voltage",
         "nl": "Spanning",
-        "de": "Spannung"
+        "de": "Spannung",
+        "no": "Spenning",
+        "pl": "Napięcie",
+        "fr": "Tension",
+        "es": "Tensión",
+        "pt": "Tensão",
+        "it": "Tensione",
+        "sl": "Napetost"
       }
     },
     "measure_current": {
       "title": {
         "en": "Current",
         "nl": "Stroom",
-        "de": "Strom"
+        "de": "Strom",
+        "no": "Strøm",
+        "pl": "Prąd",
+        "fr": "Courant",
+        "es": "Corriente",
+        "pt": "Corrente",
+        "it": "Corrente",
+        "sl": "Tok"
       }
     },
     "meter_power": {
       "title": {
         "en": "Net Energy",
         "nl": "Netto Energie",
-        "de": "Netto Energie"
+        "de": "Netto Energie",
+        "no": "Netto energi",
+        "pl": "Energia netto",
+        "fr": "Énergie nette",
+        "es": "Energía neta",
+        "pt": "Energia líquida",
+        "it": "Energia netta",
+        "sl": "Neto energija"
       }
     },
     "meter_power.imported": {
       "title": {
         "en": "Total Import Energy",
         "nl": "Totaal geïmporteerd energie",
-        "de": "Insgesamt importierte Energie"
+        "de": "Insgesamt importierte Energie",
+        "no": "Total importert energi",
+        "pl": "Całkowita energia pobrana",
+        "fr": "Énergie importée totale",
+        "es": "Energía importada total",
+        "pt": "Energia importada total",
+        "it": "Energia importata totale",
+        "sl": "Skupna prejeta energija"
       }
     },
     "meter_power.exported": {
       "title": {
         "en": "Total Export Energy",
         "nl": "Totaal geëxporteerd energie",
-        "de": "Insgesamt exportierte Energie"
+        "de": "Insgesamt exportierte Energie",
+        "no": "Total eksportert energi",
+        "pl": "Całkowita energia oddana",
+        "fr": "Énergie exportée totale",
+        "es": "Energía exportada total",
+        "pt": "Energia exportada total",
+        "it": "Energia esportata totale",
+        "sl": "Skupna oddana energija"
       }
     },
     "meter_power_import_daily": {
       "title": {
         "en": "Daily Import Energy",
         "nl": "Dagelijkse geïmporteerd energie",
-        "de": "Tägliche importierte Energie"
+        "de": "Tägliche importierte Energie",
+        "no": "Daglig importert energi",
+        "pl": "Dzienna energia pobrana",
+        "fr": "Énergie importée du jour",
+        "es": "Energía importada diaria",
+        "pt": "Energia importada diária",
+        "it": "Energia importata giornaliera",
+        "sl": "Dnevno prejeta energija"
       }
     },
     "meter_power_export_daily": {
       "title": {
         "en": "Daily Export Energy",
         "nl": "Dagelijkse geëxporteerd energie",
-        "de": "Tägliche exportierte Energie"
+        "de": "Tägliche exportierte Energie",
+        "no": "Daglig eksportert energi",
+        "pl": "Dzienna energia oddana",
+        "fr": "Énergie exportée du jour",
+        "es": "Energía exportada diaria",
+        "pt": "Energia exportada diária",
+        "it": "Energia esportata giornaliera",
+        "sl": "Dnevno oddana energija"
       }
     },
     "meter_frequency": {
       "title": {
         "en": "Grid Frequency",
         "nl": "Netfrequentie",
-        "de": "Netzfrequenz"
+        "de": "Netzfrequenz",
+        "no": "Nettfrekvens",
+        "pl": "Częstotliwość sieci",
+        "fr": "Fréquence du réseau",
+        "es": "Frecuencia de red",
+        "pt": "Frequência da rede",
+        "it": "Frequenza di rete",
+        "sl": "Omrežna frekvenca"
       }
     },
     "measure_power_factor": {
       "title": {
         "en": "Power Factor",
         "nl": "Vermogensfactor",
-        "de": "Leistungsfaktor"
+        "de": "Leistungsfaktor",
+        "no": "Effektfaktor",
+        "pl": "Współczynnik mocy",
+        "fr": "Facteur de puissance",
+        "es": "Factor de potencia",
+        "pt": "Fator de potência",
+        "it": "Fattore di potenza",
+        "sl": "Faktor moči"
       }
     },
     "measure_phase_angle": {
       "title": {
         "en": "Phase Angle",
         "nl": "Fasehoek",
-        "de": "Phasenwinkel"
+        "de": "Phasenwinkel",
+        "no": "Fasevinkel",
+        "pl": "Kąt fazowy",
+        "fr": "Angle de phase",
+        "es": "Ángulo de fase",
+        "pt": "Ângulo de fase",
+        "it": "Angolo di fase",
+        "sl": "Fazni kot"
       }
     },
     "measure_apparent_power": {
       "title": {
         "en": "Apparent Power",
         "nl": "Schijnbaar vermogen",
-        "de": "Scheinleistung"
+        "de": "Scheinleistung",
+        "no": "Tilsynelatende effekt",
+        "pl": "Moc pozorna",
+        "fr": "Puissance apparente",
+        "es": "Potencia aparente",
+        "pt": "Potência aparente",
+        "it": "Potenza apparente",
+        "sl": "Navidezna moč"
       }
     },
     "measure_reactive_power": {
       "title": {
         "en": "Reactive Power",
         "nl": "Blindvermogen",
-        "de": "Blindleistung"
+        "de": "Blindleistung",
+        "no": "Reaktiv effekt",
+        "pl": "Moc bierna",
+        "fr": "Puissance réactive",
+        "es": "Potencia reactiva",
+        "pt": "Potência reativa",
+        "it": "Potenza reattiva",
+        "sl": "Jalova moč"
       }
     }
   },
@@ -132,9 +223,16 @@
     {
       "type": "group",
       "label": {
-      "en": "Modbus TCP settings",
-      "nl": "Modbus TCP instellingen",
-      "de": "Modbus TCP Einstellungen"
+        "en": "Modbus TCP settings",
+        "nl": "Modbus TCP instellingen",
+        "de": "Modbus TCP Einstellungen",
+        "no": "Modbus TCP-innstillinger",
+        "pl": "Ustawienia Modbus TCP",
+        "fr": "Paramètres Modbus TCP",
+        "es": "Ajustes Modbus TCP",
+        "pt": "Definições Modbus TCP",
+        "it": "Impostazioni Modbus TCP",
+        "sl": "Nastavitve Modbus TCP"
       },
       "children": [
         {
@@ -144,7 +242,14 @@
           "label": {
             "en": "IP Address",
             "nl": "IP-adres",
-            "de": "IP-Adresse"
+            "de": "IP-Adresse",
+            "no": "IP-adresse",
+            "pl": "Adres IP",
+            "fr": "Adresse IP",
+            "es": "Dirección IP",
+            "pt": "Endereço IP",
+            "it": "Indirizzo IP",
+            "sl": "Naslov IP"
           }
         },
         {
@@ -155,7 +260,14 @@
           "label": {
             "en": "Port",
             "nl": "Poort",
-            "de": "Port"
+            "de": "Port",
+            "no": "Port",
+            "pl": "Port",
+            "fr": "Port",
+            "es": "Puerto",
+            "pt": "Porta",
+            "it": "Porta",
+            "sl": "Vrata"
           }
         },
         {
@@ -168,9 +280,16 @@
             "max": 50
           },
           "label": {
-          "en": "Modbus device ID",
-          "nl": "Modbus apparaat ID",
-          "de": "Modbus Geräte-ID"
+            "en": "Modbus device ID",
+            "nl": "Modbus apparaat ID",
+            "de": "Modbus Geräte-ID",
+            "no": "Modbus enhets-ID",
+            "pl": "ID urządzenia Modbus",
+            "fr": "ID de l'appareil Modbus",
+            "es": "ID del dispositivo Modbus",
+            "pt": "ID do dispositivo Modbus",
+            "it": "ID dispositivo Modbus",
+            "sl": "ID naprave Modbus"
           }
         }
       ]

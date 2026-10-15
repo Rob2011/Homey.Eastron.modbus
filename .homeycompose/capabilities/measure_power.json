@@ -3,7 +3,14 @@
   "title": {
     "en": "Power",
     "nl": "Vermogen",
-    "de": "Leistung"
+    "de": "Leistung",
+    "no": "Effekt",
+    "pl": "Moc",
+    "fr": "Puissance",
+    "es": "Potencia",
+    "pt": "Potência",
+    "it": "Potenza",
+    "sl": "Moč"
   },
   "units": {
     "en": "W"
@@ -12,7 +19,14 @@
   "desc": {
     "en": "Power in watt (W)",
     "nl": "Vermogen in watt (W)",
-    "de": "Leistung in Watt (W)"
+    "de": "Leistung in Watt (W)",
+    "no": "Effekt i watt (W)",
+    "pl": "Moc w watach (W)",
+    "fr": "Puissance en watts (W)",
+    "es": "Potencia en vatios (W)",
+    "pt": "Potência em watts (W)",
+    "it": "Potenza in watt (W)",
+    "sl": "Moč v vatih (W)"
   },
   "chartType": "stepLine",
   "decimals": 2,

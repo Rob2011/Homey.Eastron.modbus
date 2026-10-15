@@ -48,7 +48,8 @@
     "invalid_settings": "Invalid settings, please check.",
     "device_unreachable": "The device is not reachable, please check the connection.",
     "title_sdm630mct": "Eastron SDM630MCT",
-    "title_sdm630mct_rc": "Eastron SDM630MCT-RC (Rogowski)"
+    "title_sdm630mct_rc": "Eastron SDM630MCT-RC (Rogowski)",
+    "deviceid": "Modbus device ID"
   },
   "Unreachable": "Unreachable",
   "Device_unavailable": "The device is not available",

@@ -2,7 +2,14 @@
   "type": "number",
   "title": {
     "en": "Daily Yield",
-    "nl": "Dagelijks terug geleverd vermogen"
+    "nl": "Dagelijks terug geleverd vermogen",
+    "no": "Dagens energi",
+    "pl": "Energia dzienna",
+    "fr": "Énergie du jour",
+    "es": "Energía del día",
+    "pt": "Energia do dia",
+    "it": "Energia giornaliera",
+    "sl": "Dnevna energija"
   },
   "decimals": 2,
   "units": {
@@ -10,7 +17,14 @@
   },
   "desc": {
     "en": "Energy returned daily in kilowatt-hour (kWh)",
-    "nl": "Terug geleverd vermogen per dag in kilowattuur (kWh)"
+    "nl": "Terug geleverd vermogen per dag in kilowattuur (kWh)",
+    "no": "Daglig levert energi i kilowattimer (kWh)",
+    "pl": "Energia oddana dziennie w kilowatogodzinach (kWh)",
+    "fr": "Énergie restituée par jour en kilowattheures (kWh)",
+    "es": "Energía devuelta diaria en kilovatios hora (kWh)",
+    "pt": "Energia devolvida diária em quilowatt-hora (kWh)",
+    "it": "Energia restituita giornaliera in chilowattora (kWh)",
+    "sl": "Dnevno oddana energija v kilovatnih urah (kWh)"
   },
   "chartType": "spline",
   "insights": true,

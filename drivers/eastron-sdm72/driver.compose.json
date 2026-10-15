@@ -31,126 +31,252 @@
       "title": {
         "en": "Total System Power",
         "nl": "Totaal systeemvermogen",
-        "de": "Gesamt Systemleistung"
+        "de": "Gesamt Systemleistung",
+        "no": "Total systemeffekt",
+        "pl": "Całkowita moc systemu",
+        "fr": "Puissance totale du système",
+        "es": "Potencia total del sistema",
+        "pt": "Potência total do sistema",
+        "it": "Potenza totale del sistema",
+        "sl": "Skupna moč sistema"
       }
     },
     "meter_power": {
       "title": {
         "en": "Net Energy",
         "nl": "Netto Energie",
-        "de": "Netto Energie"
+        "de": "Netto Energie",
+        "no": "Netto energi",
+        "pl": "Energia netto",
+        "fr": "Énergie nette",
+        "es": "Energía neta",
+        "pt": "Energia líquida",
+        "it": "Energia netta",
+        "sl": "Neto energija"
       }
     },
     "meter_power.imported": {
       "title": {
         "en": "Total Import Energy",
         "nl": "Totaal geïmporteerd energie",
-        "de": "Insgesamt importierte Energie"
+        "de": "Insgesamt importierte Energie",
+        "no": "Total importert energi",
+        "pl": "Całkowita energia pobrana",
+        "fr": "Énergie importée totale",
+        "es": "Energía importada total",
+        "pt": "Energia importada total",
+        "it": "Energia importata totale",
+        "sl": "Skupna prejeta energija"
       }
     },
     "meter_power.exported": {
       "title": {
         "en": "Total Export Energy",
         "nl": "Totaal geëxporteerd energie",
-        "de": "Insgesamt exportierte Energie"
+        "de": "Insgesamt exportierte Energie",
+        "no": "Total eksportert energi",
+        "pl": "Całkowita energia oddana",
+        "fr": "Énergie exportée totale",
+        "es": "Energía exportada total",
+        "pt": "Energia exportada total",
+        "it": "Energia esportata totale",
+        "sl": "Skupna oddana energija"
       }
     },
     "meter_power_import_daily": {
       "title": {
         "en": "Daily Import Energy",
         "nl": "Dagelijks geïmporteerd energie",
-        "de": "Täglich importierte Energie"
+        "de": "Täglich importierte Energie",
+        "no": "Daglig importert energi",
+        "pl": "Dzienna energia pobrana",
+        "fr": "Énergie importée du jour",
+        "es": "Energía importada diaria",
+        "pt": "Energia importada diária",
+        "it": "Energia importata giornaliera",
+        "sl": "Dnevno prejeta energija"
       }
     },
     "meter_power_export_daily": {
       "title": {
         "en": "Daily Export Energy",
         "nl": "Dagelijks geëxporteerd energie",
-        "de": "Täglich exportierte Energie"
+        "de": "Täglich exportierte Energie",
+        "no": "Daglig eksportert energi",
+        "pl": "Dzienna energia oddana",
+        "fr": "Énergie exportée du jour",
+        "es": "Energía exportada diaria",
+        "pt": "Energia exportada diária",
+        "it": "Energia esportata giornaliera",
+        "sl": "Dnevno oddana energija"
       }
     },
     "meter_l1_voltage": {
       "title": {
         "en": "L1 Voltage",
         "nl": "L1 Spanning",
-        "de": "L1 Spannung"
+        "de": "L1 Spannung",
+        "no": "L1 spenning",
+        "pl": "L1 napięcie",
+        "fr": "L1 tension",
+        "es": "L1 tensión",
+        "pt": "L1 tensão",
+        "it": "L1 tensione",
+        "sl": "L1 napetost"
       }
     },
     "meter_l2_voltage": {
       "title": {
         "en": "L2 Voltage",
         "nl": "L2 Spanning",
-        "de": "L2 Spannung"
+        "de": "L2 Spannung",
+        "no": "L2 spenning",
+        "pl": "L2 napięcie",
+        "fr": "L2 tension",
+        "es": "L2 tensión",
+        "pt": "L2 tensão",
+        "it": "L2 tensione",
+        "sl": "L2 napetost"
       }
     },
     "meter_l3_voltage": {
       "title": {
         "en": "L3 Voltage",
         "nl": "L3 Spanning",
-        "de": "L3 Spannung"
+        "de": "L3 Spannung",
+        "no": "L3 spenning",
+        "pl": "L3 napięcie",
+        "fr": "L3 tension",
+        "es": "L3 tensión",
+        "pt": "L3 tensão",
+        "it": "L3 tensione",
+        "sl": "L3 napetost"
       }
     },
     "meter_l1_current": {
       "title": {
         "en": "L1 Current",
         "nl": "L1 Stroom",
-        "de": "L1 Strom"
+        "de": "L1 Strom",
+        "no": "L1 strøm",
+        "pl": "L1 prąd",
+        "fr": "L1 courant",
+        "es": "L1 corriente",
+        "pt": "L1 corrente",
+        "it": "L1 corrente",
+        "sl": "L1 tok"
       }
     },
     "meter_l2_current": {
       "title": {
         "en": "L2 Current",
         "nl": "L2 Stroom",
-        "de": "L2 Strom"
+        "de": "L2 Strom",
+        "no": "L2 strøm",
+        "pl": "L2 prąd",
+        "fr": "L2 courant",
+        "es": "L2 corriente",
+        "pt": "L2 corrente",
+        "it": "L2 corrente",
+        "sl": "L2 tok"
       }
     },
     "meter_l3_current": {
       "title": {
         "en": "L3 Current",
         "nl": "L3 Stroom",
-        "de": "L3 Strom"
+        "de": "L3 Strom",
+        "no": "L3 strøm",
+        "pl": "L3 prąd",
+        "fr": "L3 courant",
+        "es": "L3 corriente",
+        "pt": "L3 corrente",
+        "it": "L3 corrente",
+        "sl": "L3 tok"
       }
     },
     "meter_l1_power": {
       "title": {
         "en": "L1 Active Power",
         "nl": "L1 Actief Vermogen",
-        "de": "L1 Wirkleistung"
+        "de": "L1 Wirkleistung",
+        "no": "L1 aktiv effekt",
+        "pl": "L1 moc czynna",
+        "fr": "L1 puissance active",
+        "es": "L1 potencia activa",
+        "pt": "L1 potência ativa",
+        "it": "L1 potenza attiva",
+        "sl": "L1 delovna moč"
       }
     },
     "meter_l2_power": {
       "title": {
         "en": "L2 Active Power",
         "nl": "L2 Actief Vermogen",
-        "de": "L2 Wirkleistung"
+        "de": "L2 Wirkleistung",
+        "no": "L2 aktiv effekt",
+        "pl": "L2 moc czynna",
+        "fr": "L2 puissance active",
+        "es": "L2 potencia activa",
+        "pt": "L2 potência ativa",
+        "it": "L2 potenza attiva",
+        "sl": "L2 delovna moč"
       }
     },
     "meter_l3_power": {
       "title": {
-        "en": "L3 Active Power",  
+        "en": "L3 Active Power",
         "nl": "L3 Actief Vermogen",
-        "de": "L3 Wirkleistung"
+        "de": "L3 Wirkleistung",
+        "no": "L3 aktiv effekt",
+        "pl": "L3 moc czynna",
+        "fr": "L3 puissance active",
+        "es": "L3 potencia activa",
+        "pt": "L3 potência ativa",
+        "it": "L3 potenza attiva",
+        "sl": "L3 delovna moč"
       }
     },
     "meter_frequency": {
       "title": {
         "en": "Grid Frequency",
         "nl": "Netfrequentie",
-        "de": "Netzfrequenz"
+        "de": "Netzfrequenz",
+        "no": "Nettfrekvens",
+        "pl": "Częstotliwość sieci",
+        "fr": "Fréquence du réseau",
+        "es": "Frecuencia de red",
+        "pt": "Frequência da rede",
+        "it": "Frequenza di rete",
+        "sl": "Omrežna frekvenca"
       }
     },
     "measure_tot_power_factor": {
       "title": {
         "en": "Total Power Factor",
         "nl": "Totale Vermogensfactor",
-        "de": "Gesamt Leistungsfaktor"
+        "de": "Gesamt Leistungsfaktor",
+        "no": "Total effektfaktor",
+        "pl": "Całkowity współczynnik mocy",
+        "fr": "Facteur de puissance total",
+        "es": "Factor de potencia total",
+        "pt": "Fator de potência total",
+        "it": "Fattore di potenza totale",
+        "sl": "Skupni faktor moči"
       }
     },
     "meter_neutral_current": {
       "title": {
         "en": "Neutral Current",
         "nl": "Nul Stroom",
-        "de": "Neutralstrom"
+        "de": "Neutralstrom",
+        "no": "Nøytralstrøm",
+        "pl": "Prąd w przewodzie neutralnym",
+        "fr": "Courant de neutre",
+        "es": "Corriente de neutro",
+        "pt": "Corrente de neutro",
+        "it": "Corrente di neutro",
+        "sl": "Tok v nevtralnem vodniku"
       }
     }
   },
@@ -165,56 +291,84 @@
     "large": "{{driverAssetsPath}}/images/large.png"
   },
   "pair": [
-  {
-    "id": "start"
-  }
-],
-"settings": [
-  {
-    "type": "group",
-    "label": {
-      "en": "Modbus TCP settings",
-      "nl": "Modbus TCP instellingen",
-      "de": "Modbus TCP Einstellungen"
-    },
-    "children": [
-      {
-        "id": "address",
-        "type": "text",
-        "value": "0.0.0.0",
-        "label": {
-          "en": "IP Address",
-          "nl": "IP-adres",
-          "de": "IP-Adresse"
-        }
+    {
+      "id": "start"
+    }
+  ],
+  "settings": [
+    {
+      "type": "group",
+      "label": {
+        "en": "Modbus TCP settings",
+        "nl": "Modbus TCP instellingen",
+        "de": "Modbus TCP Einstellungen",
+        "no": "Modbus TCP-innstillinger",
+        "pl": "Ustawienia Modbus TCP",
+        "fr": "Paramètres Modbus TCP",
+        "es": "Ajustes Modbus TCP",
+        "pt": "Definições Modbus TCP",
+        "it": "Impostazioni Modbus TCP",
+        "sl": "Nastavitve Modbus TCP"
       },
-      {
-        "id": "port",
-        "type": "number",
-        "value": 502,
-        "step": 1,
-        "label": {
-          "en": "Port",
-          "nl": "Poort",
-          "de": "Port"
-        }
-      },
-      {
-        "id": "id",
-        "type": "number",
-        "value": 1,
-        "step": 1,
-        "attr": {
-          "min": 0,
-          "max": 50
+      "children": [
+        {
+          "id": "address",
+          "type": "text",
+          "value": "0.0.0.0",
+          "label": {
+            "en": "IP Address",
+            "nl": "IP-adres",
+            "de": "IP-Adresse",
+            "no": "IP-adresse",
+            "pl": "Adres IP",
+            "fr": "Adresse IP",
+            "es": "Dirección IP",
+            "pt": "Endereço IP",
+            "it": "Indirizzo IP",
+            "sl": "Naslov IP"
+          }
         },
-        "label": {
-          "en": "Modbus device ID",
-          "nl": "Modbus apparaat ID",
-          "de": "Modbus Geräte-ID"
+        {
+          "id": "port",
+          "type": "number",
+          "value": 502,
+          "step": 1,
+          "label": {
+            "en": "Port",
+            "nl": "Poort",
+            "de": "Port",
+            "no": "Port",
+            "pl": "Port",
+            "fr": "Port",
+            "es": "Puerto",
+            "pt": "Porta",
+            "it": "Porta",
+            "sl": "Vrata"
+          }
+        },
+        {
+          "id": "id",
+          "type": "number",
+          "value": 1,
+          "step": 1,
+          "attr": {
+            "min": 0,
+            "max": 50
+          },
+          "label": {
+            "en": "Modbus device ID",
+            "nl": "Modbus apparaat ID",
+            "de": "Modbus Geräte-ID",
+            "no": "Modbus enhets-ID",
+            "pl": "ID urządzenia Modbus",
+            "fr": "ID de l'appareil Modbus",
+            "es": "ID del dispositivo Modbus",
+            "pt": "ID do dispositivo Modbus",
+            "it": "ID dispositivo Modbus",
+            "sl": "ID naprave Modbus"
+          }
         }
-      }
-    ]
-  }
-]
+      ]
+    }
+  ]
 }

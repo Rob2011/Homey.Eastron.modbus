@@ -3,7 +3,14 @@
   "title": {
     "en": "Voltage L3-L1",
     "nl": "Spanning L3-L1",
-    "de": "Spannung L3-L1"
+    "de": "Spannung L3-L1",
+    "no": "Spenning L3-L1",
+    "pl": "Napięcie L3-L1",
+    "fr": "Tension L3-L1",
+    "es": "Tensión L3-L1",
+    "pt": "Tensão L3-L1",
+    "it": "Tensione L3-L1",
+    "sl": "Napetost L3-L1"
   },
   "units": {
     "en": "V"
@@ -11,7 +18,14 @@
   "desc": {
     "en": "Line to line voltage L3-L1 (V)",
     "nl": "Lijnspanning L3-L1 (V)",
-    "de": "Leiterspannung L3-L1 (V)"
+    "de": "Leiterspannung L3-L1 (V)",
+    "no": "Linjespenning L3-L1 (V)",
+    "pl": "Napięcie międzyfazowe L3-L1 (V)",
+    "fr": "Tension composée L3-L1 (V)",
+    "es": "Tensión entre fases L3-L1 (V)",
+    "pt": "Tensão entre fases L3-L1 (V)",
+    "it": "Tensione concatenata L3-L1 (V)",
+    "sl": "Medfazna napetost L3-L1 (V)"
   },
   "insights": true,
   "chartType": "stepLine",

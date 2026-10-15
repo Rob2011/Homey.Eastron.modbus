@@ -1,13 +1,20 @@
 {
-	"type": "number",
-	"title": {
-		"en": "Phase frequency"
-	},
-	"getable": true,
-	"setable": false,
-	"units": {
-		"en": "Hz"
-	},
-	"decimals": 2,
-  "icon": "/assets/measure_frequency.svg" 
+  "type": "number",
+  "title": {
+    "en": "Phase frequency",
+    "no": "Frekvens",
+    "pl": "Częstotliwość",
+    "fr": "Fréquence",
+    "es": "Frecuencia",
+    "pt": "Frequência",
+    "it": "Frequenza",
+    "sl": "Frekvenca"
+  },
+  "getable": true,
+  "setable": false,
+  "units": {
+    "en": "Hz"
+  },
+  "decimals": 2,
+  "icon": "/assets/measure_frequency.svg"
 }

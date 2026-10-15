@@ -2,7 +2,14 @@
   "type": "number",
   "title": {
     "en": "Total Yield",
-    "nl": "Terug geleverd vermogen"
+    "nl": "Terug geleverd vermogen",
+    "no": "Total energi",
+    "pl": "Energia całkowita",
+    "fr": "Énergie totale",
+    "es": "Energía total",
+    "pt": "Energia total",
+    "it": "Energia totale",
+    "sl": "Skupna energija"
   },
   "decimals": 2,
   "units": {
@@ -10,7 +17,14 @@
   },
   "desc": {
     "en": "Energy returned in kilowatt-hour (kWh)",
-    "nl": "Terug geleverd vermogen in kilowattuur (kWh)"
+    "nl": "Terug geleverd vermogen in kilowattuur (kWh)",
+    "no": "Levert energi i kilowattimer (kWh)",
+    "pl": "Energia oddana w kilowatogodzinach (kWh)",
+    "fr": "Énergie restituée en kilowattheures (kWh)",
+    "es": "Energía devuelta en kilovatios hora (kWh)",
+    "pt": "Energia devolvida em quilowatt-hora (kWh)",
+    "it": "Energia restituita in chilowattora (kWh)",
+    "sl": "Oddana energija v kilovatnih urah (kWh)"
   },
   "chartType": "spline",
   "insights": true,

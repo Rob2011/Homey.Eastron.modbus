@@ -25,63 +25,126 @@
       "title": {
         "en": "Power",
         "nl": "Vermogen",
-        "de": "Leistung"
+        "de": "Leistung",
+        "no": "Effekt",
+        "pl": "Moc",
+        "fr": "Puissance",
+        "es": "Potencia",
+        "pt": "Potência",
+        "it": "Potenza",
+        "sl": "Moč"
       }
     },
     "measure_voltage": {
       "title": {
         "en": "Voltage",
         "nl": "Spanning",
-        "de": "Spannung"
+        "de": "Spannung",
+        "no": "Spenning",
+        "pl": "Napięcie",
+        "fr": "Tension",
+        "es": "Tensión",
+        "pt": "Tensão",
+        "it": "Tensione",
+        "sl": "Napetost"
       }
     },
     "measure_current": {
       "title": {
         "en": "Current",
         "nl": "Stroom",
-        "de": "Strom"
+        "de": "Strom",
+        "no": "Strøm",
+        "pl": "Prąd",
+        "fr": "Courant",
+        "es": "Corriente",
+        "pt": "Corrente",
+        "it": "Corrente",
+        "sl": "Tok"
       }
     },
     "meter_power": {
       "title": {
         "en": "Net Energy",
         "nl": "Netto Energie",
-        "de": "Netto Energie"
+        "de": "Netto Energie",
+        "no": "Netto energi",
+        "pl": "Energia netto",
+        "fr": "Énergie nette",
+        "es": "Energía neta",
+        "pt": "Energia líquida",
+        "it": "Energia netta",
+        "sl": "Neto energija"
       }
     },
     "meter_power.imported": {
       "title": {
         "en": "Total Import",
         "nl": "Totaal geïmporteerd",
-        "de": "Insgesamt importierte Energie"
+        "de": "Insgesamt importierte Energie",
+        "no": "Total import",
+        "pl": "Import całkowity",
+        "fr": "Import total",
+        "es": "Importación total",
+        "pt": "Importação total",
+        "it": "Importazione totale",
+        "sl": "Skupni uvoz"
       }
     },
     "meter_power.exported": {
       "title": {
         "en": "Total Export",
         "nl": "Totaal geëxporteerd",
-        "de": "Insgesamt exportierte Energie"
+        "de": "Insgesamt exportierte Energie",
+        "no": "Total eksport",
+        "pl": "Eksport całkowity",
+        "fr": "Export total",
+        "es": "Exportación total",
+        "pt": "Exportação total",
+        "it": "Esportazione totale",
+        "sl": "Skupni izvoz"
       }
     },
     "meter_power_import_daily": {
       "title": {
         "en": "Daily Import",
         "nl": "Dagelijkse Import",
-        "de": "Tägliche Importe"
+        "de": "Tägliche Importe",
+        "no": "Daglig import",
+        "pl": "Import dzienny",
+        "fr": "Import journalier",
+        "es": "Importación diaria",
+        "pt": "Importação diária",
+        "it": "Importazione giornaliera",
+        "sl": "Dnevni uvoz"
       }
     },
     "meter_power_export_daily": {
       "title": {
         "en": "Daily Export",
         "nl": "Dagelijkse Export",
-        "de": "Tägliche Exporte"
+        "de": "Tägliche Exporte",
+        "no": "Daglig eksport",
+        "pl": "Eksport dzienny",
+        "fr": "Export journalier",
+        "es": "Exportación diaria",
+        "pt": "Exportação diária",
+        "it": "Esportazione giornaliera",
+        "sl": "Dnevni izvoz"
       }
     },
     "meter_frequency": {
       "title": {
         "en": "Grid Frequency",
         "nl": "Netfrequentie",
-        "de": "Netzfrequenz"
+        "de": "Netzfrequenz",
+        "no": "Nettfrekvens",
+        "pl": "Częstotliwość sieci",
+        "fr": "Fréquence du réseau",
+        "es": "Frecuencia de red",
+        "pt": "Frequência da rede",
+        "it": "Frequenza di rete",
+        "sl": "Omrežna frekvenca"
       }
     }
   },
@@ -106,7 +169,14 @@
       "label": {
         "en": "Modbus TCP settings",
         "nl": "Modbus TCP instellingen",
-        "de": "Modbus TCP Einstellungen"
+        "de": "Modbus TCP Einstellungen",
+        "no": "Modbus TCP-innstillinger",
+        "pl": "Ustawienia Modbus TCP",
+        "fr": "Paramètres Modbus TCP",
+        "es": "Ajustes Modbus TCP",
+        "pt": "Definições Modbus TCP",
+        "it": "Impostazioni Modbus TCP",
+        "sl": "Nastavitve Modbus TCP"
       },
       "children": [
         {
@@ -116,7 +186,14 @@
           "label": {
             "en": "IP Address",
             "nl": "IP-adres",
-            "de": "IP-Adresse"
+            "de": "IP-Adresse",
+            "no": "IP-adresse",
+            "pl": "Adres IP",
+            "fr": "Adresse IP",
+            "es": "Dirección IP",
+            "pt": "Endereço IP",
+            "it": "Indirizzo IP",
+            "sl": "Naslov IP"
           }
         },
         {
@@ -127,7 +204,14 @@
           "label": {
             "en": "Port",
             "nl": "Poort",
-            "de": "Port"
+            "de": "Port",
+            "no": "Port",
+            "pl": "Port",
+            "fr": "Port",
+            "es": "Puerto",
+            "pt": "Porta",
+            "it": "Porta",
+            "sl": "Vrata"
           }
         },
         {
@@ -142,7 +226,14 @@
           "label": {
             "en": "Modbus device ID",
             "nl": "Modbus apparaat ID",
-            "de": "Modbus Geräte-ID"
+            "de": "Modbus Geräte-ID",
+            "no": "Modbus enhets-ID",
+            "pl": "ID urządzenia Modbus",
+            "fr": "ID de l'appareil Modbus",
+            "es": "ID del dispositivo Modbus",
+            "pt": "ID do dispositivo Modbus",
+            "it": "ID dispositivo Modbus",
+            "sl": "ID naprave Modbus"
           }
         }
       ]

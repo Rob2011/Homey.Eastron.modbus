@@ -1,66 +1,122 @@
 [
-    {
-        "id": "address",
-        "type": "text",
-        "label": {
-            "en": "IP address",
-            "nl": "IP-adres",
-            "de": "IP-Adresse"
-        },
-        "value": "192.168.1.100",
-        "hint": {
-            "en": "The IP address of the Modbus gateway",
-            "nl": "Het IP-adres van de Modbus gateway",
-            "de": "Die IP-Adresse des Modbus-Gateways"
-        }
+  {
+    "id": "address",
+    "type": "text",
+    "label": {
+      "en": "IP address",
+      "nl": "IP-adres",
+      "de": "IP-Adresse",
+      "no": "IP-adresse",
+      "pl": "Adres IP",
+      "fr": "Adresse IP",
+      "es": "Dirección IP",
+      "pt": "Endereço IP",
+      "it": "Indirizzo IP",
+      "sl": "Naslov IP"
     },
-    {
-        "id": "port",
-        "type": "number",
-        "label": {
-            "en": "Port",
-            "nl": "Poort",
-            "de": "Port"
-        },
-        "value": 502,
-        "hint": {
-            "en": "Modbus TCP port (typically 502)",
-            "nl": "Modbus TCP-poort (meestal 502)",
-            "de": "Modbus TCP-Port (typischerweise 502)"
-        }
-    },
-    {
-        "id": "id",
-        "type": "number",
-        "label": {
-            "en": "Modbus device ID",
-            "nl": "Modbus apparaat ID",
-            "de": "Modbus Geräte ID"
-        },
-        "value": 1,
-        "min": 1,
-        "max": 247,
-        "hint": {
-            "en": "Modbus device ID (client address)",
-            "nl": "Modbus-apparaat-ID (clientadres)",
-            "de": "Modbus-Geräte-ID (Client-Adresse)"
-        }
-    },
-    {
-        "id": "polling_interval",
-        "type": "number",
-        "label": {
-            "en": "Polling Interval (seconds)",
-            "nl": "Polling interval (seconden)",
-            "de": "Abfrageintervall (Sekunden)"
-        },
-        "hint": {
-            "en": "How often to poll the device for new data (recommended: 15-60 seconds)",
-            "nl": "Hoe vaak het apparaat te controleren op nieuwe gegevens (aanbevolen: 15-60 seconden)",
-            "de": "Wie oft das Gerät auf neue Daten abgefragt werden soll (empfohlen: 15-60 Sekunden)"
-        },
-        "value": 20,
-        "min": 5,
-        "max": 300
+    "value": "192.168.1.100",
+    "hint": {
+      "en": "The IP address of the Modbus gateway",
+      "nl": "Het IP-adres van de Modbus gateway",
+      "de": "Die IP-Adresse des Modbus-Gateways",
+      "no": "IP-adressen til Modbus-gatewayen",
+      "pl": "Adres IP bramki Modbus",
+      "fr": "L'adresse IP de la passerelle Modbus",
+      "es": "La dirección IP de la pasarela Modbus",
+      "pt": "O endereço IP do gateway Modbus",
+      "it": "L'indirizzo IP del gateway Modbus",
+      "sl": "Naslov IP prehoda Modbus"
     }
+  },
+  {
+    "id": "port",
+    "type": "number",
+    "label": {
+      "en": "Port",
+      "nl": "Poort",
+      "de": "Port",
+      "no": "Port",
+      "pl": "Port",
+      "fr": "Port",
+      "es": "Puerto",
+      "pt": "Porta",
+      "it": "Porta",
+      "sl": "Vrata"
+    },
+    "value": 502,
+    "hint": {
+      "en": "Modbus TCP port (typically 502)",
+      "nl": "Modbus TCP-poort (meestal 502)",
+      "de": "Modbus TCP-Port (typischerweise 502)",
+      "no": "Modbus TCP-port (vanligvis 502)",
+      "pl": "Port Modbus TCP (zwykle 502)",
+      "fr": "Port Modbus TCP (généralement 502)",
+      "es": "Puerto Modbus TCP (normalmente 502)",
+      "pt": "Porta Modbus TCP (normalmente 502)",
+      "it": "Porta Modbus TCP (di solito 502)",
+      "sl": "Vrata Modbus TCP (običajno 502)"
+    }
+  },
+  {
+    "id": "id",
+    "type": "number",
+    "label": {
+      "en": "Modbus device ID",
+      "nl": "Modbus apparaat ID",
+      "de": "Modbus Geräte ID",
+      "no": "Modbus enhets-ID",
+      "pl": "ID urządzenia Modbus",
+      "fr": "ID de l'appareil Modbus",
+      "es": "ID del dispositivo Modbus",
+      "pt": "ID do dispositivo Modbus",
+      "it": "ID dispositivo Modbus",
+      "sl": "ID naprave Modbus"
+    },
+    "value": 1,
+    "min": 1,
+    "max": 247,
+    "hint": {
+      "en": "Modbus device ID (client address)",
+      "nl": "Modbus-apparaat-ID (clientadres)",
+      "de": "Modbus-Geräte-ID (Client-Adresse)",
+      "no": "Modbus enhets-ID (slaveadresse)",
+      "pl": "ID urządzenia Modbus (adres slave)",
+      "fr": "ID de l'appareil Modbus (adresse esclave)",
+      "es": "ID del dispositivo Modbus (dirección esclavo)",
+      "pt": "ID do dispositivo Modbus (endereço escravo)",
+      "it": "ID dispositivo Modbus (indirizzo slave)",
+      "sl": "ID naprave Modbus (naslov podrejene naprave)"
+    }
+  },
+  {
+    "id": "polling_interval",
+    "type": "number",
+    "label": {
+      "en": "Polling Interval (seconds)",
+      "nl": "Polling interval (seconden)",
+      "de": "Abfrageintervall (Sekunden)",
+      "no": "Avlesingsintervall (sekunder)",
+      "pl": "Interwał odpytywania (sekundy)",
+      "fr": "Intervalle d'interrogation (secondes)",
+      "es": "Intervalo de consulta (segundos)",
+      "pt": "Intervalo de consulta (segundos)",
+      "it": "Intervallo di interrogazione (secondi)",
+      "sl": "Interval branja (sekunde)"
+    },
+    "hint": {
+      "en": "How often to poll the device for new data (recommended: 15-60 seconds)",
+      "nl": "Hoe vaak het apparaat te controleren op nieuwe gegevens (aanbevolen: 15-60 seconden)",
+      "de": "Wie oft das Gerät auf neue Daten abgefragt werden soll (empfohlen: 15-60 Sekunden)",
+      "no": "Hvor ofte enheten skal leses av for nye data (anbefalt: 15-60 sekunder)",
+      "pl": "Jak często odpytywać urządzenie o nowe dane (zalecane: 15-60 sekund)",
+      "fr": "Fréquence d'interrogation de l'appareil (recommandé : 15-60 secondes)",
+      "es": "Con qué frecuencia consultar el dispositivo (recomendado: 15-60 segundos)",
+      "pt": "Com que frequência consultar o dispositivo (recomendado: 15-60 segundos)",
+      "it": "Ogni quanto interrogare il dispositivo per nuovi dati (consigliato: 15-60 secondi)",
+      "sl": "Kako pogosto napravo povprašati po novih podatkih (priporočeno: 15-60 sekund)"
+    },
+    "value": 20,
+    "min": 5,
+    "max": 300
+  }
 ]

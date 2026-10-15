@@ -3,7 +3,14 @@
   "title": {
     "en": "Current",
     "nl": "Stroom",
-    "de": "Strom"
+    "de": "Strom",
+    "no": "Strøm",
+    "pl": "Prąd",
+    "fr": "Courant",
+    "es": "Corriente",
+    "pt": "Corrente",
+    "it": "Corrente",
+    "sl": "Tok"
   },
   "units": {
     "en": "A"
@@ -12,7 +19,14 @@
   "desc": {
     "en": "Electric current (A)",
     "nl": "Elektrische stroom (A)",
-    "de": "Elektrischer Strom (A)"
+    "de": "Elektrischer Strom (A)",
+    "no": "Elektrisk strøm (A)",
+    "pl": "Prąd elektryczny (A)",
+    "fr": "Courant électrique (A)",
+    "es": "Corriente eléctrica (A)",
+    "pt": "Corrente elétrica (A)",
+    "it": "Corrente elettrica (A)",
+    "sl": "Električni tok (A)"
   },
   "chartType": "stepLine",
   "decimals": 2,

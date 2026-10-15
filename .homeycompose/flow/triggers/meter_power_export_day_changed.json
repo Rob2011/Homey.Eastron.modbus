@@ -2,17 +2,38 @@
   "title": {
     "en": "Meter Power Export Day Changed",
     "nl": "Energie export kWh per dag is veranderd",
-    "de": "Tagesertrag Export geändert"
+    "de": "Tagesertrag Export geändert",
+    "no": "Daglig eksport endret",
+    "pl": "Zmienił się eksport dzienny",
+    "fr": "Export journalier modifié",
+    "es": "Exportación diaria cambiada",
+    "pt": "Exportação diária alterada",
+    "it": "Esportazione giornaliera cambiata",
+    "sl": "Dnevni izvoz se je spremenil"
   },
   "titleFormatted": {
     "en": "Daily export of [[device]] changed by at least [[delta]] kWh",
     "nl": "Energie export per dag van [[device]] is minstens [[delta]] kWh veranderd",
-    "de": "Tagesertrag Export von [[device]] hat sich um mindestens [[delta]] kWh geändert"
+    "de": "Tagesertrag Export von [[device]] hat sich um mindestens [[delta]] kWh geändert",
+    "no": "Daglig eksport fra [[device]] endret med minst [[delta]] kWh",
+    "pl": "Eksport dzienny [[device]] zmienił się o co najmniej [[delta]] kWh",
+    "fr": "L'export journalier de [[device]] a changé d'au moins [[delta]] kWh",
+    "es": "La exportación diaria de [[device]] cambió al menos [[delta]] kWh",
+    "pt": "A exportação diária de [[device]] mudou pelo menos [[delta]] kWh",
+    "it": "L'esportazione giornaliera di [[device]] è cambiata di almeno [[delta]] kWh",
+    "sl": "Dnevni izvoz naprave [[device]] se je spremenil za vsaj [[delta]] kWh"
   },
   "hint": {
     "en": "Daily Export changed",
     "nl": "Energie export is veranderd",
-    "de": "Tagesertrag Export geändert"
+    "de": "Tagesertrag Export geändert",
+    "no": "Daglig eksport endret",
+    "pl": "Zmienił się eksport dzienny",
+    "fr": "Export journalier modifié",
+    "es": "Exportación diaria cambiada",
+    "pt": "Exportação diária alterada",
+    "it": "Esportazione giornaliera cambiata",
+    "sl": "Dnevni izvoz se je spremenil"
   },
   "tokens": [
     {
@@ -20,7 +41,14 @@
       "title": {
         "en": "Energy",
         "nl": "Energie",
-        "de": "Energie"
+        "de": "Energie",
+        "no": "Energi",
+        "pl": "Energia",
+        "fr": "Énergie",
+        "es": "Energía",
+        "pt": "Energia",
+        "it": "Energia",
+        "sl": "Energija"
       },
       "type": "number",
       "example": 25
@@ -42,14 +70,28 @@
       "title": {
         "en": "Delta kWh",
         "nl": "Delta kWh",
-        "de": "Delta kWh"
+        "de": "Delta kWh",
+        "no": "Delta kWh",
+        "pl": "Delta kWh",
+        "fr": "Delta kWh",
+        "es": "Delta kWh",
+        "pt": "Delta kWh",
+        "it": "Delta kWh",
+        "sl": "Delta kWh"
       },
       "example": 2,
       "min": 0,
       "placeholder": {
         "en": "Minimum change in kWh",
         "nl": "Minimale verandering in kWh",
-        "de": "Minimale Änderung in kWh"
+        "de": "Minimale Änderung in kWh",
+        "no": "Minste endring i kWh",
+        "pl": "Minimalna zmiana w kWh",
+        "fr": "Variation minimale en kWh",
+        "es": "Cambio mínimo en kWh",
+        "pt": "Variação mínima em kWh",
+        "it": "Variazione minima in kWh",
+        "sl": "Najmanjša sprememba v kWh"
       }
     }
   ]

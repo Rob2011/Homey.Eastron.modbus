@@ -1,0 +1,63 @@
+{
+  "pair": {
+    "modbus": {
+      "title": "Connect to Modbus device",
+      "device_settings": "Connection settings",
+      "ip": "IP address:",
+      "port": "Port:",
+      "id": "Modbus device ID",
+      "device_name": "Modbus device",
+      "intro": "Please enter the connection settings for your Modbus device.",
+      "error_no_device": "No Modbus device found at the specified address and port.",
+      "error_connection": "Could not connect to the Modbus device. Please check the settings and try again.",
+      "error_timeout": "Connection to the Modbus device timed out. Please check the settings and try again.",
+      "error_unknown": "An unknown error occurred while trying to connect to the Modbus device.",
+      "checking": "Checking connection to Modbus device...",
+      "check_success": "Successfully connected to Modbus device!",
+      "check_fail": "Unable to connect to the Modbus device. Please check the settings.",
+      "saving": "Saving Modbus TCP device...",
+      "success": "Modbus TCP device added successfully!",
+      "fail": "Failed to add Modbus TCP device. Please try again."
+    },
+    "title": "Ajouter un compteur d'énergie Eastron",
+    "title_sdm630": "Eastron SDM630",
+    "title_sdm120": "Eastron SDM120CT",
+    "title_sdm72": "Eastron SDM72D",
+    "title_sdm220": "Eastron SDM220",
+    "title_sdm230": "Eastron SDM230",
+    "nosettings": "Veuillez remplir tous les champs obligatoires.",
+    "intro": "Saisissez l'adresse IP et le port de la passerelle Modbus TCP ou du compteur.",
+    "address": "Adresse IP",
+    "port": "Port",
+    "polling": "Intervalle d'interrogation",
+    "connect": "Connecter",
+    "name_error": "Caractères non valides dans le nom de l'appareil",
+    "id_error": "ID Modbus non valide (1-247)",
+    "ip_error": "Adresse IP non valide",
+    "port_error": "Numéro de port non valide (1-65535)",
+    "connect_error": "Impossible de se connecter à l'appareil",
+    "timeout_error": "Délai de connexion à l'appareil dépassé",
+    "unknown_error": "Une erreur inconnue s'est produite",
+    "duplicate_error": "Un appareil avec la même adresse IP et le même ID Modbus existe déjà",
+    "saving": "Enregistrement de l'appareil...",
+    "success": "Appareil ajouté avec succès !",
+    "fail": "Échec de l'ajout de l'appareil. Veuillez réessayer.",
+    "checking": "Vérification de la connexion à l'appareil...",
+    "check_success": "Connexion à l'appareil réussie !",
+    "check_fail": "Impossible de se connecter à l'appareil. Vérifiez les paramètres.",
+    "invalid_settings": "Paramètres non valides, veuillez vérifier.",
+    "device_unreachable": "L'appareil est injoignable, vérifiez la connexion.",
+    "title_sdm630mct": "Eastron SDM630MCT",
+    "title_sdm630mct_rc": "Eastron SDM630MCT-RC (Rogowski)",
+    "deviceid": "ID de l'appareil Modbus"
+  },
+  "Unreachable": "Injoignable",
+  "Device_unavailable": "L'appareil n'est pas disponible",
+  "Off": "Éteint",
+  "NA": "Information non disponible",
+  "device": {
+    "modbus": {
+      "device_info": "Use flow actions to interact with this device."
+    }
+  }
+}

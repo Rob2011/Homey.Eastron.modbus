@@ -3,7 +3,14 @@
   "title": {
     "en": "Daily Yield",
     "nl": "Dagelijks verbruik",
-    "de": "Gesamtertrag"
+    "de": "Gesamtertrag",
+    "no": "Dagens energi",
+    "pl": "Energia dzienna",
+    "fr": "Énergie du jour",
+    "es": "Energía del día",
+    "pt": "Energia do dia",
+    "it": "Energia giornaliera",
+    "sl": "Dnevna energija"
   },
   "decimals": 2,
   "units": {
@@ -12,7 +19,14 @@
   "desc": {
     "en": "Energy usage Daily in kilowatt-hour (kWh)",
     "nl": "Energie verbruik per dag in kilowattuur (kWh)",
-    "de": "Verbrauchte Energie per tag in Kilowattstunden (kWh)"
+    "de": "Verbrauchte Energie per tag in Kilowattstunden (kWh)",
+    "no": "Daglig energiforbruk i kilowattimer (kWh)",
+    "pl": "Dzienne zużycie energii w kilowatogodzinach (kWh)",
+    "fr": "Consommation d'énergie journalière en kilowattheures (kWh)",
+    "es": "Consumo de energía diario en kilovatios hora (kWh)",
+    "pt": "Consumo de energia diário em quilowatt-hora (kWh)",
+    "it": "Consumo energetico giornaliero in chilowattora (kWh)",
+    "sl": "Dnevna poraba energije v kilovatnih urah (kWh)"
   },
   "chartType": "spline",
   "insights": true,

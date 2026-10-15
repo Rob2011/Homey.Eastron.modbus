@@ -1,0 +1,63 @@
+{
+  "pair": {
+    "modbus": {
+      "title": "Connect to Modbus device",
+      "device_settings": "Connection settings",
+      "ip": "IP address:",
+      "port": "Port:",
+      "id": "Modbus device ID",
+      "device_name": "Modbus device",
+      "intro": "Please enter the connection settings for your Modbus device.",
+      "error_no_device": "No Modbus device found at the specified address and port.",
+      "error_connection": "Could not connect to the Modbus device. Please check the settings and try again.",
+      "error_timeout": "Connection to the Modbus device timed out. Please check the settings and try again.",
+      "error_unknown": "An unknown error occurred while trying to connect to the Modbus device.",
+      "checking": "Checking connection to Modbus device...",
+      "check_success": "Successfully connected to Modbus device!",
+      "check_fail": "Unable to connect to the Modbus device. Please check the settings.",
+      "saving": "Saving Modbus TCP device...",
+      "success": "Modbus TCP device added successfully!",
+      "fail": "Failed to add Modbus TCP device. Please try again."
+    },
+    "title": "Dodaj števec energije Eastron",
+    "title_sdm630": "Eastron SDM630",
+    "title_sdm120": "Eastron SDM120CT",
+    "title_sdm72": "Eastron SDM72D",
+    "title_sdm220": "Eastron SDM220",
+    "title_sdm230": "Eastron SDM230",
+    "nosettings": "Izpolnite vsa obvezna polja.",
+    "intro": "Vnesite naslov IP in vrata prehoda Modbus TCP ali števca energije.",
+    "address": "Naslov IP",
+    "port": "Vrata",
+    "polling": "Interval branja",
+    "connect": "Poveži",
+    "name_error": "Neveljavni znaki v imenu naprave",
+    "id_error": "Neveljaven ID Modbus (1-247)",
+    "ip_error": "Neveljaven naslov IP",
+    "port_error": "Neveljavna številka vrat (1-65535)",
+    "connect_error": "Povezava z napravo ni mogoča",
+    "timeout_error": "Povezava z napravo je potekla",
+    "unknown_error": "Prišlo je do neznane napake",
+    "duplicate_error": "Naprava z enakim naslovom IP in ID Modbus že obstaja",
+    "saving": "Shranjevanje naprave ...",
+    "success": "Naprava je bila uspešno dodana!",
+    "fail": "Naprave ni bilo mogoče dodati. Poskusite znova.",
+    "checking": "Preverjanje povezave z napravo ...",
+    "check_success": "Povezava z napravo je uspela!",
+    "check_fail": "Povezava z napravo ni mogoča. Preverite nastavitve.",
+    "invalid_settings": "Neveljavne nastavitve, preverite jih.",
+    "device_unreachable": "Naprava ni dosegljiva, preverite povezavo.",
+    "title_sdm630mct": "Eastron SDM630MCT",
+    "title_sdm630mct_rc": "Eastron SDM630MCT-RC (Rogowski)",
+    "deviceid": "ID naprave Modbus"
+  },
+  "Unreachable": "Nedosegljivo",
+  "Device_unavailable": "Naprava ni na voljo",
+  "Off": "Izklopljeno",
+  "NA": "Podatek ni na voljo",
+  "device": {
+    "modbus": {
+      "device_info": "Use flow actions to interact with this device."
+    }
+  }
+}

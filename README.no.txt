@@ -1,0 +1,3 @@
+'Eastron' gir pålitelige energimålinger fra DIN-skinne energimålere via Modbus TCP direkte i Homey Pro. Enten du vil overvåke totalt strømforbruk, verdier per fase eller innsikt i energiproduksjon, leverer denne appen sanntidsdata til Homey Energy-dashbordet og smarte flows.
+
+Lag smarte flows basert på sanntids energidata, visualiser forbruket i Homey Energy-dashbordet og optimaliser energistyringen. Gjør energimåleren med Modbus TCP-gateway til en kraftig del av ditt smarte hjem. Støttede målere: Eastron SDM120 / SDM120CT, SDM220, SDM230, SDM72D-M-2, SDM630 (V2/V3), SDM630MCT (inkl. 40mA) og SDM630MCT-RC (Rogowski-spole). Målere med RS485-grensesnitt trenger en Modbus TCP-gateway; målere med innebygd Modbus TCP (som SDM630-TCP) kan kobles til direkte.

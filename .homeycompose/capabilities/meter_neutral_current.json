@@ -3,7 +3,14 @@
   "title": {
     "en": "Neutral Current",
     "nl": "Nulstroom",
-    "de": "Neutralstrom"
+    "de": "Neutralstrom",
+    "no": "Nøytralstrøm",
+    "pl": "Prąd w przewodzie neutralnym",
+    "fr": "Courant de neutre",
+    "es": "Corriente de neutro",
+    "pt": "Corrente de neutro",
+    "it": "Corrente di neutro",
+    "sl": "Tok v nevtralnem vodniku"
   },
   "decimals": 2,
   "units": {
@@ -11,7 +18,14 @@
   },
   "desc": {
     "en": "Neutral Current in Amperes (A)",
-    "nl": "Nulstroom in Amperes (A)"
+    "nl": "Nulstroom in Amperes (A)",
+    "no": "Nøytralstrøm i ampere (A)",
+    "pl": "Prąd w przewodzie neutralnym w amperach (A)",
+    "fr": "Courant de neutre en ampères (A)",
+    "es": "Corriente de neutro en amperios (A)",
+    "pt": "Corrente de neutro em amperes (A)",
+    "it": "Corrente di neutro in ampere (A)",
+    "sl": "Tok v nevtralnem vodniku v amperih (A)"
   },
   "chartType": "spline",
   "insights": true,

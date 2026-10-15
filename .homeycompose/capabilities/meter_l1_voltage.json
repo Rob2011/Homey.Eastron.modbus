@@ -3,7 +3,14 @@
   "title": {
     "en": "Voltage",
     "nl": "Spanning",
-    "de": "Spannung"
+    "de": "Spannung",
+    "no": "Spenning",
+    "pl": "Napięcie",
+    "fr": "Tension",
+    "es": "Tensión",
+    "pt": "Tensão",
+    "it": "Tensione",
+    "sl": "Napetost"
   },
   "units": {
     "en": "V"
@@ -11,7 +18,14 @@
   "desc": {
     "en": "Voltage (V)",
     "nl": "Spanning (V)",
-    "de": "Spannung (V)"
+    "de": "Spannung (V)",
+    "no": "Spenning (V)",
+    "pl": "Napięcie (V)",
+    "fr": "Tension (V)",
+    "es": "Tensión (V)",
+    "pt": "Tensão (V)",
+    "it": "Tensione (V)",
+    "sl": "Napetost (V)"
   },
   "insights": true,
   "chartType": "stepLine",

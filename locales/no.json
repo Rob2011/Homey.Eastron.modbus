@@ -1,0 +1,63 @@
+{
+  "pair": {
+    "modbus": {
+      "title": "Connect to Modbus device",
+      "device_settings": "Connection settings",
+      "ip": "IP address:",
+      "port": "Port:",
+      "id": "Modbus device ID",
+      "device_name": "Modbus device",
+      "intro": "Please enter the connection settings for your Modbus device.",
+      "error_no_device": "No Modbus device found at the specified address and port.",
+      "error_connection": "Could not connect to the Modbus device. Please check the settings and try again.",
+      "error_timeout": "Connection to the Modbus device timed out. Please check the settings and try again.",
+      "error_unknown": "An unknown error occurred while trying to connect to the Modbus device.",
+      "checking": "Checking connection to Modbus device...",
+      "check_success": "Successfully connected to Modbus device!",
+      "check_fail": "Unable to connect to the Modbus device. Please check the settings.",
+      "saving": "Saving Modbus TCP device...",
+      "success": "Modbus TCP device added successfully!",
+      "fail": "Failed to add Modbus TCP device. Please try again."
+    },
+    "title": "Legg til Eastron energimåler",
+    "title_sdm630": "Eastron SDM630",
+    "title_sdm120": "Eastron SDM120CT",
+    "title_sdm72": "Eastron SDM72D",
+    "title_sdm220": "Eastron SDM220",
+    "title_sdm230": "Eastron SDM230",
+    "nosettings": "Fyll ut alle obligatoriske felt.",
+    "intro": "Angi IP-adressen og porten til Modbus TCP-gatewayen eller energimåleren.",
+    "address": "IP-adresse",
+    "port": "Port",
+    "polling": "Avlesingsintervall",
+    "connect": "Koble til",
+    "name_error": "Ugyldige tegn i enhetsnavnet",
+    "id_error": "Ugyldig Modbus-ID (1-247)",
+    "ip_error": "Ugyldig IP-adresse",
+    "port_error": "Ugyldig portnummer (1-65535)",
+    "connect_error": "Kan ikke koble til enheten",
+    "timeout_error": "Tilkoblingen til enheten fikk tidsavbrudd",
+    "unknown_error": "Det oppstod en ukjent feil",
+    "duplicate_error": "Det finnes allerede en enhet med samme IP-adresse og Modbus-ID",
+    "saving": "Lagrer enhet...",
+    "success": "Enheten ble lagt til!",
+    "fail": "Kunne ikke legge til enheten. Prøv igjen.",
+    "checking": "Kontrollerer tilkoblingen til enheten...",
+    "check_success": "Tilkoblet enheten!",
+    "check_fail": "Kan ikke koble til enheten. Kontroller innstillingene.",
+    "invalid_settings": "Ugyldige innstillinger, kontroller dem.",
+    "device_unreachable": "Enheten kan ikke nås, kontroller tilkoblingen.",
+    "title_sdm630mct": "Eastron SDM630MCT",
+    "title_sdm630mct_rc": "Eastron SDM630MCT-RC (Rogowski)",
+    "deviceid": "Modbus enhets-ID"
+  },
+  "Unreachable": "Utilgjengelig",
+  "Device_unavailable": "Enheten er ikke tilgjengelig",
+  "Off": "Av",
+  "NA": "Informasjon ikke tilgjengelig",
+  "device": {
+    "modbus": {
+      "device_info": "Use flow actions to interact with this device."
+    }
+  }
+}

@@ -3,7 +3,14 @@
   "title": {
     "en": "Total Yield",
     "nl": "Totaal verbruik",
-    "de": "Gesamtertrag"
+    "de": "Gesamtertrag",
+    "no": "Total energi",
+    "pl": "Energia całkowita",
+    "fr": "Énergie totale",
+    "es": "Energía total",
+    "pt": "Energia total",
+    "it": "Energia totale",
+    "sl": "Skupna energija"
   },
   "decimals": 2,
   "units": {
@@ -12,7 +19,14 @@
   "desc": {
     "en": "Energy usage in kilowatt-hour (kWh)",
     "nl": "Energie verbruik in kilowattuur (kWh)",
-    "de": "Verbrauchte Energie in Kilowattstunden (kWh)"
+    "de": "Verbrauchte Energie in Kilowattstunden (kWh)",
+    "no": "Energiforbruk i kilowattimer (kWh)",
+    "pl": "Zużycie energii w kilowatogodzinach (kWh)",
+    "fr": "Consommation d'énergie en kilowattheures (kWh)",
+    "es": "Consumo de energía en kilovatios hora (kWh)",
+    "pt": "Consumo de energia em quilowatt-hora (kWh)",
+    "it": "Consumo energetico in chilowattora (kWh)",
+    "sl": "Poraba energije v kilovatnih urah (kWh)"
   },
   "chartType": "spline",
   "insights": true,

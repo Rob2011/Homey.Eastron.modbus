@@ -3,7 +3,14 @@
   "title": {
     "en": "Apparent Power",
     "nl": "Schijnbaar vermogen",
-    "de": "Leistung"
+    "de": "Leistung",
+    "no": "Tilsynelatende effekt",
+    "pl": "Moc pozorna",
+    "fr": "Puissance apparente",
+    "es": "Potencia aparente",
+    "pt": "Potência aparente",
+    "it": "Potenza apparente",
+    "sl": "Navidezna moč"
   },
   "units": {
     "en": "VA"
@@ -12,7 +19,14 @@
   "desc": {
     "en": "Apparent Power in volt-ampere (VA)",
     "nl": "Schijnbaar vermogen in voltampère (VA)",
-    "de": "Leistung in Voltampere (VA)"
+    "de": "Leistung in Voltampere (VA)",
+    "no": "Tilsynelatende effekt i voltampere (VA)",
+    "pl": "Moc pozorna w woltoamperach (VA)",
+    "fr": "Puissance apparente en voltampères (VA)",
+    "es": "Potencia aparente en voltamperios (VA)",
+    "pt": "Potência aparente em volt-ampere (VA)",
+    "it": "Potenza apparente in voltampere (VA)",
+    "sl": "Navidezna moč v voltamperih (VA)"
   },
   "chartType": "stepLine",
   "decimals": 0,

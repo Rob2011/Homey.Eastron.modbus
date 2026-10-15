@@ -3,7 +3,14 @@
   "title": {
     "en": "Reactive Power",
     "nl": "Blind vermogen",
-    "de": "Blindleistung"
+    "de": "Blindleistung",
+    "no": "Reaktiv effekt",
+    "pl": "Moc bierna",
+    "fr": "Puissance réactive",
+    "es": "Potencia reactiva",
+    "pt": "Potência reativa",
+    "it": "Potenza reattiva",
+    "sl": "Jalova moč"
   },
   "units": {
     "en": "VAr"
@@ -12,7 +19,14 @@
   "desc": {
     "en": "Reactive Power in volt-ampere reactive (VAr)",
     "nl": "Blind vermogen in voltampère blind (VAr)",
-    "de": "Blindleistung in Voltampere Blind (VAr)"
+    "de": "Blindleistung in Voltampere Blind (VAr)",
+    "no": "Reaktiv effekt i voltampere reaktiv (VAr)",
+    "pl": "Moc bierna w warach (VAr)",
+    "fr": "Puissance réactive en voltampères réactifs (VAr)",
+    "es": "Potencia reactiva en voltamperios reactivos (VAr)",
+    "pt": "Potência reativa em volt-ampere reativo (VAr)",
+    "it": "Potenza reattiva in voltampere reattivi (VAr)",
+    "sl": "Jalova moč v voltamperih reaktivnih (VAr)"
   },
   "chartType": "stepLine",
   "decimals": 0,

@@ -10,7 +10,8 @@
     "es": "Tensión",
     "pt": "Tensão",
     "it": "Tensione",
-    "sl": "Napetost"
+    "sl": "Napetost",
+    "sv": "Spänning"
   },
   "units": {
     "en": "V"
@@ -25,7 +26,8 @@
     "es": "Tensión (V)",
     "pt": "Tensão (V)",
     "it": "Tensione (V)",
-    "sl": "Napetost (V)"
+    "sl": "Napetost (V)",
+    "sv": "Spänning (V)"
   },
   "insights": true,
   "chartType": "stepLine",

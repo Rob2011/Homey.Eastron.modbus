@@ -38,7 +38,8 @@
         "es": "Potencia total del sistema",
         "pt": "Potência total do sistema",
         "it": "Potenza totale del sistema",
-        "sl": "Skupna moč sistema"
+        "sl": "Skupna moč sistema",
+        "sv": "Total systemeffekt"
       }
     },
     "meter_power": {
@@ -52,7 +53,8 @@
         "es": "Energía neta",
         "pt": "Energia líquida",
         "it": "Energia netta",
-        "sl": "Neto energija"
+        "sl": "Neto energija",
+        "sv": "Nettoenergi"
       }
     },
     "meter_power.imported": {
@@ -66,7 +68,8 @@
         "es": "Energía importada total",
         "pt": "Energia importada total",
         "it": "Energia importata totale",
-        "sl": "Skupna prejeta energija"
+        "sl": "Skupna prejeta energija",
+        "sv": "Total importerad energi"
       }
     },
     "meter_power.exported": {
@@ -80,7 +83,8 @@
         "es": "Energía exportada total",
         "pt": "Energia exportada total",
         "it": "Energia esportata totale",
-        "sl": "Skupna oddana energija"
+        "sl": "Skupna oddana energija",
+        "sv": "Total exporterad energi"
       }
     },
     "meter_power_import_daily": {
@@ -94,7 +98,8 @@
         "es": "Energía importada diaria",
         "pt": "Energia importada diária",
         "it": "Energia importata giornaliera",
-        "sl": "Dnevno prejeta energija"
+        "sl": "Dnevno prejeta energija",
+        "sv": "Daglig importerad energi"
       }
     },
     "meter_power_export_daily": {
@@ -108,7 +113,8 @@
         "es": "Energía exportada diaria",
         "pt": "Energia exportada diária",
         "it": "Energia esportata giornaliera",
-        "sl": "Dnevno oddana energija"
+        "sl": "Dnevno oddana energija",
+        "sv": "Daglig exporterad energi"
       }
     },
     "meter_l1_voltage": {
@@ -122,7 +128,8 @@
         "es": "L1 tensión",
         "pt": "L1 tensão",
         "it": "L1 tensione",
-        "sl": "L1 napetost"
+        "sl": "L1 napetost",
+        "sv": "L1 spänning"
       }
     },
     "meter_l2_voltage": {
@@ -136,7 +143,8 @@
         "es": "L2 tensión",
         "pt": "L2 tensão",
         "it": "L2 tensione",
-        "sl": "L2 napetost"
+        "sl": "L2 napetost",
+        "sv": "L2 spänning"
       }
     },
     "meter_l3_voltage": {
@@ -150,7 +158,8 @@
         "es": "L3 tensión",
         "pt": "L3 tensão",
         "it": "L3 tensione",
-        "sl": "L3 napetost"
+        "sl": "L3 napetost",
+        "sv": "L3 spänning"
       }
     },
     "meter_l1_current": {
@@ -164,7 +173,8 @@
         "es": "L1 corriente",
         "pt": "L1 corrente",
         "it": "L1 corrente",
-        "sl": "L1 tok"
+        "sl": "L1 tok",
+        "sv": "L1 ström"
       }
     },
     "meter_l2_current": {
@@ -178,7 +188,8 @@
         "es": "L2 corriente",
         "pt": "L2 corrente",
         "it": "L2 corrente",
-        "sl": "L2 tok"
+        "sl": "L2 tok",
+        "sv": "L2 ström"
       }
     },
     "meter_l3_current": {
@@ -192,7 +203,8 @@
         "es": "L3 corriente",
         "pt": "L3 corrente",
         "it": "L3 corrente",
-        "sl": "L3 tok"
+        "sl": "L3 tok",
+        "sv": "L3 ström"
       }
     },
     "meter_l1_power": {
@@ -206,7 +218,8 @@
         "es": "L1 potencia activa",
         "pt": "L1 potência ativa",
         "it": "L1 potenza attiva",
-        "sl": "L1 delovna moč"
+        "sl": "L1 delovna moč",
+        "sv": "L1 aktiv effekt"
       }
     },
     "meter_l2_power": {
@@ -220,7 +233,8 @@
         "es": "L2 potencia activa",
         "pt": "L2 potência ativa",
         "it": "L2 potenza attiva",
-        "sl": "L2 delovna moč"
+        "sl": "L2 delovna moč",
+        "sv": "L2 aktiv effekt"
       }
     },
     "meter_l3_power": {
@@ -234,7 +248,8 @@
         "es": "L3 potencia activa",
         "pt": "L3 potência ativa",
         "it": "L3 potenza attiva",
-        "sl": "L3 delovna moč"
+        "sl": "L3 delovna moč",
+        "sv": "L3 aktiv effekt"
       }
     },
     "meter_frequency": {
@@ -248,7 +263,8 @@
         "es": "Frecuencia de red",
         "pt": "Frequência da rede",
         "it": "Frequenza di rete",
-        "sl": "Omrežna frekvenca"
+        "sl": "Omrežna frekvenca",
+        "sv": "Nätfrekvens"
       }
     },
     "measure_tot_power_factor": {
@@ -262,7 +278,8 @@
         "es": "Factor de potencia total",
         "pt": "Fator de potência total",
         "it": "Fattore di potenza totale",
-        "sl": "Skupni faktor moči"
+        "sl": "Skupni faktor moči",
+        "sv": "Total effektfaktor"
       }
     },
     "meter_neutral_current": {
@@ -276,7 +293,8 @@
         "es": "Corriente de neutro",
         "pt": "Corrente de neutro",
         "it": "Corrente di neutro",
-        "sl": "Tok v nevtralnem vodniku"
+        "sl": "Tok v nevtralnem vodniku",
+        "sv": "Neutralström"
       }
     }
   },
@@ -308,7 +326,8 @@
         "es": "Ajustes Modbus TCP",
         "pt": "Definições Modbus TCP",
         "it": "Impostazioni Modbus TCP",
-        "sl": "Nastavitve Modbus TCP"
+        "sl": "Nastavitve Modbus TCP",
+        "sv": "Modbus TCP-inställningar"
       },
       "children": [
         {
@@ -325,7 +344,8 @@
             "es": "Dirección IP",
             "pt": "Endereço IP",
             "it": "Indirizzo IP",
-            "sl": "Naslov IP"
+            "sl": "Naslov IP",
+            "sv": "IP-adress"
           }
         },
         {
@@ -343,7 +363,8 @@
             "es": "Puerto",
             "pt": "Porta",
             "it": "Porta",
-            "sl": "Vrata"
+            "sl": "Vrata",
+            "sv": "Port"
           }
         },
         {
@@ -365,7 +386,8 @@
             "es": "ID del dispositivo Modbus",
             "pt": "ID do dispositivo Modbus",
             "it": "ID dispositivo Modbus",
-            "sl": "ID naprave Modbus"
+            "sl": "ID naprave Modbus",
+            "sv": "Modbus enhets-ID"
           }
         }
       ]

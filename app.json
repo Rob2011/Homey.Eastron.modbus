@@ -22,7 +22,8 @@
     "es": "Eastron",
     "pt": "Eastron",
     "it": "Eastron",
-    "sl": "Eastron"
+    "sl": "Eastron",
+    "sv": "Eastron"
   },
   "description": {
     "en": "Advanced Energy Monitoring with DIN Rail Meters over Modbus TCP",
@@ -34,7 +35,8 @@
     "es": "Monitorización avanzada de energía con contadores de carril DIN a través de Modbus TCP",
     "pt": "Monitorização avançada de energia com contadores de calha DIN via Modbus TCP",
     "it": "Monitoraggio energetico avanzato con contatori su guida DIN tramite Modbus TCP",
-    "sl": "Napredno spremljanje energije s števci za DIN letev prek Modbus TCP"
+    "sl": "Napredno spremljanje energije s števci za DIN letev prek Modbus TCP",
+    "sv": "Avancerad energiövervakning med DIN-skenmätare via Modbus TCP"
   },
   "category": [
     "energy"
@@ -68,7 +70,8 @@
           "es": "Potencia cambiada",
           "pt": "Potência alterada",
           "it": "Potenza cambiata",
-          "sl": "Moč se je spremenila"
+          "sl": "Moč se je spremenila",
+          "sv": "Effekt ändrad"
         },
         "titleFormatted": {
           "en": "Power of [[device]] changed by at least [[delta]] W",
@@ -80,7 +83,8 @@
           "es": "La potencia de [[device]] cambió al menos [[delta]] W",
           "pt": "A potência de [[device]] mudou pelo menos [[delta]] W",
           "it": "La potenza di [[device]] è cambiata di almeno [[delta]] W",
-          "sl": "Moč naprave [[device]] se je spremenila za vsaj [[delta]] W"
+          "sl": "Moč naprave [[device]] se je spremenila za vsaj [[delta]] W",
+          "sv": "Effekten för [[device]] ändrades med minst [[delta]] W"
         },
         "args": [
           {
@@ -105,7 +109,8 @@
               "es": "Delta W",
               "pt": "Delta W",
               "it": "Delta W",
-              "sl": "Delta W"
+              "sl": "Delta W",
+              "sv": "Delta W"
             },
             "example": 10,
             "min": 0,
@@ -119,7 +124,8 @@
               "es": "Cambio mínimo en W",
               "pt": "Variação mínima em W",
               "it": "Variazione minima in W",
-              "sl": "Najmanjša sprememba v W"
+              "sl": "Najmanjša sprememba v W",
+              "sv": "Minsta ändring i W"
             }
           }
         ],
@@ -156,7 +162,8 @@
           "es": "Exportación diaria cambiada",
           "pt": "Exportação diária alterada",
           "it": "Esportazione giornaliera cambiata",
-          "sl": "Dnevni izvoz se je spremenil"
+          "sl": "Dnevni izvoz se je spremenil",
+          "sv": "Daglig export ändrad"
         },
         "titleFormatted": {
           "en": "Daily export of [[device]] changed by at least [[delta]] kWh",
@@ -168,7 +175,8 @@
           "es": "La exportación diaria de [[device]] cambió al menos [[delta]] kWh",
           "pt": "A exportação diária de [[device]] mudou pelo menos [[delta]] kWh",
           "it": "L'esportazione giornaliera di [[device]] è cambiata di almeno [[delta]] kWh",
-          "sl": "Dnevni izvoz naprave [[device]] se je spremenil za vsaj [[delta]] kWh"
+          "sl": "Dnevni izvoz naprave [[device]] se je spremenil za vsaj [[delta]] kWh",
+          "sv": "Daglig export från [[device]] ändrades med minst [[delta]] kWh"
         },
         "hint": {
           "en": "Daily Export changed",
@@ -180,7 +188,8 @@
           "es": "Exportación diaria cambiada",
           "pt": "Exportação diária alterada",
           "it": "Esportazione giornaliera cambiata",
-          "sl": "Dnevni izvoz se je spremenil"
+          "sl": "Dnevni izvoz se je spremenil",
+          "sv": "Daglig export ändrad"
         },
         "tokens": [
           {
@@ -195,7 +204,8 @@
               "es": "Energía",
               "pt": "Energia",
               "it": "Energia",
-              "sl": "Energija"
+              "sl": "Energija",
+              "sv": "Energi"
             },
             "type": "number",
             "example": 25
@@ -224,7 +234,8 @@
               "es": "Delta kWh",
               "pt": "Delta kWh",
               "it": "Delta kWh",
-              "sl": "Delta kWh"
+              "sl": "Delta kWh",
+              "sv": "Delta kWh"
             },
             "example": 2,
             "min": 0,
@@ -238,7 +249,8 @@
               "es": "Cambio mínimo en kWh",
               "pt": "Variação mínima em kWh",
               "it": "Variazione minima in kWh",
-              "sl": "Najmanjša sprememba v kWh"
+              "sl": "Najmanjša sprememba v kWh",
+              "sv": "Minsta ändring i kWh"
             }
           }
         ],
@@ -255,7 +267,8 @@
           "es": "Importación diaria cambiada",
           "pt": "Importação diária alterada",
           "it": "Importazione giornaliera cambiata",
-          "sl": "Dnevni uvoz se je spremenil"
+          "sl": "Dnevni uvoz se je spremenil",
+          "sv": "Daglig import ändrad"
         },
         "titleFormatted": {
           "en": "Daily import of [[device]] changed by at least [[delta]] kWh",
@@ -267,7 +280,8 @@
           "es": "La importación diaria de [[device]] cambió al menos [[delta]] kWh",
           "pt": "A importação diária de [[device]] mudou pelo menos [[delta]] kWh",
           "it": "L'importazione giornaliera di [[device]] è cambiata di almeno [[delta]] kWh",
-          "sl": "Dnevni uvoz naprave [[device]] se je spremenil za vsaj [[delta]] kWh"
+          "sl": "Dnevni uvoz naprave [[device]] se je spremenil za vsaj [[delta]] kWh",
+          "sv": "Daglig import till [[device]] ändrades med minst [[delta]] kWh"
         },
         "hint": {
           "en": "Daily Import changed",
@@ -279,7 +293,8 @@
           "es": "Importación diaria cambiada",
           "pt": "Importação diária alterada",
           "it": "Importazione giornaliera cambiata",
-          "sl": "Dnevni uvoz se je spremenil"
+          "sl": "Dnevni uvoz se je spremenil",
+          "sv": "Daglig import ändrad"
         },
         "tokens": [
           {
@@ -294,7 +309,8 @@
               "es": "Energía",
               "pt": "Energia",
               "it": "Energia",
-              "sl": "Energija"
+              "sl": "Energija",
+              "sv": "Energi"
             },
             "type": "number",
             "example": 25
@@ -323,7 +339,8 @@
               "es": "Delta kWh",
               "pt": "Delta kWh",
               "it": "Delta kWh",
-              "sl": "Delta kWh"
+              "sl": "Delta kWh",
+              "sv": "Delta kWh"
             },
             "example": 2,
             "min": 0,
@@ -337,7 +354,8 @@
               "es": "Cambio mínimo en kWh",
               "pt": "Variação mínima em kWh",
               "it": "Variazione minima in kWh",
-              "sl": "Najmanjša sprememba v kWh"
+              "sl": "Najmanjša sprememba v kWh",
+              "sv": "Minsta ändring i kWh"
             }
           }
         ],
@@ -380,7 +398,8 @@
             "es": "Potencia",
             "pt": "Potência",
             "it": "Potenza",
-            "sl": "Moč"
+            "sl": "Moč",
+            "sv": "Effekt"
           }
         },
         "measure_voltage": {
@@ -394,7 +413,8 @@
             "es": "Tensión",
             "pt": "Tensão",
             "it": "Tensione",
-            "sl": "Napetost"
+            "sl": "Napetost",
+            "sv": "Spänning"
           }
         },
         "measure_current": {
@@ -408,7 +428,8 @@
             "es": "Corriente",
             "pt": "Corrente",
             "it": "Corrente",
-            "sl": "Tok"
+            "sl": "Tok",
+            "sv": "Ström"
           }
         },
         "meter_power": {
@@ -422,7 +443,8 @@
             "es": "Energía neta",
             "pt": "Energia líquida",
             "it": "Energia netta",
-            "sl": "Neto energija"
+            "sl": "Neto energija",
+            "sv": "Nettoenergi"
           }
         },
         "meter_power.imported": {
@@ -436,7 +458,8 @@
             "es": "Energía importada total",
             "pt": "Energia importada total",
             "it": "Energia importata totale",
-            "sl": "Skupna prejeta energija"
+            "sl": "Skupna prejeta energija",
+            "sv": "Total importerad energi"
           }
         },
         "meter_power.exported": {
@@ -450,7 +473,8 @@
             "es": "Energía exportada total",
             "pt": "Energia exportada total",
             "it": "Energia esportata totale",
-            "sl": "Skupna oddana energija"
+            "sl": "Skupna oddana energija",
+            "sv": "Total exporterad energi"
           }
         },
         "meter_power_import_daily": {
@@ -464,7 +488,8 @@
             "es": "Energía importada diaria",
             "pt": "Energia importada diária",
             "it": "Energia importata giornaliera",
-            "sl": "Dnevno prejeta energija"
+            "sl": "Dnevno prejeta energija",
+            "sv": "Daglig importerad energi"
           }
         },
         "meter_power_export_daily": {
@@ -478,7 +503,8 @@
             "es": "Energía exportada diaria",
             "pt": "Energia exportada diária",
             "it": "Energia esportata giornaliera",
-            "sl": "Dnevno oddana energija"
+            "sl": "Dnevno oddana energija",
+            "sv": "Daglig exporterad energi"
           }
         },
         "meter_frequency": {
@@ -492,7 +518,8 @@
             "es": "Frecuencia de red",
             "pt": "Frequência da rede",
             "it": "Frequenza di rete",
-            "sl": "Omrežna frekvenca"
+            "sl": "Omrežna frekvenca",
+            "sv": "Nätfrekvens"
           }
         },
         "measure_power_factor": {
@@ -506,7 +533,8 @@
             "es": "Factor de potencia",
             "pt": "Fator de potência",
             "it": "Fattore di potenza",
-            "sl": "Faktor moči"
+            "sl": "Faktor moči",
+            "sv": "Effektfaktor"
           }
         },
         "measure_phase_angle": {
@@ -520,7 +548,8 @@
             "es": "Ángulo de fase",
             "pt": "Ângulo de fase",
             "it": "Angolo di fase",
-            "sl": "Fazni kot"
+            "sl": "Fazni kot",
+            "sv": "Fasvinkel"
           }
         },
         "measure_apparent_power": {
@@ -534,7 +563,8 @@
             "es": "Potencia aparente",
             "pt": "Potência aparente",
             "it": "Potenza apparente",
-            "sl": "Navidezna moč"
+            "sl": "Navidezna moč",
+            "sv": "Skenbar effekt"
           }
         },
         "measure_reactive_power": {
@@ -548,7 +578,8 @@
             "es": "Potencia reactiva",
             "pt": "Potência reativa",
             "it": "Potenza reattiva",
-            "sl": "Jalova moč"
+            "sl": "Jalova moč",
+            "sv": "Reaktiv effekt"
           }
         }
       },
@@ -581,7 +612,8 @@
             "es": "Dirección IP",
             "pt": "Endereço IP",
             "it": "Indirizzo IP",
-            "sl": "Naslov IP"
+            "sl": "Naslov IP",
+            "sv": "IP-adress"
           },
           "value": "192.168.1.100",
           "hint": {
@@ -594,7 +626,8 @@
             "es": "La dirección IP de la pasarela Modbus",
             "pt": "O endereço IP do gateway Modbus",
             "it": "L'indirizzo IP del gateway Modbus",
-            "sl": "Naslov IP prehoda Modbus"
+            "sl": "Naslov IP prehoda Modbus",
+            "sv": "IP-adressen till Modbus-gatewayen"
           }
         },
         {
@@ -610,7 +643,8 @@
             "es": "Puerto",
             "pt": "Porta",
             "it": "Porta",
-            "sl": "Vrata"
+            "sl": "Vrata",
+            "sv": "Port"
           },
           "value": 502,
           "hint": {
@@ -623,7 +657,8 @@
             "es": "Puerto Modbus TCP (normalmente 502)",
             "pt": "Porta Modbus TCP (normalmente 502)",
             "it": "Porta Modbus TCP (di solito 502)",
-            "sl": "Vrata Modbus TCP (običajno 502)"
+            "sl": "Vrata Modbus TCP (običajno 502)",
+            "sv": "Modbus TCP-port (vanligtvis 502)"
           }
         },
         {
@@ -639,7 +674,8 @@
             "es": "ID del dispositivo Modbus",
             "pt": "ID do dispositivo Modbus",
             "it": "ID dispositivo Modbus",
-            "sl": "ID naprave Modbus"
+            "sl": "ID naprave Modbus",
+            "sv": "Modbus enhets-ID"
           },
           "value": 1,
           "min": 1,
@@ -654,7 +690,8 @@
             "es": "ID del dispositivo Modbus (dirección esclavo)",
             "pt": "ID do dispositivo Modbus (endereço escravo)",
             "it": "ID dispositivo Modbus (indirizzo slave)",
-            "sl": "ID naprave Modbus (naslov podrejene naprave)"
+            "sl": "ID naprave Modbus (naslov podrejene naprave)",
+            "sv": "Modbus enhets-ID (slavadress)"
           }
         },
         {
@@ -670,7 +707,8 @@
             "es": "Intervalo de consulta (segundos)",
             "pt": "Intervalo de consulta (segundos)",
             "it": "Intervallo di interrogazione (secondi)",
-            "sl": "Interval branja (sekunde)"
+            "sl": "Interval branja (sekunde)",
+            "sv": "Avläsningsintervall (sekunder)"
           },
           "hint": {
             "en": "How often to poll the device for new data (recommended: 15-60 seconds)",
@@ -682,7 +720,8 @@
             "es": "Con qué frecuencia consultar el dispositivo (recomendado: 15-60 segundos)",
             "pt": "Com que frequência consultar o dispositivo (recomendado: 15-60 segundos)",
             "it": "Ogni quanto interrogare il dispositivo per nuovi dati (consigliato: 15-60 secondi)",
-            "sl": "Kako pogosto napravo povprašati po novih podatkih (priporočeno: 15-60 sekund)"
+            "sl": "Kako pogosto napravo povprašati po novih podatkih (priporočeno: 15-60 sekund)",
+            "sv": "Hur ofta enheten ska läsas av för nya data (rekommenderat: 15-60 sekunder)"
           },
           "value": 20,
           "min": 5,
@@ -725,7 +764,8 @@
             "es": "Potencia",
             "pt": "Potência",
             "it": "Potenza",
-            "sl": "Moč"
+            "sl": "Moč",
+            "sv": "Effekt"
           }
         },
         "measure_voltage": {
@@ -739,7 +779,8 @@
             "es": "Tensión",
             "pt": "Tensão",
             "it": "Tensione",
-            "sl": "Napetost"
+            "sl": "Napetost",
+            "sv": "Spänning"
           }
         },
         "measure_current": {
@@ -753,7 +794,8 @@
             "es": "Corriente",
             "pt": "Corrente",
             "it": "Corrente",
-            "sl": "Tok"
+            "sl": "Tok",
+            "sv": "Ström"
           }
         },
         "meter_power": {
@@ -767,7 +809,8 @@
             "es": "Energía neta",
             "pt": "Energia líquida",
             "it": "Energia netta",
-            "sl": "Neto energija"
+            "sl": "Neto energija",
+            "sv": "Nettoenergi"
           }
         },
         "meter_power.imported": {
@@ -781,7 +824,8 @@
             "es": "Importación total",
             "pt": "Importação total",
             "it": "Importazione totale",
-            "sl": "Skupni uvoz"
+            "sl": "Skupni uvoz",
+            "sv": "Total import"
           }
         },
         "meter_power.exported": {
@@ -795,7 +839,8 @@
             "es": "Exportación total",
             "pt": "Exportação total",
             "it": "Esportazione totale",
-            "sl": "Skupni izvoz"
+            "sl": "Skupni izvoz",
+            "sv": "Total export"
           }
         },
         "meter_power_import_daily": {
@@ -809,7 +854,8 @@
             "es": "Importación diaria",
             "pt": "Importação diária",
             "it": "Importazione giornaliera",
-            "sl": "Dnevni uvoz"
+            "sl": "Dnevni uvoz",
+            "sv": "Daglig import"
           }
         },
         "meter_power_export_daily": {
@@ -823,7 +869,8 @@
             "es": "Exportación diaria",
             "pt": "Exportação diária",
             "it": "Esportazione giornaliera",
-            "sl": "Dnevni izvoz"
+            "sl": "Dnevni izvoz",
+            "sv": "Daglig export"
           }
         },
         "meter_frequency": {
@@ -837,7 +884,8 @@
             "es": "Frecuencia de red",
             "pt": "Frequência da rede",
             "it": "Frequenza di rete",
-            "sl": "Omrežna frekvenca"
+            "sl": "Omrežna frekvenca",
+            "sv": "Nätfrekvens"
           }
         }
       },
@@ -870,7 +918,8 @@
             "es": "Dirección IP",
             "pt": "Endereço IP",
             "it": "Indirizzo IP",
-            "sl": "Naslov IP"
+            "sl": "Naslov IP",
+            "sv": "IP-adress"
           },
           "value": "192.168.1.100",
           "hint": {
@@ -883,7 +932,8 @@
             "es": "La dirección IP de la pasarela Modbus",
             "pt": "O endereço IP do gateway Modbus",
             "it": "L'indirizzo IP del gateway Modbus",
-            "sl": "Naslov IP prehoda Modbus"
+            "sl": "Naslov IP prehoda Modbus",
+            "sv": "IP-adressen till Modbus-gatewayen"
           }
         },
         {
@@ -899,7 +949,8 @@
             "es": "Puerto",
             "pt": "Porta",
             "it": "Porta",
-            "sl": "Vrata"
+            "sl": "Vrata",
+            "sv": "Port"
           },
           "value": 502,
           "hint": {
@@ -912,7 +963,8 @@
             "es": "Puerto Modbus TCP (normalmente 502)",
             "pt": "Porta Modbus TCP (normalmente 502)",
             "it": "Porta Modbus TCP (di solito 502)",
-            "sl": "Vrata Modbus TCP (običajno 502)"
+            "sl": "Vrata Modbus TCP (običajno 502)",
+            "sv": "Modbus TCP-port (vanligtvis 502)"
           }
         },
         {
@@ -928,7 +980,8 @@
             "es": "ID del dispositivo Modbus",
             "pt": "ID do dispositivo Modbus",
             "it": "ID dispositivo Modbus",
-            "sl": "ID naprave Modbus"
+            "sl": "ID naprave Modbus",
+            "sv": "Modbus enhets-ID"
           },
           "value": 1,
           "min": 1,
@@ -943,7 +996,8 @@
             "es": "ID del dispositivo Modbus (dirección esclavo)",
             "pt": "ID do dispositivo Modbus (endereço escravo)",
             "it": "ID dispositivo Modbus (indirizzo slave)",
-            "sl": "ID naprave Modbus (naslov podrejene naprave)"
+            "sl": "ID naprave Modbus (naslov podrejene naprave)",
+            "sv": "Modbus enhets-ID (slavadress)"
           }
         },
         {
@@ -959,7 +1013,8 @@
             "es": "Intervalo de consulta (segundos)",
             "pt": "Intervalo de consulta (segundos)",
             "it": "Intervallo di interrogazione (secondi)",
-            "sl": "Interval branja (sekunde)"
+            "sl": "Interval branja (sekunde)",
+            "sv": "Avläsningsintervall (sekunder)"
           },
           "hint": {
             "en": "How often to poll the device for new data (recommended: 15-60 seconds)",
@@ -971,7 +1026,8 @@
             "es": "Con qué frecuencia consultar el dispositivo (recomendado: 15-60 segundos)",
             "pt": "Com que frequência consultar o dispositivo (recomendado: 15-60 segundos)",
             "it": "Ogni quanto interrogare il dispositivo per nuovi dati (consigliato: 15-60 secondi)",
-            "sl": "Kako pogosto napravo povprašati po novih podatkih (priporočeno: 15-60 sekund)"
+            "sl": "Kako pogosto napravo povprašati po novih podatkih (priporočeno: 15-60 sekund)",
+            "sv": "Hur ofta enheten ska läsas av för nya data (rekommenderat: 15-60 sekunder)"
           },
           "value": 20,
           "min": 5,
@@ -1015,7 +1071,8 @@
             "es": "Potencia",
             "pt": "Potência",
             "it": "Potenza",
-            "sl": "Moč"
+            "sl": "Moč",
+            "sv": "Effekt"
           }
         },
         "measure_voltage": {
@@ -1029,7 +1086,8 @@
             "es": "Tensión",
             "pt": "Tensão",
             "it": "Tensione",
-            "sl": "Napetost"
+            "sl": "Napetost",
+            "sv": "Spänning"
           }
         },
         "measure_current": {
@@ -1043,7 +1101,8 @@
             "es": "Corriente",
             "pt": "Corrente",
             "it": "Corrente",
-            "sl": "Tok"
+            "sl": "Tok",
+            "sv": "Ström"
           }
         },
         "meter_power": {
@@ -1057,7 +1116,8 @@
             "es": "Energía neta",
             "pt": "Energia líquida",
             "it": "Energia netta",
-            "sl": "Neto energija"
+            "sl": "Neto energija",
+            "sv": "Nettoenergi"
           }
         },
         "meter_power.imported": {
@@ -1071,7 +1131,8 @@
             "es": "Importación total",
             "pt": "Importação total",
             "it": "Importazione totale",
-            "sl": "Skupni uvoz"
+            "sl": "Skupni uvoz",
+            "sv": "Total import"
           }
         },
         "meter_power.exported": {
@@ -1085,7 +1146,8 @@
             "es": "Exportación total",
             "pt": "Exportação total",
             "it": "Esportazione totale",
-            "sl": "Skupni izvoz"
+            "sl": "Skupni izvoz",
+            "sv": "Total export"
           }
         },
         "meter_power_import_daily": {
@@ -1099,7 +1161,8 @@
             "es": "Importación diaria",
             "pt": "Importação diária",
             "it": "Importazione giornaliera",
-            "sl": "Dnevni uvoz"
+            "sl": "Dnevni uvoz",
+            "sv": "Daglig import"
           }
         },
         "meter_power_export_daily": {
@@ -1113,7 +1176,8 @@
             "es": "Exportación diaria",
             "pt": "Exportação diária",
             "it": "Esportazione giornaliera",
-            "sl": "Dnevni izvoz"
+            "sl": "Dnevni izvoz",
+            "sv": "Daglig export"
           }
         },
         "meter_frequency": {
@@ -1127,7 +1191,8 @@
             "es": "Frecuencia de red",
             "pt": "Frequência da rede",
             "it": "Frequenza di rete",
-            "sl": "Omrežna frekvenca"
+            "sl": "Omrežna frekvenca",
+            "sv": "Nätfrekvens"
           }
         }
       },
@@ -1160,7 +1225,8 @@
             "es": "Dirección IP",
             "pt": "Endereço IP",
             "it": "Indirizzo IP",
-            "sl": "Naslov IP"
+            "sl": "Naslov IP",
+            "sv": "IP-adress"
           },
           "value": "192.168.1.100",
           "hint": {
@@ -1173,7 +1239,8 @@
             "es": "La dirección IP de la pasarela Modbus",
             "pt": "O endereço IP do gateway Modbus",
             "it": "L'indirizzo IP del gateway Modbus",
-            "sl": "Naslov IP prehoda Modbus"
+            "sl": "Naslov IP prehoda Modbus",
+            "sv": "IP-adressen till Modbus-gatewayen"
           }
         },
         {
@@ -1189,7 +1256,8 @@
             "es": "Puerto",
             "pt": "Porta",
             "it": "Porta",
-            "sl": "Vrata"
+            "sl": "Vrata",
+            "sv": "Port"
           },
           "value": 502,
           "hint": {
@@ -1202,7 +1270,8 @@
             "es": "Puerto Modbus TCP (normalmente 502)",
             "pt": "Porta Modbus TCP (normalmente 502)",
             "it": "Porta Modbus TCP (di solito 502)",
-            "sl": "Vrata Modbus TCP (običajno 502)"
+            "sl": "Vrata Modbus TCP (običajno 502)",
+            "sv": "Modbus TCP-port (vanligtvis 502)"
           }
         },
         {
@@ -1218,7 +1287,8 @@
             "es": "ID del dispositivo Modbus",
             "pt": "ID do dispositivo Modbus",
             "it": "ID dispositivo Modbus",
-            "sl": "ID naprave Modbus"
+            "sl": "ID naprave Modbus",
+            "sv": "Modbus enhets-ID"
           },
           "value": 1,
           "min": 1,
@@ -1233,7 +1303,8 @@
             "es": "ID del dispositivo Modbus (dirección esclavo)",
             "pt": "ID do dispositivo Modbus (endereço escravo)",
             "it": "ID dispositivo Modbus (indirizzo slave)",
-            "sl": "ID naprave Modbus (naslov podrejene naprave)"
+            "sl": "ID naprave Modbus (naslov podrejene naprave)",
+            "sv": "Modbus enhets-ID (slavadress)"
           }
         },
         {
@@ -1249,7 +1320,8 @@
             "es": "Intervalo de consulta (segundos)",
             "pt": "Intervalo de consulta (segundos)",
             "it": "Intervallo di interrogazione (secondi)",
-            "sl": "Interval branja (sekunde)"
+            "sl": "Interval branja (sekunde)",
+            "sv": "Avläsningsintervall (sekunder)"
           },
           "hint": {
             "en": "How often to poll the device for new data (recommended: 15-60 seconds)",
@@ -1261,7 +1333,8 @@
             "es": "Con qué frecuencia consultar el dispositivo (recomendado: 15-60 segundos)",
             "pt": "Com que frequência consultar o dispositivo (recomendado: 15-60 segundos)",
             "it": "Ogni quanto interrogare il dispositivo per nuovi dati (consigliato: 15-60 secondi)",
-            "sl": "Kako pogosto napravo povprašati po novih podatkih (priporočeno: 15-60 sekund)"
+            "sl": "Kako pogosto napravo povprašati po novih podatkih (priporočeno: 15-60 sekund)",
+            "sv": "Hur ofta enheten ska läsas av för nya data (rekommenderat: 15-60 sekunder)"
           },
           "value": 20,
           "min": 5,
@@ -1318,7 +1391,8 @@
             "es": "Frecuencia de red",
             "pt": "Frequência da rede",
             "it": "Frequenza di rete",
-            "sl": "Omrežna frekvenca"
+            "sl": "Omrežna frekvenca",
+            "sv": "Nätfrekvens"
           }
         },
         "meter_power": {
@@ -1333,7 +1407,8 @@
             "es": "Energía neta consumida",
             "pt": "Energia líquida consumida",
             "it": "Energia netta consumata",
-            "sl": "Neto porabljena energija"
+            "sl": "Neto porabljena energija",
+            "sv": "Nettoförbrukad energi"
           }
         },
         "meter_power.exported": {
@@ -1348,7 +1423,8 @@
             "es": "Energía exportada total",
             "pt": "Energia exportada total",
             "it": "Energia esportata totale",
-            "sl": "Skupna oddana energija"
+            "sl": "Skupna oddana energija",
+            "sv": "Total exporterad energi"
           }
         },
         "meter_power_export_daily": {
@@ -1363,7 +1439,8 @@
             "es": "Energía exportada hoy",
             "pt": "Energia exportada hoje",
             "it": "Energia esportata oggi",
-            "sl": "Danes oddana energija"
+            "sl": "Danes oddana energija",
+            "sv": "Exporterad energi idag"
           }
         },
         "meter_power.imported": {
@@ -1378,7 +1455,8 @@
             "es": "Energía importada total",
             "pt": "Energia importada total",
             "it": "Energia importata totale",
-            "sl": "Skupna prejeta energija"
+            "sl": "Skupna prejeta energija",
+            "sv": "Total importerad energi"
           }
         },
         "meter_power_import_daily": {
@@ -1393,7 +1471,8 @@
             "es": "Energía importada hoy",
             "pt": "Energia importada hoje",
             "it": "Energia importata oggi",
-            "sl": "Danes prejeta energija"
+            "sl": "Danes prejeta energija",
+            "sv": "Importerad energi idag"
           }
         },
         "meter_l1_power": {
@@ -1408,7 +1487,8 @@
             "es": "Potencia fase 1",
             "pt": "Potência fase 1",
             "it": "Potenza fase 1",
-            "sl": "Moč faza 1"
+            "sl": "Moč faza 1",
+            "sv": "Effekt fas 1"
           }
         },
         "meter_l2_power": {
@@ -1423,7 +1503,8 @@
             "es": "Potencia fase 2",
             "pt": "Potência fase 2",
             "it": "Potenza fase 2",
-            "sl": "Moč faza 2"
+            "sl": "Moč faza 2",
+            "sv": "Effekt fas 2"
           }
         },
         "meter_l3_power": {
@@ -1438,7 +1519,8 @@
             "es": "Potencia fase 3",
             "pt": "Potência fase 3",
             "it": "Potenza fase 3",
-            "sl": "Moč faza 3"
+            "sl": "Moč faza 3",
+            "sv": "Effekt fas 3"
           }
         },
         "meter_l1_voltage": {
@@ -1453,7 +1535,8 @@
             "es": "Tensión fase 1",
             "pt": "Tensão fase 1",
             "it": "Tensione fase 1",
-            "sl": "Napetost faza 1"
+            "sl": "Napetost faza 1",
+            "sv": "Spänning fas 1"
           }
         },
         "meter_l2_voltage": {
@@ -1468,7 +1551,8 @@
             "es": "Tensión fase 2",
             "pt": "Tensão fase 2",
             "it": "Tensione fase 2",
-            "sl": "Napetost faza 2"
+            "sl": "Napetost faza 2",
+            "sv": "Spänning fas 2"
           }
         },
         "meter_l3_voltage": {
@@ -1483,7 +1567,8 @@
             "es": "Tensión fase 3",
             "pt": "Tensão fase 3",
             "it": "Tensione fase 3",
-            "sl": "Napetost faza 3"
+            "sl": "Napetost faza 3",
+            "sv": "Spänning fas 3"
           }
         },
         "meter_l1_current": {
@@ -1497,7 +1582,8 @@
             "es": "Corriente fase 1",
             "pt": "Corrente fase 1",
             "it": "Corrente fase 1",
-            "sl": "Tok faza 1"
+            "sl": "Tok faza 1",
+            "sv": "Ström fas 1"
           }
         },
         "meter_l2_current": {
@@ -1511,7 +1597,8 @@
             "es": "Corriente fase 2",
             "pt": "Corrente fase 2",
             "it": "Corrente fase 2",
-            "sl": "Tok faza 2"
+            "sl": "Tok faza 2",
+            "sv": "Ström fas 2"
           }
         },
         "meter_l3_current": {
@@ -1525,7 +1612,8 @@
             "es": "Corriente fase 3",
             "pt": "Corrente fase 3",
             "it": "Corrente fase 3",
-            "sl": "Tok faza 3"
+            "sl": "Tok faza 3",
+            "sv": "Ström fas 3"
           }
         },
         "meter_current": {
@@ -1539,7 +1627,8 @@
             "es": "Corriente total",
             "pt": "Corrente total",
             "it": "Corrente totale",
-            "sl": "Skupni tok"
+            "sl": "Skupni tok",
+            "sv": "Total ström"
           }
         },
         "measure_power": {
@@ -1553,7 +1642,8 @@
             "es": "Potencia actual",
             "pt": "Potência atual",
             "it": "Potenza attuale",
-            "sl": "Trenutna moč"
+            "sl": "Trenutna moč",
+            "sv": "Aktuell effekt"
           }
         },
         "measure_tot_power_factor": {
@@ -1567,7 +1657,8 @@
             "es": "Factor de potencia",
             "pt": "Fator de potência",
             "it": "Fattore di potenza",
-            "sl": "Faktor moči"
+            "sl": "Faktor moči",
+            "sv": "Effektfaktor"
           }
         },
         "measure_tot_phase_angle": {
@@ -1581,7 +1672,8 @@
             "es": "Ángulo de fase",
             "pt": "Ângulo de fase",
             "it": "Angolo di fase",
-            "sl": "Fazni kot"
+            "sl": "Fazni kot",
+            "sv": "Fasvinkel"
           }
         }
       },
@@ -1614,7 +1706,8 @@
             "es": "Dirección IP",
             "pt": "Endereço IP",
             "it": "Indirizzo IP",
-            "sl": "Naslov IP"
+            "sl": "Naslov IP",
+            "sv": "IP-adress"
           },
           "value": "192.168.1.100",
           "hint": {
@@ -1627,7 +1720,8 @@
             "es": "La dirección IP de la pasarela Modbus",
             "pt": "O endereço IP do gateway Modbus",
             "it": "L'indirizzo IP del gateway Modbus",
-            "sl": "Naslov IP prehoda Modbus"
+            "sl": "Naslov IP prehoda Modbus",
+            "sv": "IP-adressen till Modbus-gatewayen"
           }
         },
         {
@@ -1643,7 +1737,8 @@
             "es": "Puerto",
             "pt": "Porta",
             "it": "Porta",
-            "sl": "Vrata"
+            "sl": "Vrata",
+            "sv": "Port"
           },
           "value": 502,
           "hint": {
@@ -1656,7 +1751,8 @@
             "es": "Puerto Modbus TCP (normalmente 502)",
             "pt": "Porta Modbus TCP (normalmente 502)",
             "it": "Porta Modbus TCP (di solito 502)",
-            "sl": "Vrata Modbus TCP (običajno 502)"
+            "sl": "Vrata Modbus TCP (običajno 502)",
+            "sv": "Modbus TCP-port (vanligtvis 502)"
           }
         },
         {
@@ -1672,7 +1768,8 @@
             "es": "ID del dispositivo Modbus",
             "pt": "ID do dispositivo Modbus",
             "it": "ID dispositivo Modbus",
-            "sl": "ID naprave Modbus"
+            "sl": "ID naprave Modbus",
+            "sv": "Modbus enhets-ID"
           },
           "value": 1,
           "min": 1,
@@ -1687,7 +1784,8 @@
             "es": "ID del dispositivo Modbus (dirección esclavo)",
             "pt": "ID do dispositivo Modbus (endereço escravo)",
             "it": "ID dispositivo Modbus (indirizzo slave)",
-            "sl": "ID naprave Modbus (naslov podrejene naprave)"
+            "sl": "ID naprave Modbus (naslov podrejene naprave)",
+            "sv": "Modbus enhets-ID (slavadress)"
           }
         },
         {
@@ -1703,7 +1801,8 @@
             "es": "Intervalo de consulta (segundos)",
             "pt": "Intervalo de consulta (segundos)",
             "it": "Intervallo di interrogazione (secondi)",
-            "sl": "Interval branja (sekunde)"
+            "sl": "Interval branja (sekunde)",
+            "sv": "Avläsningsintervall (sekunder)"
           },
           "hint": {
             "en": "How often to poll the device for new data (recommended: 15-60 seconds)",
@@ -1715,7 +1814,8 @@
             "es": "Con qué frecuencia consultar el dispositivo (recomendado: 15-60 segundos)",
             "pt": "Com que frequência consultar o dispositivo (recomendado: 15-60 segundos)",
             "it": "Ogni quanto interrogare il dispositivo per nuovi dati (consigliato: 15-60 secondi)",
-            "sl": "Kako pogosto napravo povprašati po novih podatkih (priporočeno: 15-60 sekund)"
+            "sl": "Kako pogosto napravo povprašati po novih podatkih (priporočeno: 15-60 sekund)",
+            "sv": "Hur ofta enheten ska läsas av för nya data (rekommenderat: 15-60 sekunder)"
           },
           "value": 20,
           "min": 5,
@@ -1778,7 +1878,8 @@
             "es": "Frecuencia de red",
             "pt": "Frequência da rede",
             "it": "Frequenza di rete",
-            "sl": "Omrežna frekvenca"
+            "sl": "Omrežna frekvenca",
+            "sv": "Nätfrekvens"
           }
         },
         "meter_power": {
@@ -1793,7 +1894,8 @@
             "es": "Energía neta consumida",
             "pt": "Energia líquida consumida",
             "it": "Energia netta consumata",
-            "sl": "Neto porabljena energija"
+            "sl": "Neto porabljena energija",
+            "sv": "Nettoförbrukad energi"
           }
         },
         "meter_power.exported": {
@@ -1808,7 +1910,8 @@
             "es": "Energía exportada total",
             "pt": "Energia exportada total",
             "it": "Energia esportata totale",
-            "sl": "Skupna oddana energija"
+            "sl": "Skupna oddana energija",
+            "sv": "Total exporterad energi"
           }
         },
         "meter_power_export_daily": {
@@ -1823,7 +1926,8 @@
             "es": "Energía exportada hoy",
             "pt": "Energia exportada hoje",
             "it": "Energia esportata oggi",
-            "sl": "Danes oddana energija"
+            "sl": "Danes oddana energija",
+            "sv": "Exporterad energi idag"
           }
         },
         "meter_power.imported": {
@@ -1838,7 +1942,8 @@
             "es": "Energía importada total",
             "pt": "Energia importada total",
             "it": "Energia importata totale",
-            "sl": "Skupna prejeta energija"
+            "sl": "Skupna prejeta energija",
+            "sv": "Total importerad energi"
           }
         },
         "meter_power_import_daily": {
@@ -1853,7 +1958,8 @@
             "es": "Energía importada hoy",
             "pt": "Energia importada hoje",
             "it": "Energia importata oggi",
-            "sl": "Danes prejeta energija"
+            "sl": "Danes prejeta energija",
+            "sv": "Importerad energi idag"
           }
         },
         "meter_l1_power": {
@@ -1868,7 +1974,8 @@
             "es": "Potencia fase 1",
             "pt": "Potência fase 1",
             "it": "Potenza fase 1",
-            "sl": "Moč faza 1"
+            "sl": "Moč faza 1",
+            "sv": "Effekt fas 1"
           }
         },
         "meter_l2_power": {
@@ -1883,7 +1990,8 @@
             "es": "Potencia fase 2",
             "pt": "Potência fase 2",
             "it": "Potenza fase 2",
-            "sl": "Moč faza 2"
+            "sl": "Moč faza 2",
+            "sv": "Effekt fas 2"
           }
         },
         "meter_l3_power": {
@@ -1898,7 +2006,8 @@
             "es": "Potencia fase 3",
             "pt": "Potência fase 3",
             "it": "Potenza fase 3",
-            "sl": "Moč faza 3"
+            "sl": "Moč faza 3",
+            "sv": "Effekt fas 3"
           }
         },
         "meter_l1_voltage": {
@@ -1913,7 +2022,8 @@
             "es": "Tensión fase 1",
             "pt": "Tensão fase 1",
             "it": "Tensione fase 1",
-            "sl": "Napetost faza 1"
+            "sl": "Napetost faza 1",
+            "sv": "Spänning fas 1"
           }
         },
         "meter_l2_voltage": {
@@ -1928,7 +2038,8 @@
             "es": "Tensión fase 2",
             "pt": "Tensão fase 2",
             "it": "Tensione fase 2",
-            "sl": "Napetost faza 2"
+            "sl": "Napetost faza 2",
+            "sv": "Spänning fas 2"
           }
         },
         "meter_l3_voltage": {
@@ -1943,7 +2054,8 @@
             "es": "Tensión fase 3",
             "pt": "Tensão fase 3",
             "it": "Tensione fase 3",
-            "sl": "Napetost faza 3"
+            "sl": "Napetost faza 3",
+            "sv": "Spänning fas 3"
           }
         },
         "meter_l1_current": {
@@ -1957,7 +2069,8 @@
             "es": "Corriente fase 1",
             "pt": "Corrente fase 1",
             "it": "Corrente fase 1",
-            "sl": "Tok faza 1"
+            "sl": "Tok faza 1",
+            "sv": "Ström fas 1"
           }
         },
         "meter_l2_current": {
@@ -1971,7 +2084,8 @@
             "es": "Corriente fase 2",
             "pt": "Corrente fase 2",
             "it": "Corrente fase 2",
-            "sl": "Tok faza 2"
+            "sl": "Tok faza 2",
+            "sv": "Ström fas 2"
           }
         },
         "meter_l3_current": {
@@ -1985,7 +2099,8 @@
             "es": "Corriente fase 3",
             "pt": "Corrente fase 3",
             "it": "Corrente fase 3",
-            "sl": "Tok faza 3"
+            "sl": "Tok faza 3",
+            "sv": "Ström fas 3"
           }
         },
         "meter_current": {
@@ -1999,7 +2114,8 @@
             "es": "Corriente total",
             "pt": "Corrente total",
             "it": "Corrente totale",
-            "sl": "Skupni tok"
+            "sl": "Skupni tok",
+            "sv": "Total ström"
           }
         },
         "measure_power": {
@@ -2013,7 +2129,8 @@
             "es": "Potencia actual",
             "pt": "Potência atual",
             "it": "Potenza attuale",
-            "sl": "Trenutna moč"
+            "sl": "Trenutna moč",
+            "sv": "Aktuell effekt"
           }
         },
         "measure_tot_power_factor": {
@@ -2027,7 +2144,8 @@
             "es": "Factor de potencia",
             "pt": "Fator de potência",
             "it": "Fattore di potenza",
-            "sl": "Faktor moči"
+            "sl": "Faktor moči",
+            "sv": "Effektfaktor"
           }
         },
         "measure_tot_phase_angle": {
@@ -2041,7 +2159,8 @@
             "es": "Ángulo de fase",
             "pt": "Ângulo de fase",
             "it": "Angolo di fase",
-            "sl": "Fazni kot"
+            "sl": "Fazni kot",
+            "sv": "Fasvinkel"
           }
         }
       },
@@ -2074,7 +2193,8 @@
             "es": "Dirección IP",
             "pt": "Endereço IP",
             "it": "Indirizzo IP",
-            "sl": "Naslov IP"
+            "sl": "Naslov IP",
+            "sv": "IP-adress"
           },
           "value": "192.168.1.100",
           "hint": {
@@ -2087,7 +2207,8 @@
             "es": "La dirección IP de la pasarela Modbus",
             "pt": "O endereço IP do gateway Modbus",
             "it": "L'indirizzo IP del gateway Modbus",
-            "sl": "Naslov IP prehoda Modbus"
+            "sl": "Naslov IP prehoda Modbus",
+            "sv": "IP-adressen till Modbus-gatewayen"
           }
         },
         {
@@ -2103,7 +2224,8 @@
             "es": "Puerto",
             "pt": "Porta",
             "it": "Porta",
-            "sl": "Vrata"
+            "sl": "Vrata",
+            "sv": "Port"
           },
           "value": 502,
           "hint": {
@@ -2116,7 +2238,8 @@
             "es": "Puerto Modbus TCP (normalmente 502)",
             "pt": "Porta Modbus TCP (normalmente 502)",
             "it": "Porta Modbus TCP (di solito 502)",
-            "sl": "Vrata Modbus TCP (običajno 502)"
+            "sl": "Vrata Modbus TCP (običajno 502)",
+            "sv": "Modbus TCP-port (vanligtvis 502)"
           }
         },
         {
@@ -2132,7 +2255,8 @@
             "es": "ID del dispositivo Modbus",
             "pt": "ID do dispositivo Modbus",
             "it": "ID dispositivo Modbus",
-            "sl": "ID naprave Modbus"
+            "sl": "ID naprave Modbus",
+            "sv": "Modbus enhets-ID"
           },
           "value": 1,
           "min": 1,
@@ -2147,7 +2271,8 @@
             "es": "ID del dispositivo Modbus (dirección esclavo)",
             "pt": "ID do dispositivo Modbus (endereço escravo)",
             "it": "ID dispositivo Modbus (indirizzo slave)",
-            "sl": "ID naprave Modbus (naslov podrejene naprave)"
+            "sl": "ID naprave Modbus (naslov podrejene naprave)",
+            "sv": "Modbus enhets-ID (slavadress)"
           }
         },
         {
@@ -2163,7 +2288,8 @@
             "es": "Intervalo de consulta (segundos)",
             "pt": "Intervalo de consulta (segundos)",
             "it": "Intervallo di interrogazione (secondi)",
-            "sl": "Interval branja (sekunde)"
+            "sl": "Interval branja (sekunde)",
+            "sv": "Avläsningsintervall (sekunder)"
           },
           "hint": {
             "en": "How often to poll the device for new data (recommended: 15-60 seconds)",
@@ -2175,7 +2301,8 @@
             "es": "Con qué frecuencia consultar el dispositivo (recomendado: 15-60 segundos)",
             "pt": "Com que frequência consultar o dispositivo (recomendado: 15-60 segundos)",
             "it": "Ogni quanto interrogare il dispositivo per nuovi dati (consigliato: 15-60 secondi)",
-            "sl": "Kako pogosto napravo povprašati po novih podatkih (priporočeno: 15-60 sekund)"
+            "sl": "Kako pogosto napravo povprašati po novih podatkih (priporočeno: 15-60 sekund)",
+            "sv": "Hur ofta enheten ska läsas av för nya data (rekommenderat: 15-60 sekunder)"
           },
           "value": 20,
           "min": 5,
@@ -2238,7 +2365,8 @@
             "es": "Frecuencia de red",
             "pt": "Frequência da rede",
             "it": "Frequenza di rete",
-            "sl": "Omrežna frekvenca"
+            "sl": "Omrežna frekvenca",
+            "sv": "Nätfrekvens"
           }
         },
         "meter_power": {
@@ -2253,7 +2381,8 @@
             "es": "Energía neta consumida",
             "pt": "Energia líquida consumida",
             "it": "Energia netta consumata",
-            "sl": "Neto porabljena energija"
+            "sl": "Neto porabljena energija",
+            "sv": "Nettoförbrukad energi"
           }
         },
         "meter_power.exported": {
@@ -2268,7 +2397,8 @@
             "es": "Energía exportada total",
             "pt": "Energia exportada total",
             "it": "Energia esportata totale",
-            "sl": "Skupna oddana energija"
+            "sl": "Skupna oddana energija",
+            "sv": "Total exporterad energi"
           }
         },
         "meter_power_export_daily": {
@@ -2283,7 +2413,8 @@
             "es": "Energía exportada hoy",
             "pt": "Energia exportada hoje",
             "it": "Energia esportata oggi",
-            "sl": "Danes oddana energija"
+            "sl": "Danes oddana energija",
+            "sv": "Exporterad energi idag"
           }
         },
         "meter_power.imported": {
@@ -2298,7 +2429,8 @@
             "es": "Energía importada total",
             "pt": "Energia importada total",
             "it": "Energia importata totale",
-            "sl": "Skupna prejeta energija"
+            "sl": "Skupna prejeta energija",
+            "sv": "Total importerad energi"
           }
         },
         "meter_power_import_daily": {
@@ -2313,7 +2445,8 @@
             "es": "Energía importada hoy",
             "pt": "Energia importada hoje",
             "it": "Energia importata oggi",
-            "sl": "Danes prejeta energija"
+            "sl": "Danes prejeta energija",
+            "sv": "Importerad energi idag"
           }
         },
         "meter_l1_power": {
@@ -2328,7 +2461,8 @@
             "es": "Potencia fase 1",
             "pt": "Potência fase 1",
             "it": "Potenza fase 1",
-            "sl": "Moč faza 1"
+            "sl": "Moč faza 1",
+            "sv": "Effekt fas 1"
           }
         },
         "meter_l2_power": {
@@ -2343,7 +2477,8 @@
             "es": "Potencia fase 2",
             "pt": "Potência fase 2",
             "it": "Potenza fase 2",
-            "sl": "Moč faza 2"
+            "sl": "Moč faza 2",
+            "sv": "Effekt fas 2"
           }
         },
         "meter_l3_power": {
@@ -2358,7 +2493,8 @@
             "es": "Potencia fase 3",
             "pt": "Potência fase 3",
             "it": "Potenza fase 3",
-            "sl": "Moč faza 3"
+            "sl": "Moč faza 3",
+            "sv": "Effekt fas 3"
           }
         },
         "meter_l1_voltage": {
@@ -2373,7 +2509,8 @@
             "es": "Tensión fase 1",
             "pt": "Tensão fase 1",
             "it": "Tensione fase 1",
-            "sl": "Napetost faza 1"
+            "sl": "Napetost faza 1",
+            "sv": "Spänning fas 1"
           }
         },
         "meter_l2_voltage": {
@@ -2388,7 +2525,8 @@
             "es": "Tensión fase 2",
             "pt": "Tensão fase 2",
             "it": "Tensione fase 2",
-            "sl": "Napetost faza 2"
+            "sl": "Napetost faza 2",
+            "sv": "Spänning fas 2"
           }
         },
         "meter_l3_voltage": {
@@ -2403,7 +2541,8 @@
             "es": "Tensión fase 3",
             "pt": "Tensão fase 3",
             "it": "Tensione fase 3",
-            "sl": "Napetost faza 3"
+            "sl": "Napetost faza 3",
+            "sv": "Spänning fas 3"
           }
         },
         "meter_l1_current": {
@@ -2417,7 +2556,8 @@
             "es": "Corriente fase 1",
             "pt": "Corrente fase 1",
             "it": "Corrente fase 1",
-            "sl": "Tok faza 1"
+            "sl": "Tok faza 1",
+            "sv": "Ström fas 1"
           }
         },
         "meter_l2_current": {
@@ -2431,7 +2571,8 @@
             "es": "Corriente fase 2",
             "pt": "Corrente fase 2",
             "it": "Corrente fase 2",
-            "sl": "Tok faza 2"
+            "sl": "Tok faza 2",
+            "sv": "Ström fas 2"
           }
         },
         "meter_l3_current": {
@@ -2445,7 +2586,8 @@
             "es": "Corriente fase 3",
             "pt": "Corrente fase 3",
             "it": "Corrente fase 3",
-            "sl": "Tok faza 3"
+            "sl": "Tok faza 3",
+            "sv": "Ström fas 3"
           }
         },
         "meter_current": {
@@ -2459,7 +2601,8 @@
             "es": "Corriente total",
             "pt": "Corrente total",
             "it": "Corrente totale",
-            "sl": "Skupni tok"
+            "sl": "Skupni tok",
+            "sv": "Total ström"
           }
         },
         "measure_power": {
@@ -2473,7 +2616,8 @@
             "es": "Potencia actual",
             "pt": "Potência atual",
             "it": "Potenza attuale",
-            "sl": "Trenutna moč"
+            "sl": "Trenutna moč",
+            "sv": "Aktuell effekt"
           }
         },
         "measure_tot_power_factor": {
@@ -2487,7 +2631,8 @@
             "es": "Factor de potencia",
             "pt": "Fator de potência",
             "it": "Fattore di potenza",
-            "sl": "Faktor moči"
+            "sl": "Faktor moči",
+            "sv": "Effektfaktor"
           }
         },
         "measure_tot_phase_angle": {
@@ -2501,7 +2646,8 @@
             "es": "Ángulo de fase",
             "pt": "Ângulo de fase",
             "it": "Angolo di fase",
-            "sl": "Fazni kot"
+            "sl": "Fazni kot",
+            "sv": "Fasvinkel"
           }
         }
       },
@@ -2534,7 +2680,8 @@
             "es": "Dirección IP",
             "pt": "Endereço IP",
             "it": "Indirizzo IP",
-            "sl": "Naslov IP"
+            "sl": "Naslov IP",
+            "sv": "IP-adress"
           },
           "value": "192.168.1.100",
           "hint": {
@@ -2547,7 +2694,8 @@
             "es": "La dirección IP de la pasarela Modbus",
             "pt": "O endereço IP do gateway Modbus",
             "it": "L'indirizzo IP del gateway Modbus",
-            "sl": "Naslov IP prehoda Modbus"
+            "sl": "Naslov IP prehoda Modbus",
+            "sv": "IP-adressen till Modbus-gatewayen"
           }
         },
         {
@@ -2563,7 +2711,8 @@
             "es": "Puerto",
             "pt": "Porta",
             "it": "Porta",
-            "sl": "Vrata"
+            "sl": "Vrata",
+            "sv": "Port"
           },
           "value": 502,
           "hint": {
@@ -2576,7 +2725,8 @@
             "es": "Puerto Modbus TCP (normalmente 502)",
             "pt": "Porta Modbus TCP (normalmente 502)",
             "it": "Porta Modbus TCP (di solito 502)",
-            "sl": "Vrata Modbus TCP (običajno 502)"
+            "sl": "Vrata Modbus TCP (običajno 502)",
+            "sv": "Modbus TCP-port (vanligtvis 502)"
           }
         },
         {
@@ -2592,7 +2742,8 @@
             "es": "ID del dispositivo Modbus",
             "pt": "ID do dispositivo Modbus",
             "it": "ID dispositivo Modbus",
-            "sl": "ID naprave Modbus"
+            "sl": "ID naprave Modbus",
+            "sv": "Modbus enhets-ID"
           },
           "value": 1,
           "min": 1,
@@ -2607,7 +2758,8 @@
             "es": "ID del dispositivo Modbus (dirección esclavo)",
             "pt": "ID do dispositivo Modbus (endereço escravo)",
             "it": "ID dispositivo Modbus (indirizzo slave)",
-            "sl": "ID naprave Modbus (naslov podrejene naprave)"
+            "sl": "ID naprave Modbus (naslov podrejene naprave)",
+            "sv": "Modbus enhets-ID (slavadress)"
           }
         },
         {
@@ -2623,7 +2775,8 @@
             "es": "Intervalo de consulta (segundos)",
             "pt": "Intervalo de consulta (segundos)",
             "it": "Intervallo di interrogazione (secondi)",
-            "sl": "Interval branja (sekunde)"
+            "sl": "Interval branja (sekunde)",
+            "sv": "Avläsningsintervall (sekunder)"
           },
           "hint": {
             "en": "How often to poll the device for new data (recommended: 15-60 seconds)",
@@ -2635,7 +2788,8 @@
             "es": "Con qué frecuencia consultar el dispositivo (recomendado: 15-60 segundos)",
             "pt": "Com que frequência consultar o dispositivo (recomendado: 15-60 segundos)",
             "it": "Ogni quanto interrogare il dispositivo per nuovi dati (consigliato: 15-60 secondi)",
-            "sl": "Kako pogosto napravo povprašati po novih podatkih (priporočeno: 15-60 sekund)"
+            "sl": "Kako pogosto napravo povprašati po novih podatkih (priporočeno: 15-60 sekund)",
+            "sv": "Hur ofta enheten ska läsas av för nya data (rekommenderat: 15-60 sekunder)"
           },
           "value": 20,
           "min": 5,
@@ -2684,7 +2838,8 @@
             "es": "Potencia total del sistema",
             "pt": "Potência total do sistema",
             "it": "Potenza totale del sistema",
-            "sl": "Skupna moč sistema"
+            "sl": "Skupna moč sistema",
+            "sv": "Total systemeffekt"
           }
         },
         "meter_power": {
@@ -2698,7 +2853,8 @@
             "es": "Energía neta",
             "pt": "Energia líquida",
             "it": "Energia netta",
-            "sl": "Neto energija"
+            "sl": "Neto energija",
+            "sv": "Nettoenergi"
           }
         },
         "meter_power.imported": {
@@ -2712,7 +2868,8 @@
             "es": "Energía importada total",
             "pt": "Energia importada total",
             "it": "Energia importata totale",
-            "sl": "Skupna prejeta energija"
+            "sl": "Skupna prejeta energija",
+            "sv": "Total importerad energi"
           }
         },
         "meter_power.exported": {
@@ -2726,7 +2883,8 @@
             "es": "Energía exportada total",
             "pt": "Energia exportada total",
             "it": "Energia esportata totale",
-            "sl": "Skupna oddana energija"
+            "sl": "Skupna oddana energija",
+            "sv": "Total exporterad energi"
           }
         },
         "meter_power_import_daily": {
@@ -2740,7 +2898,8 @@
             "es": "Energía importada diaria",
             "pt": "Energia importada diária",
             "it": "Energia importata giornaliera",
-            "sl": "Dnevno prejeta energija"
+            "sl": "Dnevno prejeta energija",
+            "sv": "Daglig importerad energi"
           }
         },
         "meter_power_export_daily": {
@@ -2754,7 +2913,8 @@
             "es": "Energía exportada diaria",
             "pt": "Energia exportada diária",
             "it": "Energia esportata giornaliera",
-            "sl": "Dnevno oddana energija"
+            "sl": "Dnevno oddana energija",
+            "sv": "Daglig exporterad energi"
           }
         },
         "meter_l1_voltage": {
@@ -2768,7 +2928,8 @@
             "es": "L1 tensión",
             "pt": "L1 tensão",
             "it": "L1 tensione",
-            "sl": "L1 napetost"
+            "sl": "L1 napetost",
+            "sv": "L1 spänning"
           }
         },
         "meter_l2_voltage": {
@@ -2782,7 +2943,8 @@
             "es": "L2 tensión",
             "pt": "L2 tensão",
             "it": "L2 tensione",
-            "sl": "L2 napetost"
+            "sl": "L2 napetost",
+            "sv": "L2 spänning"
           }
         },
         "meter_l3_voltage": {
@@ -2796,7 +2958,8 @@
             "es": "L3 tensión",
             "pt": "L3 tensão",
             "it": "L3 tensione",
-            "sl": "L3 napetost"
+            "sl": "L3 napetost",
+            "sv": "L3 spänning"
           }
         },
         "meter_l1_current": {
@@ -2810,7 +2973,8 @@
             "es": "L1 corriente",
             "pt": "L1 corrente",
             "it": "L1 corrente",
-            "sl": "L1 tok"
+            "sl": "L1 tok",
+            "sv": "L1 ström"
           }
         },
         "meter_l2_current": {
@@ -2824,7 +2988,8 @@
             "es": "L2 corriente",
             "pt": "L2 corrente",
             "it": "L2 corrente",
-            "sl": "L2 tok"
+            "sl": "L2 tok",
+            "sv": "L2 ström"
           }
         },
         "meter_l3_current": {
@@ -2838,7 +3003,8 @@
             "es": "L3 corriente",
             "pt": "L3 corrente",
             "it": "L3 corrente",
-            "sl": "L3 tok"
+            "sl": "L3 tok",
+            "sv": "L3 ström"
           }
         },
         "meter_l1_power": {
@@ -2852,7 +3018,8 @@
             "es": "L1 potencia activa",
             "pt": "L1 potência ativa",
             "it": "L1 potenza attiva",
-            "sl": "L1 delovna moč"
+            "sl": "L1 delovna moč",
+            "sv": "L1 aktiv effekt"
           }
         },
         "meter_l2_power": {
@@ -2866,7 +3033,8 @@
             "es": "L2 potencia activa",
             "pt": "L2 potência ativa",
             "it": "L2 potenza attiva",
-            "sl": "L2 delovna moč"
+            "sl": "L2 delovna moč",
+            "sv": "L2 aktiv effekt"
           }
         },
         "meter_l3_power": {
@@ -2880,7 +3048,8 @@
             "es": "L3 potencia activa",
             "pt": "L3 potência ativa",
             "it": "L3 potenza attiva",
-            "sl": "L3 delovna moč"
+            "sl": "L3 delovna moč",
+            "sv": "L3 aktiv effekt"
           }
         },
         "meter_frequency": {
@@ -2894,7 +3063,8 @@
             "es": "Frecuencia de red",
             "pt": "Frequência da rede",
             "it": "Frequenza di rete",
-            "sl": "Omrežna frekvenca"
+            "sl": "Omrežna frekvenca",
+            "sv": "Nätfrekvens"
           }
         },
         "measure_tot_power_factor": {
@@ -2908,7 +3078,8 @@
             "es": "Factor de potencia total",
             "pt": "Fator de potência total",
             "it": "Fattore di potenza totale",
-            "sl": "Skupni faktor moči"
+            "sl": "Skupni faktor moči",
+            "sv": "Total effektfaktor"
           }
         },
         "meter_neutral_current": {
@@ -2922,7 +3093,8 @@
             "es": "Corriente de neutro",
             "pt": "Corrente de neutro",
             "it": "Corrente di neutro",
-            "sl": "Tok v nevtralnem vodniku"
+            "sl": "Tok v nevtralnem vodniku",
+            "sv": "Neutralström"
           }
         }
       },
@@ -2954,7 +3126,8 @@
             "es": "Ajustes del dispositivo",
             "pt": "Definições do dispositivo",
             "it": "Impostazioni dispositivo",
-            "sl": "Nastavitve naprave"
+            "sl": "Nastavitve naprave",
+            "sv": "Enhetsinställningar"
           },
           "children": [
             {
@@ -2970,7 +3143,8 @@
                 "es": "Dirección IP",
                 "pt": "Endereço IP",
                 "it": "Indirizzo IP",
-                "sl": "Naslov IP"
+                "sl": "Naslov IP",
+                "sv": "IP-adress"
               },
               "value": "192.168.1.100",
               "hint": {
@@ -2983,7 +3157,8 @@
                 "es": "La dirección IP de la pasarela Modbus",
                 "pt": "O endereço IP do gateway Modbus",
                 "it": "L'indirizzo IP del gateway Modbus",
-                "sl": "Naslov IP prehoda Modbus"
+                "sl": "Naslov IP prehoda Modbus",
+                "sv": "IP-adressen till Modbus-gatewayen"
               }
             },
             {
@@ -2997,7 +3172,8 @@
                 "es": "Puerto",
                 "pt": "Porta",
                 "it": "Porta",
-                "sl": "Vrata"
+                "sl": "Vrata",
+                "sv": "Port"
               },
               "value": 502,
               "hint": {
@@ -3010,7 +3186,8 @@
                 "es": "Puerto Modbus TCP (normalmente 502)",
                 "pt": "Porta Modbus TCP (normalmente 502)",
                 "it": "Porta Modbus TCP (di solito 502)",
-                "sl": "Vrata Modbus TCP (običajno 502)"
+                "sl": "Vrata Modbus TCP (običajno 502)",
+                "sv": "Modbus TCP-port (vanligtvis 502)"
               }
             },
             {
@@ -3026,7 +3203,8 @@
                 "es": "ID del dispositivo Modbus",
                 "pt": "ID do dispositivo Modbus",
                 "it": "ID dispositivo Modbus",
-                "sl": "ID naprave Modbus"
+                "sl": "ID naprave Modbus",
+                "sv": "Modbus enhets-ID"
               },
               "value": 1,
               "min": 1,
@@ -3041,7 +3219,8 @@
                 "es": "ID del dispositivo Modbus (dirección esclavo)",
                 "pt": "ID do dispositivo Modbus (endereço escravo)",
                 "it": "ID dispositivo Modbus (indirizzo slave)",
-                "sl": "ID naprave Modbus (naslov podrejene naprave)"
+                "sl": "ID naprave Modbus (naslov podrejene naprave)",
+                "sv": "Modbus enhets-ID (slavadress)"
               }
             },
             {
@@ -3057,7 +3236,8 @@
                 "es": "Intervalo de consulta (segundos)",
                 "pt": "Intervalo de consulta (segundos)",
                 "it": "Intervallo di interrogazione (secondi)",
-                "sl": "Interval branja (sekunde)"
+                "sl": "Interval branja (sekunde)",
+                "sv": "Avläsningsintervall (sekunder)"
               },
               "hint": {
                 "en": "How often to poll the device for new data (recommended: 15-60 seconds)",
@@ -3069,7 +3249,8 @@
                 "es": "Con qué frecuencia consultar el dispositivo (recomendado: 15-60 segundos)",
                 "pt": "Com que frequência consultar o dispositivo (recomendado: 15-60 segundos)",
                 "it": "Ogni quanto interrogare il dispositivo per nuovi dati (consigliato: 15-60 secondi)",
-                "sl": "Kako pogosto napravo povprašati po novih podatkih (priporočeno: 15-60 sekund)"
+                "sl": "Kako pogosto napravo povprašati po novih podatkih (priporočeno: 15-60 sekund)",
+                "sv": "Hur ofta enheten ska läsas av för nya data (rekommenderat: 15-60 sekunder)"
               },
               "value": 20,
               "min": 5,
@@ -3094,7 +3275,8 @@
         "es": "Potencia aparente",
         "pt": "Potência aparente",
         "it": "Potenza apparente",
-        "sl": "Navidezna moč"
+        "sl": "Navidezna moč",
+        "sv": "Skenbar effekt"
       },
       "units": {
         "en": "VA"
@@ -3110,7 +3292,8 @@
         "es": "Potencia aparente en voltamperios (VA)",
         "pt": "Potência aparente em volt-ampere (VA)",
         "it": "Potenza apparente in voltampere (VA)",
-        "sl": "Navidezna moč v voltamperih (VA)"
+        "sl": "Navidezna moč v voltamperih (VA)",
+        "sv": "Skenbar effekt i voltampere (VA)"
       },
       "chartType": "stepLine",
       "decimals": 0,
@@ -3131,7 +3314,8 @@
         "es": "Ángulo de fase",
         "pt": "Ângulo de fase",
         "it": "Angolo di fase",
-        "sl": "Fazni kot"
+        "sl": "Fazni kot",
+        "sv": "Fasvinkel"
       },
       "getable": true,
       "setable": false,
@@ -3145,7 +3329,8 @@
         "es": "Grados",
         "pt": "Graus",
         "it": "Gradi",
-        "sl": "Stopinje"
+        "sl": "Stopinje",
+        "sv": "Grader"
       },
       "decimals": 1,
       "uiComponent": "sensor",
@@ -3163,7 +3348,8 @@
         "es": "Potencia",
         "pt": "Potência",
         "it": "Potenza",
-        "sl": "Moč"
+        "sl": "Moč",
+        "sv": "Effekt"
       },
       "units": {
         "en": "W"
@@ -3179,7 +3365,8 @@
         "es": "Potencia en vatios (W)",
         "pt": "Potência em watts (W)",
         "it": "Potenza in watt (W)",
-        "sl": "Moč v vatih (W)"
+        "sl": "Moč v vatih (W)",
+        "sv": "Effekt i watt (W)"
       },
       "chartType": "stepLine",
       "decimals": 2,
@@ -3200,7 +3387,8 @@
         "es": "Factor de potencia",
         "pt": "Fator de potência",
         "it": "Fattore di potenza",
-        "sl": "Faktor moči"
+        "sl": "Faktor moči",
+        "sv": "Effektfaktor"
       },
       "getable": true,
       "setable": false,
@@ -3224,7 +3412,8 @@
         "es": "Potencia reactiva",
         "pt": "Potência reativa",
         "it": "Potenza reattiva",
-        "sl": "Jalova moč"
+        "sl": "Jalova moč",
+        "sv": "Reaktiv effekt"
       },
       "units": {
         "en": "VAr"
@@ -3240,7 +3429,8 @@
         "es": "Potencia reactiva en voltamperios reactivos (VAr)",
         "pt": "Potência reativa em volt-ampere reativo (VAr)",
         "it": "Potenza reattiva in voltampere reattivi (VAr)",
-        "sl": "Jalova moč v voltamperih reaktivnih (VAr)"
+        "sl": "Jalova moč v voltamperih reaktivnih (VAr)",
+        "sv": "Reaktiv effekt i voltampere reaktiv (VAr)"
       },
       "chartType": "stepLine",
       "decimals": 0,
@@ -3261,7 +3451,8 @@
         "es": "Ángulo de fase",
         "pt": "Ângulo de fase",
         "it": "Angolo di fase",
-        "sl": "Fazni kot"
+        "sl": "Fazni kot",
+        "sv": "Fasvinkel"
       },
       "getable": true,
       "setable": false,
@@ -3275,7 +3466,8 @@
         "es": "Grados",
         "pt": "Graus",
         "it": "Gradi",
-        "sl": "Stopinje"
+        "sl": "Stopinje",
+        "sv": "Grader"
       },
       "decimals": 1,
       "icon": "/assets/measure_factor.svg"
@@ -3292,7 +3484,8 @@
         "es": "Factor de potencia",
         "pt": "Fator de potência",
         "it": "Fattore di potenza",
-        "sl": "Faktor moči"
+        "sl": "Faktor moči",
+        "sv": "Effektfaktor"
       },
       "getable": true,
       "setable": false,
@@ -3316,7 +3509,8 @@
         "es": "Corriente",
         "pt": "Corrente",
         "it": "Corrente",
-        "sl": "Tok"
+        "sl": "Tok",
+        "sv": "Ström"
       },
       "units": {
         "en": "A"
@@ -3332,7 +3526,8 @@
         "es": "Corriente eléctrica (A)",
         "pt": "Corrente elétrica (A)",
         "it": "Corrente elettrica (A)",
-        "sl": "Električni tok (A)"
+        "sl": "Električni tok (A)",
+        "sv": "Elektrisk ström (A)"
       },
       "chartType": "stepLine",
       "decimals": 2,
@@ -3351,7 +3546,8 @@
         "es": "Frecuencia",
         "pt": "Frequência",
         "it": "Frequenza",
-        "sl": "Frekvenca"
+        "sl": "Frekvenca",
+        "sv": "Frekvens"
       },
       "getable": true,
       "setable": false,
@@ -3373,7 +3569,8 @@
         "es": "Corriente",
         "pt": "Corrente",
         "it": "Corrente",
-        "sl": "Tok"
+        "sl": "Tok",
+        "sv": "Ström"
       },
       "units": {
         "en": "A"
@@ -3389,7 +3586,8 @@
         "es": "Corriente eléctrica (A)",
         "pt": "Corrente elétrica (A)",
         "it": "Corrente elettrica (A)",
-        "sl": "Električni tok (A)"
+        "sl": "Električni tok (A)",
+        "sv": "Elektrisk ström (A)"
       },
       "chartType": "stepLine",
       "decimals": 2,
@@ -3410,7 +3608,8 @@
         "es": "Potencia",
         "pt": "Potência",
         "it": "Potenza",
-        "sl": "Moč"
+        "sl": "Moč",
+        "sv": "Effekt"
       },
       "units": {
         "en": "W"
@@ -3426,7 +3625,8 @@
         "es": "Potencia en vatios (W)",
         "pt": "Potência em watts (W)",
         "it": "Potenza in watt (W)",
-        "sl": "Moč v vatih (W)"
+        "sl": "Moč v vatih (W)",
+        "sv": "Effekt i watt (W)"
       },
       "chartType": "stepLine",
       "decimals": 2,
@@ -3447,7 +3647,8 @@
         "es": "Tensión",
         "pt": "Tensão",
         "it": "Tensione",
-        "sl": "Napetost"
+        "sl": "Napetost",
+        "sv": "Spänning"
       },
       "units": {
         "en": "V"
@@ -3462,7 +3663,8 @@
         "es": "Tensión (V)",
         "pt": "Tensão (V)",
         "it": "Tensione (V)",
-        "sl": "Napetost (V)"
+        "sl": "Napetost (V)",
+        "sv": "Spänning (V)"
       },
       "insights": true,
       "chartType": "stepLine",
@@ -3484,7 +3686,8 @@
         "es": "Tensión L1-L2",
         "pt": "Tensão L1-L2",
         "it": "Tensione L1-L2",
-        "sl": "Napetost L1-L2"
+        "sl": "Napetost L1-L2",
+        "sv": "Spänning L1-L2"
       },
       "units": {
         "en": "V"
@@ -3499,7 +3702,8 @@
         "es": "Tensión entre fases L1-L2 (V)",
         "pt": "Tensão entre fases L1-L2 (V)",
         "it": "Tensione concatenata L1-L2 (V)",
-        "sl": "Medfazna napetost L1-L2 (V)"
+        "sl": "Medfazna napetost L1-L2 (V)",
+        "sv": "Huvudspänning L1-L2 (V)"
       },
       "insights": true,
       "chartType": "stepLine",
@@ -3521,7 +3725,8 @@
         "es": "Corriente",
         "pt": "Corrente",
         "it": "Corrente",
-        "sl": "Tok"
+        "sl": "Tok",
+        "sv": "Ström"
       },
       "units": {
         "en": "A"
@@ -3537,7 +3742,8 @@
         "es": "Corriente eléctrica (A)",
         "pt": "Corrente elétrica (A)",
         "it": "Corrente elettrica (A)",
-        "sl": "Električni tok (A)"
+        "sl": "Električni tok (A)",
+        "sv": "Elektrisk ström (A)"
       },
       "chartType": "stepLine",
       "decimals": 2,
@@ -3558,7 +3764,8 @@
         "es": "Potencia",
         "pt": "Potência",
         "it": "Potenza",
-        "sl": "Moč"
+        "sl": "Moč",
+        "sv": "Effekt"
       },
       "units": {
         "en": "W"
@@ -3574,7 +3781,8 @@
         "es": "Potencia en vatios (W)",
         "pt": "Potência em watts (W)",
         "it": "Potenza in watt (W)",
-        "sl": "Moč v vatih (W)"
+        "sl": "Moč v vatih (W)",
+        "sv": "Effekt i watt (W)"
       },
       "chartType": "stepLine",
       "decimals": 2,
@@ -3595,7 +3803,8 @@
         "es": "Tensión",
         "pt": "Tensão",
         "it": "Tensione",
-        "sl": "Napetost"
+        "sl": "Napetost",
+        "sv": "Spänning"
       },
       "units": {
         "en": "V"
@@ -3610,7 +3819,8 @@
         "es": "Tensión (V)",
         "pt": "Tensão (V)",
         "it": "Tensione (V)",
-        "sl": "Napetost (V)"
+        "sl": "Napetost (V)",
+        "sv": "Spänning (V)"
       },
       "insights": true,
       "chartType": "stepLine",
@@ -3632,7 +3842,8 @@
         "es": "Tensión L2-L3",
         "pt": "Tensão L2-L3",
         "it": "Tensione L2-L3",
-        "sl": "Napetost L2-L3"
+        "sl": "Napetost L2-L3",
+        "sv": "Spänning L2-L3"
       },
       "units": {
         "en": "V"
@@ -3647,7 +3858,8 @@
         "es": "Tensión entre fases L2-L3 (V)",
         "pt": "Tensão entre fases L2-L3 (V)",
         "it": "Tensione concatenata L2-L3 (V)",
-        "sl": "Medfazna napetost L2-L3 (V)"
+        "sl": "Medfazna napetost L2-L3 (V)",
+        "sv": "Huvudspänning L2-L3 (V)"
       },
       "insights": true,
       "chartType": "stepLine",
@@ -3669,7 +3881,8 @@
         "es": "Corriente",
         "pt": "Corrente",
         "it": "Corrente",
-        "sl": "Tok"
+        "sl": "Tok",
+        "sv": "Ström"
       },
       "units": {
         "en": "A"
@@ -3685,7 +3898,8 @@
         "es": "Corriente eléctrica (A)",
         "pt": "Corrente elétrica (A)",
         "it": "Corrente elettrica (A)",
-        "sl": "Električni tok (A)"
+        "sl": "Električni tok (A)",
+        "sv": "Elektrisk ström (A)"
       },
       "chartType": "stepLine",
       "decimals": 2,
@@ -3706,7 +3920,8 @@
         "es": "Potencia",
         "pt": "Potência",
         "it": "Potenza",
-        "sl": "Moč"
+        "sl": "Moč",
+        "sv": "Effekt"
       },
       "units": {
         "en": "W"
@@ -3722,7 +3937,8 @@
         "es": "Potencia en vatios (W)",
         "pt": "Potência em watts (W)",
         "it": "Potenza in watt (W)",
-        "sl": "Moč v vatih (W)"
+        "sl": "Moč v vatih (W)",
+        "sv": "Effekt i watt (W)"
       },
       "chartType": "stepLine",
       "decimals": 2,
@@ -3743,7 +3959,8 @@
         "es": "Tensión",
         "pt": "Tensão",
         "it": "Tensione",
-        "sl": "Napetost"
+        "sl": "Napetost",
+        "sv": "Spänning"
       },
       "units": {
         "en": "V"
@@ -3758,7 +3975,8 @@
         "es": "Tensión (V)",
         "pt": "Tensão (V)",
         "it": "Tensione (V)",
-        "sl": "Napetost (V)"
+        "sl": "Napetost (V)",
+        "sv": "Spänning (V)"
       },
       "insights": true,
       "chartType": "stepLine",
@@ -3780,7 +3998,8 @@
         "es": "Tensión L3-L1",
         "pt": "Tensão L3-L1",
         "it": "Tensione L3-L1",
-        "sl": "Napetost L3-L1"
+        "sl": "Napetost L3-L1",
+        "sv": "Spänning L3-L1"
       },
       "units": {
         "en": "V"
@@ -3795,7 +4014,8 @@
         "es": "Tensión entre fases L3-L1 (V)",
         "pt": "Tensão entre fases L3-L1 (V)",
         "it": "Tensione concatenata L3-L1 (V)",
-        "sl": "Medfazna napetost L3-L1 (V)"
+        "sl": "Medfazna napetost L3-L1 (V)",
+        "sv": "Huvudspänning L3-L1 (V)"
       },
       "insights": true,
       "chartType": "stepLine",
@@ -3817,7 +4037,8 @@
         "es": "Corriente de neutro",
         "pt": "Corrente de neutro",
         "it": "Corrente di neutro",
-        "sl": "Tok v nevtralnem vodniku"
+        "sl": "Tok v nevtralnem vodniku",
+        "sv": "Neutralström"
       },
       "decimals": 2,
       "units": {
@@ -3832,7 +4053,8 @@
         "es": "Corriente de neutro en amperios (A)",
         "pt": "Corrente de neutro em amperes (A)",
         "it": "Corrente di neutro in ampere (A)",
-        "sl": "Tok v nevtralnem vodniku v amperih (A)"
+        "sl": "Tok v nevtralnem vodniku v amperih (A)",
+        "sv": "Neutralström i ampere (A)"
       },
       "chartType": "spline",
       "insights": true,
@@ -3852,7 +4074,8 @@
         "es": "Consumo neto",
         "pt": "Consumo líquido",
         "it": "Consumo netto",
-        "sl": "Neto poraba"
+        "sl": "Neto poraba",
+        "sv": "Nettoförbrukning"
       },
       "decimals": 2,
       "units": {
@@ -3867,7 +4090,8 @@
         "es": "Energía neta consumida en kilovatios hora (kWh)",
         "pt": "Energia líquida consumida em quilowatt-hora (kWh)",
         "it": "Energia netta consumata in chilowattora (kWh)",
-        "sl": "Neto porabljena energija v kilovatnih urah (kWh)"
+        "sl": "Neto porabljena energija v kilovatnih urah (kWh)",
+        "sv": "Nettoförbrukad energi i kilowattimmar (kWh)"
       },
       "chartType": "spline",
       "insights": true,
@@ -3887,7 +4111,8 @@
         "es": "Energía del día",
         "pt": "Energia do dia",
         "it": "Energia giornaliera",
-        "sl": "Dnevna energija"
+        "sl": "Dnevna energija",
+        "sv": "Dagens energi"
       },
       "decimals": 2,
       "units": {
@@ -3902,7 +4127,8 @@
         "es": "Energía devuelta diaria en kilovatios hora (kWh)",
         "pt": "Energia devolvida diária em quilowatt-hora (kWh)",
         "it": "Energia restituita giornaliera in chilowattora (kWh)",
-        "sl": "Dnevno oddana energija v kilovatnih urah (kWh)"
+        "sl": "Dnevno oddana energija v kilovatnih urah (kWh)",
+        "sv": "Daglig levererad energi i kilowattimmar (kWh)"
       },
       "chartType": "spline",
       "insights": true,
@@ -3922,7 +4148,8 @@
         "es": "Energía total",
         "pt": "Energia total",
         "it": "Energia totale",
-        "sl": "Skupna energija"
+        "sl": "Skupna energija",
+        "sv": "Total energi"
       },
       "decimals": 2,
       "units": {
@@ -3937,7 +4164,8 @@
         "es": "Energía devuelta en kilovatios hora (kWh)",
         "pt": "Energia devolvida em quilowatt-hora (kWh)",
         "it": "Energia restituita in chilowattora (kWh)",
-        "sl": "Oddana energija v kilovatnih urah (kWh)"
+        "sl": "Oddana energija v kilovatnih urah (kWh)",
+        "sv": "Levererad energi i kilowattimmar (kWh)"
       },
       "chartType": "spline",
       "insights": true,
@@ -3958,7 +4186,8 @@
         "es": "Energía del día",
         "pt": "Energia do dia",
         "it": "Energia giornaliera",
-        "sl": "Dnevna energija"
+        "sl": "Dnevna energija",
+        "sv": "Dagens energi"
       },
       "decimals": 2,
       "units": {
@@ -3974,7 +4203,8 @@
         "es": "Consumo de energía diario en kilovatios hora (kWh)",
         "pt": "Consumo de energia diário em quilowatt-hora (kWh)",
         "it": "Consumo energetico giornaliero in chilowattora (kWh)",
-        "sl": "Dnevna poraba energije v kilovatnih urah (kWh)"
+        "sl": "Dnevna poraba energije v kilovatnih urah (kWh)",
+        "sv": "Daglig energiförbrukning i kilowattimmar (kWh)"
       },
       "chartType": "spline",
       "insights": true,
@@ -3995,7 +4225,8 @@
         "es": "Energía total",
         "pt": "Energia total",
         "it": "Energia totale",
-        "sl": "Skupna energija"
+        "sl": "Skupna energija",
+        "sv": "Total energi"
       },
       "decimals": 2,
       "units": {
@@ -4011,7 +4242,8 @@
         "es": "Consumo de energía en kilovatios hora (kWh)",
         "pt": "Consumo de energia em quilowatt-hora (kWh)",
         "it": "Consumo energetico in chilowattora (kWh)",
-        "sl": "Poraba energije v kilovatnih urah (kWh)"
+        "sl": "Poraba energije v kilovatnih urah (kWh)",
+        "sv": "Energiförbrukning i kilowattimmar (kWh)"
       },
       "chartType": "spline",
       "insights": true,

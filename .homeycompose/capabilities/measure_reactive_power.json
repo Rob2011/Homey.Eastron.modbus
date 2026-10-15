@@ -10,7 +10,8 @@
     "es": "Potencia reactiva",
     "pt": "Potência reativa",
     "it": "Potenza reattiva",
-    "sl": "Jalova moč"
+    "sl": "Jalova moč",
+    "sv": "Reaktiv effekt"
   },
   "units": {
     "en": "VAr"
@@ -26,7 +27,8 @@
     "es": "Potencia reactiva en voltamperios reactivos (VAr)",
     "pt": "Potência reativa em volt-ampere reativo (VAr)",
     "it": "Potenza reattiva in voltampere reattivi (VAr)",
-    "sl": "Jalova moč v voltamperih reaktivnih (VAr)"
+    "sl": "Jalova moč v voltamperih reaktivnih (VAr)",
+    "sv": "Reaktiv effekt i voltampere reaktiv (VAr)"
   },
   "chartType": "stepLine",
   "decimals": 0,

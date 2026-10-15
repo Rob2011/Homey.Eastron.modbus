@@ -10,7 +10,8 @@
     "es": "Energía del día",
     "pt": "Energia do dia",
     "it": "Energia giornaliera",
-    "sl": "Dnevna energija"
+    "sl": "Dnevna energija",
+    "sv": "Dagens energi"
   },
   "decimals": 2,
   "units": {
@@ -26,7 +27,8 @@
     "es": "Consumo de energía diario en kilovatios hora (kWh)",
     "pt": "Consumo de energia diário em quilowatt-hora (kWh)",
     "it": "Consumo energetico giornaliero in chilowattora (kWh)",
-    "sl": "Dnevna poraba energije v kilovatnih urah (kWh)"
+    "sl": "Dnevna poraba energije v kilovatnih urah (kWh)",
+    "sv": "Daglig energiförbrukning i kilowattimmar (kWh)"
   },
   "chartType": "spline",
   "insights": true,

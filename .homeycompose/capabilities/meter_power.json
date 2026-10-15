@@ -9,7 +9,8 @@
     "es": "Consumo neto",
     "pt": "Consumo líquido",
     "it": "Consumo netto",
-    "sl": "Neto poraba"
+    "sl": "Neto poraba",
+    "sv": "Nettoförbrukning"
   },
   "decimals": 2,
   "units": {
@@ -24,7 +25,8 @@
     "es": "Energía neta consumida en kilovatios hora (kWh)",
     "pt": "Energia líquida consumida em quilowatt-hora (kWh)",
     "it": "Energia netta consumata in chilowattora (kWh)",
-    "sl": "Neto porabljena energija v kilovatnih urah (kWh)"
+    "sl": "Neto porabljena energija v kilovatnih urah (kWh)",
+    "sv": "Nettoförbrukad energi i kilowattimmar (kWh)"
   },
   "chartType": "spline",
   "insights": true,

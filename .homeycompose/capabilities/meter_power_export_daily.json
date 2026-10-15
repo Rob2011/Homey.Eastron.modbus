@@ -9,7 +9,8 @@
     "es": "Energía del día",
     "pt": "Energia do dia",
     "it": "Energia giornaliera",
-    "sl": "Dnevna energija"
+    "sl": "Dnevna energija",
+    "sv": "Dagens energi"
   },
   "decimals": 2,
   "units": {
@@ -24,7 +25,8 @@
     "es": "Energía devuelta diaria en kilovatios hora (kWh)",
     "pt": "Energia devolvida diária em quilowatt-hora (kWh)",
     "it": "Energia restituita giornaliera in chilowattora (kWh)",
-    "sl": "Dnevno oddana energija v kilovatnih urah (kWh)"
+    "sl": "Dnevno oddana energija v kilovatnih urah (kWh)",
+    "sv": "Daglig levererad energi i kilowattimmar (kWh)"
   },
   "chartType": "spline",
   "insights": true,

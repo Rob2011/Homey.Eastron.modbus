@@ -10,7 +10,8 @@
     "es": "Ángulo de fase",
     "pt": "Ângulo de fase",
     "it": "Angolo di fase",
-    "sl": "Fazni kot"
+    "sl": "Fazni kot",
+    "sv": "Fasvinkel"
   },
   "getable": true,
   "setable": false,
@@ -24,7 +25,8 @@
     "es": "Grados",
     "pt": "Graus",
     "it": "Gradi",
-    "sl": "Stopinje"
+    "sl": "Stopinje",
+    "sv": "Grader"
   },
   "decimals": 1,
   "icon": "/assets/measure_factor.svg"

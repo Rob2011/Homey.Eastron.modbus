@@ -10,7 +10,8 @@
     "es": "Corriente de neutro",
     "pt": "Corrente de neutro",
     "it": "Corrente di neutro",
-    "sl": "Tok v nevtralnem vodniku"
+    "sl": "Tok v nevtralnem vodniku",
+    "sv": "Neutralström"
   },
   "decimals": 2,
   "units": {
@@ -25,7 +26,8 @@
     "es": "Corriente de neutro en amperios (A)",
     "pt": "Corrente de neutro em amperes (A)",
     "it": "Corrente di neutro in ampere (A)",
-    "sl": "Tok v nevtralnem vodniku v amperih (A)"
+    "sl": "Tok v nevtralnem vodniku v amperih (A)",
+    "sv": "Neutralström i ampere (A)"
   },
   "chartType": "spline",
   "insights": true,

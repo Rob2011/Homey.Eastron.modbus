@@ -52,7 +52,8 @@
         "es": "Frecuencia de red",
         "pt": "Frequência da rede",
         "it": "Frequenza di rete",
-        "sl": "Omrežna frekvenca"
+        "sl": "Omrežna frekvenca",
+        "sv": "Nätfrekvens"
       }
     },
     "meter_power": {
@@ -67,7 +68,8 @@
         "es": "Energía neta consumida",
         "pt": "Energia líquida consumida",
         "it": "Energia netta consumata",
-        "sl": "Neto porabljena energija"
+        "sl": "Neto porabljena energija",
+        "sv": "Nettoförbrukad energi"
       }
     },
     "meter_power.exported": {
@@ -82,7 +84,8 @@
         "es": "Energía exportada total",
         "pt": "Energia exportada total",
         "it": "Energia esportata totale",
-        "sl": "Skupna oddana energija"
+        "sl": "Skupna oddana energija",
+        "sv": "Total exporterad energi"
       }
     },
     "meter_power_export_daily": {
@@ -97,7 +100,8 @@
         "es": "Energía exportada hoy",
         "pt": "Energia exportada hoje",
         "it": "Energia esportata oggi",
-        "sl": "Danes oddana energija"
+        "sl": "Danes oddana energija",
+        "sv": "Exporterad energi idag"
       }
     },
     "meter_power.imported": {
@@ -112,7 +116,8 @@
         "es": "Energía importada total",
         "pt": "Energia importada total",
         "it": "Energia importata totale",
-        "sl": "Skupna prejeta energija"
+        "sl": "Skupna prejeta energija",
+        "sv": "Total importerad energi"
       }
     },
     "meter_power_import_daily": {
@@ -127,7 +132,8 @@
         "es": "Energía importada hoy",
         "pt": "Energia importada hoje",
         "it": "Energia importata oggi",
-        "sl": "Danes prejeta energija"
+        "sl": "Danes prejeta energija",
+        "sv": "Importerad energi idag"
       }
     },
     "meter_l1_power": {
@@ -142,7 +148,8 @@
         "es": "Potencia fase 1",
         "pt": "Potência fase 1",
         "it": "Potenza fase 1",
-        "sl": "Moč faza 1"
+        "sl": "Moč faza 1",
+        "sv": "Effekt fas 1"
       }
     },
     "meter_l2_power": {
@@ -157,7 +164,8 @@
         "es": "Potencia fase 2",
         "pt": "Potência fase 2",
         "it": "Potenza fase 2",
-        "sl": "Moč faza 2"
+        "sl": "Moč faza 2",
+        "sv": "Effekt fas 2"
       }
     },
     "meter_l3_power": {
@@ -172,7 +180,8 @@
         "es": "Potencia fase 3",
         "pt": "Potência fase 3",
         "it": "Potenza fase 3",
-        "sl": "Moč faza 3"
+        "sl": "Moč faza 3",
+        "sv": "Effekt fas 3"
       }
     },
     "meter_l1_voltage": {
@@ -187,7 +196,8 @@
         "es": "Tensión fase 1",
         "pt": "Tensão fase 1",
         "it": "Tensione fase 1",
-        "sl": "Napetost faza 1"
+        "sl": "Napetost faza 1",
+        "sv": "Spänning fas 1"
       }
     },
     "meter_l2_voltage": {
@@ -202,7 +212,8 @@
         "es": "Tensión fase 2",
         "pt": "Tensão fase 2",
         "it": "Tensione fase 2",
-        "sl": "Napetost faza 2"
+        "sl": "Napetost faza 2",
+        "sv": "Spänning fas 2"
       }
     },
     "meter_l3_voltage": {
@@ -217,7 +228,8 @@
         "es": "Tensión fase 3",
         "pt": "Tensão fase 3",
         "it": "Tensione fase 3",
-        "sl": "Napetost faza 3"
+        "sl": "Napetost faza 3",
+        "sv": "Spänning fas 3"
       }
     },
     "meter_l1_current": {
@@ -231,7 +243,8 @@
         "es": "Corriente fase 1",
         "pt": "Corrente fase 1",
         "it": "Corrente fase 1",
-        "sl": "Tok faza 1"
+        "sl": "Tok faza 1",
+        "sv": "Ström fas 1"
       }
     },
     "meter_l2_current": {
@@ -245,7 +258,8 @@
         "es": "Corriente fase 2",
         "pt": "Corrente fase 2",
         "it": "Corrente fase 2",
-        "sl": "Tok faza 2"
+        "sl": "Tok faza 2",
+        "sv": "Ström fas 2"
       }
     },
     "meter_l3_current": {
@@ -259,7 +273,8 @@
         "es": "Corriente fase 3",
         "pt": "Corrente fase 3",
         "it": "Corrente fase 3",
-        "sl": "Tok faza 3"
+        "sl": "Tok faza 3",
+        "sv": "Ström fas 3"
       }
     },
     "meter_current": {
@@ -273,7 +288,8 @@
         "es": "Corriente total",
         "pt": "Corrente total",
         "it": "Corrente totale",
-        "sl": "Skupni tok"
+        "sl": "Skupni tok",
+        "sv": "Total ström"
       }
     },
     "measure_power": {
@@ -287,7 +303,8 @@
         "es": "Potencia actual",
         "pt": "Potência atual",
         "it": "Potenza attuale",
-        "sl": "Trenutna moč"
+        "sl": "Trenutna moč",
+        "sv": "Aktuell effekt"
       }
     },
     "measure_tot_power_factor": {
@@ -301,7 +318,8 @@
         "es": "Factor de potencia",
         "pt": "Fator de potência",
         "it": "Fattore di potenza",
-        "sl": "Faktor moči"
+        "sl": "Faktor moči",
+        "sv": "Effektfaktor"
       }
     },
     "measure_tot_phase_angle": {
@@ -315,7 +333,8 @@
         "es": "Ángulo de fase",
         "pt": "Ângulo de fase",
         "it": "Angolo di fase",
-        "sl": "Fazni kot"
+        "sl": "Fazni kot",
+        "sv": "Fasvinkel"
       }
     }
   },
@@ -347,7 +366,8 @@
         "es": "Ajustes Modbus TCP",
         "pt": "Definições Modbus TCP",
         "it": "Impostazioni Modbus TCP",
-        "sl": "Nastavitve Modbus TCP"
+        "sl": "Nastavitve Modbus TCP",
+        "sv": "Modbus TCP-inställningar"
       },
       "children": [
         {
@@ -364,7 +384,8 @@
             "es": "Dirección IP",
             "pt": "Endereço IP",
             "it": "Indirizzo IP",
-            "sl": "Naslov IP"
+            "sl": "Naslov IP",
+            "sv": "IP-adress"
           }
         },
         {
@@ -382,7 +403,8 @@
             "es": "Puerto",
             "pt": "Porta",
             "it": "Porta",
-            "sl": "Vrata"
+            "sl": "Vrata",
+            "sv": "Port"
           }
         },
         {
@@ -404,7 +426,8 @@
             "es": "ID del dispositivo Modbus",
             "pt": "ID do dispositivo Modbus",
             "it": "ID dispositivo Modbus",
-            "sl": "ID naprave Modbus"
+            "sl": "ID naprave Modbus",
+            "sv": "Modbus enhets-ID"
           }
         }
       ]

@@ -10,7 +10,8 @@
     "es": "Factor de potencia",
     "pt": "Fator de potência",
     "it": "Fattore di potenza",
-    "sl": "Faktor moči"
+    "sl": "Faktor moči",
+    "sv": "Effektfaktor"
   },
   "getable": true,
   "setable": false,

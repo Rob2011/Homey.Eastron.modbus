@@ -10,7 +10,8 @@
     "es": "Corriente",
     "pt": "Corrente",
     "it": "Corrente",
-    "sl": "Tok"
+    "sl": "Tok",
+    "sv": "Ström"
   },
   "units": {
     "en": "A"
@@ -26,7 +27,8 @@
     "es": "Corriente eléctrica (A)",
     "pt": "Corrente elétrica (A)",
     "it": "Corrente elettrica (A)",
-    "sl": "Električni tok (A)"
+    "sl": "Električni tok (A)",
+    "sv": "Elektrisk ström (A)"
   },
   "chartType": "stepLine",
   "decimals": 2,

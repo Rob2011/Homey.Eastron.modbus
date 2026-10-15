@@ -10,7 +10,8 @@
     "es": "Tensión L3-L1",
     "pt": "Tensão L3-L1",
     "it": "Tensione L3-L1",
-    "sl": "Napetost L3-L1"
+    "sl": "Napetost L3-L1",
+    "sv": "Spänning L3-L1"
   },
   "units": {
     "en": "V"
@@ -25,7 +26,8 @@
     "es": "Tensión entre fases L3-L1 (V)",
     "pt": "Tensão entre fases L3-L1 (V)",
     "it": "Tensione concatenata L3-L1 (V)",
-    "sl": "Medfazna napetost L3-L1 (V)"
+    "sl": "Medfazna napetost L3-L1 (V)",
+    "sv": "Huvudspänning L3-L1 (V)"
   },
   "insights": true,
   "chartType": "stepLine",

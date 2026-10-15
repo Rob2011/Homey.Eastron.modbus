@@ -32,7 +32,8 @@
         "es": "Potencia",
         "pt": "Potência",
         "it": "Potenza",
-        "sl": "Moč"
+        "sl": "Moč",
+        "sv": "Effekt"
       }
     },
     "measure_voltage": {
@@ -46,7 +47,8 @@
         "es": "Tensión",
         "pt": "Tensão",
         "it": "Tensione",
-        "sl": "Napetost"
+        "sl": "Napetost",
+        "sv": "Spänning"
       }
     },
     "measure_current": {
@@ -60,7 +62,8 @@
         "es": "Corriente",
         "pt": "Corrente",
         "it": "Corrente",
-        "sl": "Tok"
+        "sl": "Tok",
+        "sv": "Ström"
       }
     },
     "meter_power": {
@@ -74,7 +77,8 @@
         "es": "Energía neta",
         "pt": "Energia líquida",
         "it": "Energia netta",
-        "sl": "Neto energija"
+        "sl": "Neto energija",
+        "sv": "Nettoenergi"
       }
     },
     "meter_power.imported": {
@@ -88,7 +92,8 @@
         "es": "Importación total",
         "pt": "Importação total",
         "it": "Importazione totale",
-        "sl": "Skupni uvoz"
+        "sl": "Skupni uvoz",
+        "sv": "Total import"
       }
     },
     "meter_power.exported": {
@@ -102,7 +107,8 @@
         "es": "Exportación total",
         "pt": "Exportação total",
         "it": "Esportazione totale",
-        "sl": "Skupni izvoz"
+        "sl": "Skupni izvoz",
+        "sv": "Total export"
       }
     },
     "meter_power_import_daily": {
@@ -116,7 +122,8 @@
         "es": "Importación diaria",
         "pt": "Importação diária",
         "it": "Importazione giornaliera",
-        "sl": "Dnevni uvoz"
+        "sl": "Dnevni uvoz",
+        "sv": "Daglig import"
       }
     },
     "meter_power_export_daily": {
@@ -130,7 +137,8 @@
         "es": "Exportación diaria",
         "pt": "Exportação diária",
         "it": "Esportazione giornaliera",
-        "sl": "Dnevni izvoz"
+        "sl": "Dnevni izvoz",
+        "sv": "Daglig export"
       }
     },
     "meter_frequency": {
@@ -144,7 +152,8 @@
         "es": "Frecuencia de red",
         "pt": "Frequência da rede",
         "it": "Frequenza di rete",
-        "sl": "Omrežna frekvenca"
+        "sl": "Omrežna frekvenca",
+        "sv": "Nätfrekvens"
       }
     }
   },
@@ -176,7 +185,8 @@
         "es": "Ajustes Modbus TCP",
         "pt": "Definições Modbus TCP",
         "it": "Impostazioni Modbus TCP",
-        "sl": "Nastavitve Modbus TCP"
+        "sl": "Nastavitve Modbus TCP",
+        "sv": "Modbus TCP-inställningar"
       },
       "children": [
         {
@@ -193,7 +203,8 @@
             "es": "Dirección IP",
             "pt": "Endereço IP",
             "it": "Indirizzo IP",
-            "sl": "Naslov IP"
+            "sl": "Naslov IP",
+            "sv": "IP-adress"
           }
         },
         {
@@ -211,7 +222,8 @@
             "es": "Puerto",
             "pt": "Porta",
             "it": "Porta",
-            "sl": "Vrata"
+            "sl": "Vrata",
+            "sv": "Port"
           }
         },
         {
@@ -233,7 +245,8 @@
             "es": "ID del dispositivo Modbus",
             "pt": "ID do dispositivo Modbus",
             "it": "ID dispositivo Modbus",
-            "sl": "ID naprave Modbus"
+            "sl": "ID naprave Modbus",
+            "sv": "Modbus enhets-ID"
           }
         }
       ]

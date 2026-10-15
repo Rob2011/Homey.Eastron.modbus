@@ -10,7 +10,8 @@
     "es": "Potencia",
     "pt": "Potência",
     "it": "Potenza",
-    "sl": "Moč"
+    "sl": "Moč",
+    "sv": "Effekt"
   },
   "units": {
     "en": "W"
@@ -26,7 +27,8 @@
     "es": "Potencia en vatios (W)",
     "pt": "Potência em watts (W)",
     "it": "Potenza in watt (W)",
-    "sl": "Moč v vatih (W)"
+    "sl": "Moč v vatih (W)",
+    "sv": "Effekt i watt (W)"
   },
   "chartType": "stepLine",
   "decimals": 2,

@@ -9,7 +9,8 @@
     "es": "Importación diaria cambiada",
     "pt": "Importação diária alterada",
     "it": "Importazione giornaliera cambiata",
-    "sl": "Dnevni uvoz se je spremenil"
+    "sl": "Dnevni uvoz se je spremenil",
+    "sv": "Daglig import ändrad"
   },
   "titleFormatted": {
     "en": "Daily import of [[device]] changed by at least [[delta]] kWh",
@@ -21,7 +22,8 @@
     "es": "La importación diaria de [[device]] cambió al menos [[delta]] kWh",
     "pt": "A importação diária de [[device]] mudou pelo menos [[delta]] kWh",
     "it": "L'importazione giornaliera di [[device]] è cambiata di almeno [[delta]] kWh",
-    "sl": "Dnevni uvoz naprave [[device]] se je spremenil za vsaj [[delta]] kWh"
+    "sl": "Dnevni uvoz naprave [[device]] se je spremenil za vsaj [[delta]] kWh",
+    "sv": "Daglig import till [[device]] ändrades med minst [[delta]] kWh"
   },
   "hint": {
     "en": "Daily Import changed",
@@ -33,7 +35,8 @@
     "es": "Importación diaria cambiada",
     "pt": "Importação diária alterada",
     "it": "Importazione giornaliera cambiata",
-    "sl": "Dnevni uvoz se je spremenil"
+    "sl": "Dnevni uvoz se je spremenil",
+    "sv": "Daglig import ändrad"
   },
   "tokens": [
     {
@@ -48,7 +51,8 @@
         "es": "Energía",
         "pt": "Energia",
         "it": "Energia",
-        "sl": "Energija"
+        "sl": "Energija",
+        "sv": "Energi"
       },
       "type": "number",
       "example": 25
@@ -77,7 +81,8 @@
         "es": "Delta kWh",
         "pt": "Delta kWh",
         "it": "Delta kWh",
-        "sl": "Delta kWh"
+        "sl": "Delta kWh",
+        "sv": "Delta kWh"
       },
       "example": 2,
       "min": 0,
@@ -91,7 +96,8 @@
         "es": "Cambio mínimo en kWh",
         "pt": "Variação mínima em kWh",
         "it": "Variazione minima in kWh",
-        "sl": "Najmanjša sprememba v kWh"
+        "sl": "Najmanjša sprememba v kWh",
+        "sv": "Minsta ändring i kWh"
       }
     }
   ]

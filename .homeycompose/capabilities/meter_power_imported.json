@@ -10,7 +10,8 @@
     "es": "Energía total",
     "pt": "Energia total",
     "it": "Energia totale",
-    "sl": "Skupna energija"
+    "sl": "Skupna energija",
+    "sv": "Total energi"
   },
   "decimals": 2,
   "units": {
@@ -26,7 +27,8 @@
     "es": "Consumo de energía en kilovatios hora (kWh)",
     "pt": "Consumo de energia em quilowatt-hora (kWh)",
     "it": "Consumo energetico in chilowattora (kWh)",
-    "sl": "Poraba energije v kilovatnih urah (kWh)"
+    "sl": "Poraba energije v kilovatnih urah (kWh)",
+    "sv": "Energiförbrukning i kilowattimmar (kWh)"
   },
   "chartType": "spline",
   "insights": true,

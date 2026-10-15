@@ -9,7 +9,8 @@
     "es": "Energía total",
     "pt": "Energia total",
     "it": "Energia totale",
-    "sl": "Skupna energija"
+    "sl": "Skupna energija",
+    "sv": "Total energi"
   },
   "decimals": 2,
   "units": {
@@ -24,7 +25,8 @@
     "es": "Energía devuelta en kilovatios hora (kWh)",
     "pt": "Energia devolvida em quilowatt-hora (kWh)",
     "it": "Energia restituita in chilowattora (kWh)",
-    "sl": "Oddana energija v kilovatnih urah (kWh)"
+    "sl": "Oddana energija v kilovatnih urah (kWh)",
+    "sv": "Levererad energi i kilowattimmar (kWh)"
   },
   "chartType": "spline",
   "insights": true,

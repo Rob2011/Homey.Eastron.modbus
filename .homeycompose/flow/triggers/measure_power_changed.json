@@ -9,7 +9,8 @@
     "es": "Potencia cambiada",
     "pt": "Potência alterada",
     "it": "Potenza cambiata",
-    "sl": "Moč se je spremenila"
+    "sl": "Moč se je spremenila",
+    "sv": "Effekt ändrad"
   },
   "titleFormatted": {
     "en": "Power of [[device]] changed by at least [[delta]] W",
@@ -21,7 +22,8 @@
     "es": "La potencia de [[device]] cambió al menos [[delta]] W",
     "pt": "A potência de [[device]] mudou pelo menos [[delta]] W",
     "it": "La potenza di [[device]] è cambiata di almeno [[delta]] W",
-    "sl": "Moč naprave [[device]] se je spremenila za vsaj [[delta]] W"
+    "sl": "Moč naprave [[device]] se je spremenila za vsaj [[delta]] W",
+    "sv": "Effekten för [[device]] ändrades med minst [[delta]] W"
   },
   "args": [
     {
@@ -46,7 +48,8 @@
         "es": "Delta W",
         "pt": "Delta W",
         "it": "Delta W",
-        "sl": "Delta W"
+        "sl": "Delta W",
+        "sv": "Delta W"
       },
       "example": 10,
       "min": 0,
@@ -60,7 +63,8 @@
         "es": "Cambio mínimo en W",
         "pt": "Variação mínima em W",
         "it": "Variazione minima in W",
-        "sl": "Najmanjša sprememba v W"
+        "sl": "Najmanjša sprememba v W",
+        "sv": "Minsta ändring i W"
       }
     }
   ],

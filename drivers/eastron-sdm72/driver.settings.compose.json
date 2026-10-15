@@ -11,7 +11,8 @@
       "es": "Ajustes del dispositivo",
       "pt": "Definições do dispositivo",
       "it": "Impostazioni dispositivo",
-      "sl": "Nastavitve naprave"
+      "sl": "Nastavitve naprave",
+      "sv": "Enhetsinställningar"
     },
     "children": [
       {
@@ -27,7 +28,8 @@
           "es": "Dirección IP",
           "pt": "Endereço IP",
           "it": "Indirizzo IP",
-          "sl": "Naslov IP"
+          "sl": "Naslov IP",
+          "sv": "IP-adress"
         },
         "value": "192.168.1.100",
         "hint": {
@@ -40,7 +42,8 @@
           "es": "La dirección IP de la pasarela Modbus",
           "pt": "O endereço IP do gateway Modbus",
           "it": "L'indirizzo IP del gateway Modbus",
-          "sl": "Naslov IP prehoda Modbus"
+          "sl": "Naslov IP prehoda Modbus",
+          "sv": "IP-adressen till Modbus-gatewayen"
         }
       },
       {
@@ -54,7 +57,8 @@
           "es": "Puerto",
           "pt": "Porta",
           "it": "Porta",
-          "sl": "Vrata"
+          "sl": "Vrata",
+          "sv": "Port"
         },
         "value": 502,
         "hint": {
@@ -67,7 +71,8 @@
           "es": "Puerto Modbus TCP (normalmente 502)",
           "pt": "Porta Modbus TCP (normalmente 502)",
           "it": "Porta Modbus TCP (di solito 502)",
-          "sl": "Vrata Modbus TCP (običajno 502)"
+          "sl": "Vrata Modbus TCP (običajno 502)",
+          "sv": "Modbus TCP-port (vanligtvis 502)"
         }
       },
       {
@@ -83,7 +88,8 @@
           "es": "ID del dispositivo Modbus",
           "pt": "ID do dispositivo Modbus",
           "it": "ID dispositivo Modbus",
-          "sl": "ID naprave Modbus"
+          "sl": "ID naprave Modbus",
+          "sv": "Modbus enhets-ID"
         },
         "value": 1,
         "min": 1,
@@ -98,7 +104,8 @@
           "es": "ID del dispositivo Modbus (dirección esclavo)",
           "pt": "ID do dispositivo Modbus (endereço escravo)",
           "it": "ID dispositivo Modbus (indirizzo slave)",
-          "sl": "ID naprave Modbus (naslov podrejene naprave)"
+          "sl": "ID naprave Modbus (naslov podrejene naprave)",
+          "sv": "Modbus enhets-ID (slavadress)"
         }
       },
       {
@@ -114,7 +121,8 @@
           "es": "Intervalo de consulta (segundos)",
           "pt": "Intervalo de consulta (segundos)",
           "it": "Intervallo di interrogazione (secondi)",
-          "sl": "Interval branja (sekunde)"
+          "sl": "Interval branja (sekunde)",
+          "sv": "Avläsningsintervall (sekunder)"
         },
         "hint": {
           "en": "How often to poll the device for new data (recommended: 15-60 seconds)",
@@ -126,7 +134,8 @@
           "es": "Con qué frecuencia consultar el dispositivo (recomendado: 15-60 segundos)",
           "pt": "Com que frequência consultar o dispositivo (recomendado: 15-60 segundos)",
           "it": "Ogni quanto interrogare il dispositivo per nuovi dati (consigliato: 15-60 secondi)",
-          "sl": "Kako pogosto napravo povprašati po novih podatkih (priporočeno: 15-60 sekund)"
+          "sl": "Kako pogosto napravo povprašati po novih podatkih (priporočeno: 15-60 sekund)",
+          "sv": "Hur ofta enheten ska läsas av för nya data (rekommenderat: 15-60 sekunder)"
         },
         "value": 20,
         "min": 5,

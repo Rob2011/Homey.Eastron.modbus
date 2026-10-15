@@ -8,7 +8,8 @@
     "es": "Frecuencia",
     "pt": "Frequência",
     "it": "Frequenza",
-    "sl": "Frekvenca"
+    "sl": "Frekvenca",
+    "sv": "Frekvens"
   },
   "getable": true,
   "setable": false,

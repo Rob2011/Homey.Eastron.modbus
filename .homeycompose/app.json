@@ -21,7 +21,8 @@
     "es": "Eastron",
     "pt": "Eastron",
     "it": "Eastron",
-    "sl": "Eastron"
+    "sl": "Eastron",
+    "sv": "Eastron"
   },
   "description": {
     "en": "Advanced Energy Monitoring with DIN Rail Meters over Modbus TCP",
@@ -33,7 +34,8 @@
     "es": "Monitorización avanzada de energía con contadores de carril DIN a través de Modbus TCP",
     "pt": "Monitorização avançada de energia com contadores de calha DIN via Modbus TCP",
     "it": "Monitoraggio energetico avanzato con contatori su guida DIN tramite Modbus TCP",
-    "sl": "Napredno spremljanje energije s števci za DIN letev prek Modbus TCP"
+    "sl": "Napredno spremljanje energije s števci za DIN letev prek Modbus TCP",
+    "sv": "Avancerad energiövervakning med DIN-skenmätare via Modbus TCP"
   },
   "category": [
     "energy"

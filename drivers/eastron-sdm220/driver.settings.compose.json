@@ -1,0 +1,66 @@
+[
+    {
+        "id": "address",
+        "type": "text",
+        "label": {
+            "en": "IP address",
+            "nl": "IP-adres",
+            "de": "IP-Adresse"
+        },
+        "value": "192.168.1.100",
+        "hint": {
+            "en": "The IP address of the Modbus gateway",
+            "nl": "Het IP-adres van de Modbus gateway",
+            "de": "Die IP-Adresse des Modbus-Gateways"
+        }
+    },
+    {
+        "id": "port",
+        "type": "number",
+        "label": {
+            "en": "Port",
+            "nl": "Poort",
+            "de": "Port"
+        },
+        "value": 502,
+        "hint": {
+            "en": "Modbus TCP port (typically 502)",
+            "nl": "Modbus TCP-poort (meestal 502)",
+            "de": "Modbus TCP-Port (typischerweise 502)"
+        }
+    },
+    {
+        "id": "id",
+        "type": "number",
+        "label": {
+            "en": "Modbus device ID",
+            "nl": "Modbus apparaat ID",
+            "de": "Modbus Geräte ID"
+        },
+        "value": 1,
+        "min": 1,
+        "max": 247,
+        "hint": {
+            "en": "Modbus device ID (client address)",
+            "nl": "Modbus-apparaat-ID (clientadres)",
+            "de": "Modbus-Geräte-ID (Client-Adresse)"
+        }
+    },
+    {
+        "id": "polling_interval",
+        "type": "number",
+        "label": {
+            "en": "Polling Interval (seconds)",
+            "nl": "Polling interval (seconden)",
+            "de": "Abfrageintervall (Sekunden)"
+        },
+        "hint": {
+            "en": "How often to poll the device for new data (recommended: 15-60 seconds)",
+            "nl": "Hoe vaak het apparaat te controleren op nieuwe gegevens (aanbevolen: 15-60 seconden)",
+            "de": "Wie oft das Gerät auf neue Daten abgefragt werden soll (empfohlen: 15-60 Sekunden)"
+        },
+        "value": 20,
+        "min": 5,
+        "max": 300
+    }
+]

@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "eastron.modbus",
-  "version": "1.2.3",
+  "version": "1.3.0",
   "compatibility": ">=12.4.0",
   "sdk": 3,
   "brandColor": "#003399",
@@ -45,31 +45,60 @@
     "triggers": [
       {
         "title": {
-          "en": "Yield changed",
-          "nl": "Energieverbruik is veranderd",
-          "de": "Gesamtertrag hat sich geändert"
+          "en": "Power changed",
+          "nl": "Vermogen is veranderd",
+          "de": "Leistung hat sich geändert"
         },
-        "tokens": [
-          {
-            "name": "measure_power",
-            "title": {
-              "en": "Energy",
-              "nl": "Energie",
-              "de": "Energie"
-            },
-            "type": "number",
-            "example": 250
-          }
-        ],
+        "titleFormatted": {
+          "en": "Power of [[device]] changed by at least [[delta]] W",
+          "nl": "Vermogen van [[device]] is minstens [[delta]] W veranderd",
+          "de": "Leistung von [[device]] hat sich um mindestens [[delta]] W geändert"
+        },
         "args": [
           {
-            "type": "device",
             "name": "device",
+            "type": "device",
             "filter": {
               "capabilities": [
                 "measure_power"
               ]
             }
+          },
+          {
+            "type": "number",
+            "name": "delta",
+            "title": {
+              "en": "Delta W",
+              "nl": "Delta W",
+              "de": "Delta W"
+            },
+            "example": 10,
+            "min": 0,
+            "placeholder": {
+              "en": "Minimum change in W",
+              "nl": "Minimale verandering in W",
+              "de": "Minimale Änderung in W"
+            }
+          }
+        ],
+        "tokens": [
+          {
+            "name": "power",
+            "type": "number",
+            "title": {
+              "en": "Watt",
+              "nl": "Watt"
+            },
+            "example": 850
+          },
+          {
+            "name": "power_delta",
+            "type": "number",
+            "title": {
+              "en": "+- W",
+              "nl": "+- W"
+            },
+            "example": 18
           }
         ],
         "id": "measure_power_changed"
@@ -79,6 +108,11 @@
           "en": "Meter Power Export Day Changed",
           "nl": "Energie export kWh per dag is veranderd",
           "de": "Tagesertrag Export geändert"
+        },
+        "titleFormatted": {
+          "en": "Daily export of [[device]] changed by at least [[delta]] kWh",
+          "nl": "Energie export per dag van [[device]] is minstens [[delta]] kWh veranderd",
+          "de": "Tagesertrag Export von [[device]] hat sich um mindestens [[delta]] kWh geändert"
         },
         "hint": {
           "en": "Daily Export changed",
@@ -106,6 +140,22 @@
                 "meter_power_export_daily"
               ]
             }
+          },
+          {
+            "type": "number",
+            "name": "delta",
+            "title": {
+              "en": "Delta kWh",
+              "nl": "Delta kWh",
+              "de": "Delta kWh"
+            },
+            "example": 2,
+            "min": 0,
+            "placeholder": {
+              "en": "Minimum change in kWh",
+              "nl": "Minimale verandering in kWh",
+              "de": "Minimale Änderung in kWh"
+            }
           }
         ],
         "id": "meter_power_export_day_changed"
@@ -115,6 +165,11 @@
           "en": "Meter Power Import Day Changed",
           "nl": "Energie import kWh per dag is veranderd",
           "de": "Tagesertrag Import geändert"
+        },
+        "titleFormatted": {
+          "en": "Daily import of [[device]] changed by at least [[delta]] kWh",
+          "nl": "Energie import per dag van [[device]] is minstens [[delta]] kWh veranderd",
+          "de": "Tagesertrag Import von [[device]] hat sich um mindestens [[delta]] kWh geändert"
         },
         "hint": {
           "en": "Daily Import changed",
@@ -141,6 +196,22 @@
               "capabilities": [
                 "meter_power_import_daily"
               ]
+            }
+          },
+          {
+            "type": "number",
+            "name": "delta",
+            "title": {
+              "en": "Delta kWh",
+              "nl": "Delta kWh",
+              "de": "Delta kWh"
+            },
+            "example": 2,
+            "min": 0,
+            "placeholder": {
+              "en": "Minimum change in kWh",
+              "nl": "Minimale verandering in kWh",
+              "de": "Minimale Änderung in kWh"
             }
           }
         ],
@@ -349,9 +420,9 @@
     },
     {
       "name": {
-        "en": "Eastron SDM230",
-        "nl": "Eastron SDM230",
-        "de": "Eastron SDM230"
+        "en": "Eastron SDM220",
+        "nl": "Eastron SDM220",
+        "de": "Eastron SDM220"
       },
       "class": "sensor",
       "capabilities": [
@@ -364,7 +435,10 @@
         "meter_power_import_daily",
         "meter_power_export_daily",
         "meter_frequency",
-        "measure_tot_power_factor"
+        "measure_power_factor",
+        "measure_phase_angle",
+        "measure_apparent_power",
+        "measure_reactive_power"
       ],
       "capabilitiesOptions": {
         "measure_power": {
@@ -429,12 +503,176 @@
             "nl": "Netfrequentie",
             "de": "Netzfrequenz"
           }
+        }
+      },
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "lan"
+      ],
+      "images": {
+        "small": "/drivers/eastron-sdm220/assets/images/small.png",
+        "large": "/drivers/eastron-sdm220/assets/images/large.png"
+      },
+      "pair": [
+        {
+          "id": "start"
+        }
+      ],
+      "settings": [
+        {
+          "id": "address",
+          "type": "text",
+          "label": {
+            "en": "IP address",
+            "nl": "IP-adres",
+            "de": "IP-Adresse"
+          },
+          "value": "192.168.1.100",
+          "hint": {
+            "en": "The IP address of the Modbus gateway",
+            "nl": "Het IP-adres van de Modbus gateway",
+            "de": "Die IP-Adresse des Modbus-Gateways"
+          }
         },
-        "measure_tot_power_factor": {
+        {
+          "id": "port",
+          "type": "number",
+          "label": {
+            "en": "Port",
+            "nl": "Poort",
+            "de": "Port"
+          },
+          "value": 502,
+          "hint": {
+            "en": "Modbus TCP port (typically 502)",
+            "nl": "Modbus TCP-poort (meestal 502)",
+            "de": "Modbus TCP-Port (typischerweise 502)"
+          }
+        },
+        {
+          "id": "id",
+          "type": "number",
+          "label": {
+            "en": "Modbus device ID",
+            "nl": "Modbus apparaat ID",
+            "de": "Modbus Geräte ID"
+          },
+          "value": 1,
+          "min": 1,
+          "max": 247,
+          "hint": {
+            "en": "Modbus device ID (client address)",
+            "nl": "Modbus-apparaat-ID (clientadres)",
+            "de": "Modbus-Geräte-ID (Client-Adresse)"
+          }
+        },
+        {
+          "id": "polling_interval",
+          "type": "number",
+          "label": {
+            "en": "Polling Interval (seconds)",
+            "nl": "Polling interval (seconden)",
+            "de": "Abfrageintervall (Sekunden)"
+          },
+          "hint": {
+            "en": "How often to poll the device for new data (recommended: 15-60 seconds)",
+            "nl": "Hoe vaak het apparaat te controleren op nieuwe gegevens (aanbevolen: 15-60 seconden)",
+            "de": "Wie oft das Gerät auf neue Daten abgefragt werden soll (empfohlen: 15-60 Sekunden)"
+          },
+          "value": 20,
+          "min": 5,
+          "max": 300
+        }
+      ],
+      "model": "SDM220",
+      "id": "eastron-sdm220"
+    },
+    {
+      "name": {
+        "en": "Eastron SDM230",
+        "nl": "Eastron SDM230",
+        "de": "Eastron SDM230"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "measure_power",
+        "measure_voltage",
+        "measure_current",
+        "meter_power",
+        "meter_power.imported",
+        "meter_power.exported",
+        "meter_power_import_daily",
+        "meter_power_export_daily",
+        "meter_frequency",
+        "measure_power_factor",
+        "measure_phase_angle",
+        "measure_apparent_power",
+        "measure_reactive_power"
+      ],
+      "capabilitiesOptions": {
+        "measure_power": {
           "title": {
-            "en": "Power Factor",
-            "nl": "Vermogensfactor",
-            "de": "Leistungsfaktor"
+            "en": "Power",
+            "nl": "Vermogen",
+            "de": "Leistung"
+          }
+        },
+        "measure_voltage": {
+          "title": {
+            "en": "Voltage",
+            "nl": "Spanning",
+            "de": "Spannung"
+          }
+        },
+        "measure_current": {
+          "title": {
+            "en": "Current",
+            "nl": "Stroom",
+            "de": "Strom"
+          }
+        },
+        "meter_power": {
+          "title": {
+            "en": "Net Energy",
+            "nl": "Netto Energie",
+            "de": "Netto Energie"
+          }
+        },
+        "meter_power.imported": {
+          "title": {
+            "en": "Total Import",
+            "nl": "Totaal geïmporteerd",
+            "de": "Insgesamt importierte Energie"
+          }
+        },
+        "meter_power.exported": {
+          "title": {
+            "en": "Total Export",
+            "nl": "Totaal geëxporteerd",
+            "de": "Insgesamt exportierte Energie"
+          }
+        },
+        "meter_power_import_daily": {
+          "title": {
+            "en": "Daily Import",
+            "nl": "Dagelijkse Import",
+            "de": "Tägliche Importe"
+          }
+        },
+        "meter_power_export_daily": {
+          "title": {
+            "en": "Daily Export",
+            "nl": "Dagelijkse Export",
+            "de": "Tägliche Exporte"
+          }
+        },
+        "meter_frequency": {
+          "title": {
+            "en": "Grid Frequency",
+            "nl": "Netfrequentie",
+            "de": "Netzfrequenz"
           }
         }
       },
@@ -683,9 +921,9 @@
         },
         "measure_power": {
           "title": {
-            "en": "Daily Yield",
+            "en": "Current power",
             "nl": "Huidig vermogen",
-            "de": "Tagesertrag"
+            "de": "Aktuelle Leistung"
           }
         },
         "measure_tot_power_factor": {
@@ -785,6 +1023,548 @@
         }
       ],
       "id": "eastron-sdm630"
+    },
+    {
+      "name": {
+        "en": "Eastron SDM630MCT",
+        "nl": "Eastron SDM630MCT",
+        "de": "Eastron SDM630MCT"
+      },
+      "class": "sensor",
+      "vendor": "Eastron",
+      "model": "SDM630MCT",
+      "capabilities": [
+        "measure_power",
+        "meter_l1_power",
+        "meter_l2_power",
+        "meter_l3_power",
+        "meter_frequency",
+        "meter_l1_current",
+        "meter_l2_current",
+        "meter_l3_current",
+        "meter_current",
+        "meter_l1_voltage",
+        "meter_l2_voltage",
+        "meter_l3_voltage",
+        "meter_power.exported",
+        "meter_power_export_daily",
+        "meter_power.imported",
+        "meter_power_import_daily",
+        "meter_power",
+        "measure_tot_power_factor",
+        "measure_tot_phase_angle",
+        "measure_apparent_power",
+        "measure_reactive_power",
+        "meter_l12_voltage",
+        "meter_l23_voltage",
+        "meter_l31_voltage",
+        "meter_neutral_current"
+      ],
+      "energy": {
+        "cumulative": true,
+        "cumulativeImportedCapability": "meter_power.imported",
+        "cumulativeExportedCapability": "meter_power.exported"
+      },
+      "capabilitiesOptions": {
+        "meter_frequency": {
+          "decimals": 2,
+          "title": {
+            "en": "Grid Frequency",
+            "nl": "Netfrequentie",
+            "de": "Netzfrequenz"
+          }
+        },
+        "meter_power": {
+          "decimals": 0,
+          "title": {
+            "en": "Net energy used",
+            "nl": "Netto verbruikt vermogen",
+            "de": "Netto verbrauchtes elektrisches Leistung"
+          }
+        },
+        "meter_power.exported": {
+          "decimals": 0,
+          "title": {
+            "en": "Total exported energy",
+            "nl": "Totaal geëxporteerd vermogen",
+            "de": "Insgesamt exportierte Energie"
+          }
+        },
+        "meter_power_export_daily": {
+          "decimals": 2,
+          "title": {
+            "en": "Today exported energy",
+            "nl": "Vandaag geëxporteerd vermogen",
+            "de": "Heute exportierte Energie"
+          }
+        },
+        "meter_power.imported": {
+          "decimals": 0,
+          "title": {
+            "en": "Total imported energy",
+            "nl": "Totaal geïmporteerd vermogen",
+            "de": "Insgesamt importierte Energie"
+          }
+        },
+        "meter_power_import_daily": {
+          "decimals": 2,
+          "title": {
+            "en": "Today imported energy",
+            "nl": "Vandaag geïmporteerd vermogen",
+            "de": "Heute importierte Energie"
+          }
+        },
+        "meter_l1_power": {
+          "decimals": 0,
+          "title": {
+            "en": "Phase 1 Power",
+            "nl": "Vermogen fase 1",
+            "de": "Leistung Phase 1"
+          }
+        },
+        "meter_l2_power": {
+          "decimals": 0,
+          "title": {
+            "en": "Phase 2 Power",
+            "nl": "Vermogen fase 2",
+            "de": "Leistung Phase 2"
+          }
+        },
+        "meter_l3_power": {
+          "decimals": 0,
+          "title": {
+            "en": "Phase 3 Power",
+            "nl": "Vermogen fase 3",
+            "de": "Leistung Phase 3"
+          }
+        },
+        "meter_l1_voltage": {
+          "decimals": 0,
+          "title": {
+            "en": "Phase 1 Voltage",
+            "nl": "Spanning fase 1",
+            "de": "Spannung Phase 1"
+          }
+        },
+        "meter_l2_voltage": {
+          "decimals": 0,
+          "title": {
+            "en": "Phase 2 Voltage",
+            "nl": "Spanning fase 2",
+            "de": "Spannung Phase 2"
+          }
+        },
+        "meter_l3_voltage": {
+          "decimals": 0,
+          "title": {
+            "en": "Phase 3 Voltage",
+            "nl": "Spanning fase 3",
+            "de": "Spannung Phase 3"
+          }
+        },
+        "meter_l1_current": {
+          "title": {
+            "en": "Current phase1",
+            "nl": "Stroom fase 1",
+            "de": "Strom Phase 1"
+          }
+        },
+        "meter_l2_current": {
+          "title": {
+            "en": "Current phase2",
+            "nl": "Stroom fase 2",
+            "de": "Strom Phase 2"
+          }
+        },
+        "meter_l3_current": {
+          "title": {
+            "en": "Current phase3",
+            "nl": "Stroom fase 3",
+            "de": "Strom Phase 3"
+          }
+        },
+        "meter_current": {
+          "title": {
+            "en": "Total Current",
+            "nl": "Totale Stroom",
+            "de": "Gesamtstrom"
+          }
+        },
+        "measure_power": {
+          "title": {
+            "en": "Current power",
+            "nl": "Huidig vermogen",
+            "de": "Aktuelle Leistung"
+          }
+        },
+        "measure_tot_power_factor": {
+          "title": {
+            "en": "Power Factor",
+            "nl": "Arbeidsfactor",
+            "de": "Leistungsfaktor"
+          }
+        },
+        "measure_tot_phase_angle": {
+          "title": {
+            "en": "Phase Angle",
+            "nl": "Fasehoek",
+            "de": "Phasenwinkel"
+          }
+        }
+      },
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "lan"
+      ],
+      "images": {
+        "small": "/drivers/eastron-sdm630mct/assets/images/small.png",
+        "large": "/drivers/eastron-sdm630mct/assets/images/large.png"
+      },
+      "pair": [
+        {
+          "id": "start"
+        }
+      ],
+      "settings": [
+        {
+          "id": "address",
+          "type": "text",
+          "label": {
+            "en": "IP address",
+            "nl": "IP-adres",
+            "de": "IP-Adresse"
+          },
+          "value": "192.168.1.100",
+          "hint": {
+            "en": "The IP address of the Modbus gateway",
+            "nl": "Het IP-adres van de Modbus gateway",
+            "de": "Die IP-Adresse des Modbus-Gateways"
+          }
+        },
+        {
+          "id": "port",
+          "type": "number",
+          "label": {
+            "en": "Port",
+            "nl": "Poort",
+            "de": "Port"
+          },
+          "value": 502,
+          "hint": {
+            "en": "Modbus TCP port (typically 502)",
+            "nl": "Modbus TCP-poort (meestal 502)",
+            "de": "Modbus TCP-Port (typischerweise 502)"
+          }
+        },
+        {
+          "id": "id",
+          "type": "number",
+          "label": {
+            "en": "Modbus device ID",
+            "nl": "Modbus apparaat ID",
+            "de": "Modbus Geräte ID"
+          },
+          "value": 1,
+          "min": 1,
+          "max": 247,
+          "hint": {
+            "en": "Modbus device ID (client address)",
+            "nl": "Modbus-apparaat-ID (clientadres)",
+            "de": "Modbus-Geräte-ID (Client-Adresse)"
+          }
+        },
+        {
+          "id": "polling_interval",
+          "type": "number",
+          "label": {
+            "en": "Polling Interval (seconds)",
+            "nl": "Polling interval (seconden)",
+            "de": "Abfrageintervall (Sekunden)"
+          },
+          "hint": {
+            "en": "How often to poll the device for new data (recommended: 15-60 seconds)",
+            "nl": "Hoe vaak het apparaat te controleren op nieuwe gegevens (aanbevolen: 15-60 seconden)",
+            "de": "Wie oft das Gerät auf neue Daten abgefragt werden soll (empfohlen: 15-60 Sekunden)"
+          },
+          "value": 20,
+          "min": 5,
+          "max": 300
+        }
+      ],
+      "id": "eastron-sdm630mct"
+    },
+    {
+      "name": {
+        "en": "Eastron SDM630MCT-RC",
+        "nl": "Eastron SDM630MCT-RC",
+        "de": "Eastron SDM630MCT-RC"
+      },
+      "class": "sensor",
+      "vendor": "Eastron",
+      "model": "SDM630MCT-RC",
+      "capabilities": [
+        "measure_power",
+        "meter_l1_power",
+        "meter_l2_power",
+        "meter_l3_power",
+        "meter_frequency",
+        "meter_l1_current",
+        "meter_l2_current",
+        "meter_l3_current",
+        "meter_current",
+        "meter_l1_voltage",
+        "meter_l2_voltage",
+        "meter_l3_voltage",
+        "meter_power.exported",
+        "meter_power_export_daily",
+        "meter_power.imported",
+        "meter_power_import_daily",
+        "meter_power",
+        "measure_tot_power_factor",
+        "measure_tot_phase_angle",
+        "measure_apparent_power",
+        "measure_reactive_power",
+        "meter_l12_voltage",
+        "meter_l23_voltage",
+        "meter_l31_voltage",
+        "meter_neutral_current"
+      ],
+      "energy": {
+        "cumulative": true,
+        "cumulativeImportedCapability": "meter_power.imported",
+        "cumulativeExportedCapability": "meter_power.exported"
+      },
+      "capabilitiesOptions": {
+        "meter_frequency": {
+          "decimals": 2,
+          "title": {
+            "en": "Grid Frequency",
+            "nl": "Netfrequentie",
+            "de": "Netzfrequenz"
+          }
+        },
+        "meter_power": {
+          "decimals": 0,
+          "title": {
+            "en": "Net energy used",
+            "nl": "Netto verbruikt vermogen",
+            "de": "Netto verbrauchtes elektrisches Leistung"
+          }
+        },
+        "meter_power.exported": {
+          "decimals": 0,
+          "title": {
+            "en": "Total exported energy",
+            "nl": "Totaal geëxporteerd vermogen",
+            "de": "Insgesamt exportierte Energie"
+          }
+        },
+        "meter_power_export_daily": {
+          "decimals": 2,
+          "title": {
+            "en": "Today exported energy",
+            "nl": "Vandaag geëxporteerd vermogen",
+            "de": "Heute exportierte Energie"
+          }
+        },
+        "meter_power.imported": {
+          "decimals": 0,
+          "title": {
+            "en": "Total imported energy",
+            "nl": "Totaal geïmporteerd vermogen",
+            "de": "Insgesamt importierte Energie"
+          }
+        },
+        "meter_power_import_daily": {
+          "decimals": 2,
+          "title": {
+            "en": "Today imported energy",
+            "nl": "Vandaag geïmporteerd vermogen",
+            "de": "Heute importierte Energie"
+          }
+        },
+        "meter_l1_power": {
+          "decimals": 0,
+          "title": {
+            "en": "Phase 1 Power",
+            "nl": "Vermogen fase 1",
+            "de": "Leistung Phase 1"
+          }
+        },
+        "meter_l2_power": {
+          "decimals": 0,
+          "title": {
+            "en": "Phase 2 Power",
+            "nl": "Vermogen fase 2",
+            "de": "Leistung Phase 2"
+          }
+        },
+        "meter_l3_power": {
+          "decimals": 0,
+          "title": {
+            "en": "Phase 3 Power",
+            "nl": "Vermogen fase 3",
+            "de": "Leistung Phase 3"
+          }
+        },
+        "meter_l1_voltage": {
+          "decimals": 0,
+          "title": {
+            "en": "Phase 1 Voltage",
+            "nl": "Spanning fase 1",
+            "de": "Spannung Phase 1"
+          }
+        },
+        "meter_l2_voltage": {
+          "decimals": 0,
+          "title": {
+            "en": "Phase 2 Voltage",
+            "nl": "Spanning fase 2",
+            "de": "Spannung Phase 2"
+          }
+        },
+        "meter_l3_voltage": {
+          "decimals": 0,
+          "title": {
+            "en": "Phase 3 Voltage",
+            "nl": "Spanning fase 3",
+            "de": "Spannung Phase 3"
+          }
+        },
+        "meter_l1_current": {
+          "title": {
+            "en": "Current phase1",
+            "nl": "Stroom fase 1",
+            "de": "Strom Phase 1"
+          }
+        },
+        "meter_l2_current": {
+          "title": {
+            "en": "Current phase2",
+            "nl": "Stroom fase 2",
+            "de": "Strom Phase 2"
+          }
+        },
+        "meter_l3_current": {
+          "title": {
+            "en": "Current phase3",
+            "nl": "Stroom fase 3",
+            "de": "Strom Phase 3"
+          }
+        },
+        "meter_current": {
+          "title": {
+            "en": "Total Current",
+            "nl": "Totale Stroom",
+            "de": "Gesamtstrom"
+          }
+        },
+        "measure_power": {
+          "title": {
+            "en": "Current power",
+            "nl": "Huidig vermogen",
+            "de": "Aktuelle Leistung"
+          }
+        },
+        "measure_tot_power_factor": {
+          "title": {
+            "en": "Power Factor",
+            "nl": "Arbeidsfactor",
+            "de": "Leistungsfaktor"
+          }
+        },
+        "measure_tot_phase_angle": {
+          "title": {
+            "en": "Phase Angle",
+            "nl": "Fasehoek",
+            "de": "Phasenwinkel"
+          }
+        }
+      },
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "lan"
+      ],
+      "images": {
+        "small": "/drivers/eastron-sdm630mct-rc/assets/images/small.png",
+        "large": "/drivers/eastron-sdm630mct-rc/assets/images/large.png"
+      },
+      "pair": [
+        {
+          "id": "start"
+        }
+      ],
+      "settings": [
+        {
+          "id": "address",
+          "type": "text",
+          "label": {
+            "en": "IP address",
+            "nl": "IP-adres",
+            "de": "IP-Adresse"
+          },
+          "value": "192.168.1.100",
+          "hint": {
+            "en": "The IP address of the Modbus gateway",
+            "nl": "Het IP-adres van de Modbus gateway",
+            "de": "Die IP-Adresse des Modbus-Gateways"
+          }
+        },
+        {
+          "id": "port",
+          "type": "number",
+          "label": {
+            "en": "Port",
+            "nl": "Poort",
+            "de": "Port"
+          },
+          "value": 502,
+          "hint": {
+            "en": "Modbus TCP port (typically 502)",
+            "nl": "Modbus TCP-poort (meestal 502)",
+            "de": "Modbus TCP-Port (typischerweise 502)"
+          }
+        },
+        {
+          "id": "id",
+          "type": "number",
+          "label": {
+            "en": "Modbus device ID",
+            "nl": "Modbus apparaat ID",
+            "de": "Modbus Geräte ID"
+          },
+          "value": 1,
+          "min": 1,
+          "max": 247,
+          "hint": {
+            "en": "Modbus device ID (client address)",
+            "nl": "Modbus-apparaat-ID (clientadres)",
+            "de": "Modbus-Geräte-ID (Client-Adresse)"
+          }
+        },
+        {
+          "id": "polling_interval",
+          "type": "number",
+          "label": {
+            "en": "Polling Interval (seconds)",
+            "nl": "Polling interval (seconden)",
+            "de": "Abfrageintervall (Sekunden)"
+          },
+          "hint": {
+            "en": "How often to poll the device for new data (recommended: 15-60 seconds)",
+            "nl": "Hoe vaak het apparaat te controleren op nieuwe gegevens (aanbevolen: 15-60 seconden)",
+            "de": "Wie oft das Gerät auf neue Daten abgefragt werden soll (empfohlen: 15-60 Sekunden)"
+          },
+          "value": 20,
+          "min": 5,
+          "max": 300
+        }
+      ],
+      "id": "eastron-sdm630mct-rc"
     },
     {
       "name": {
@@ -1278,6 +2058,29 @@
       "uiComponent": "sensor",
       "icon": "/assets/measure_voltage.svg"
     },
+    "meter_l12_voltage": {
+      "type": "number",
+      "title": {
+        "en": "Voltage L1-L2",
+        "nl": "Spanning L1-L2",
+        "de": "Spannung L1-L2"
+      },
+      "units": {
+        "en": "V"
+      },
+      "desc": {
+        "en": "Line to line voltage L1-L2 (V)",
+        "nl": "Lijnspanning L1-L2 (V)",
+        "de": "Leiterspannung L1-L2 (V)"
+      },
+      "insights": true,
+      "chartType": "stepLine",
+      "decimals": 2,
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/measure_voltage.svg"
+    },
     "meter_l2_current": {
       "type": "number",
       "title": {
@@ -1347,6 +2150,29 @@
       "uiComponent": "sensor",
       "icon": "/assets/measure_voltage.svg"
     },
+    "meter_l23_voltage": {
+      "type": "number",
+      "title": {
+        "en": "Voltage L2-L3",
+        "nl": "Spanning L2-L3",
+        "de": "Spannung L2-L3"
+      },
+      "units": {
+        "en": "V"
+      },
+      "desc": {
+        "en": "Line to line voltage L2-L3 (V)",
+        "nl": "Lijnspanning L2-L3 (V)",
+        "de": "Leiterspannung L2-L3 (V)"
+      },
+      "insights": true,
+      "chartType": "stepLine",
+      "decimals": 2,
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/measure_voltage.svg"
+    },
     "meter_l3_current": {
       "type": "number",
       "title": {
@@ -1407,6 +2233,29 @@
         "en": "Voltage (V)",
         "nl": "Spanning (V)",
         "de": "Spannung (V)"
+      },
+      "insights": true,
+      "chartType": "stepLine",
+      "decimals": 2,
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor",
+      "icon": "/assets/measure_voltage.svg"
+    },
+    "meter_l31_voltage": {
+      "type": "number",
+      "title": {
+        "en": "Voltage L3-L1",
+        "nl": "Spanning L3-L1",
+        "de": "Spannung L3-L1"
+      },
+      "units": {
+        "en": "V"
+      },
+      "desc": {
+        "en": "Line to line voltage L3-L1 (V)",
+        "nl": "Lijnspanning L3-L1 (V)",
+        "de": "Leiterspannung L3-L1 (V)"
       },
       "insights": true,
       "chartType": "stepLine",

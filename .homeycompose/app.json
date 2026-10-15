@@ -1,0 +1,43 @@
+{
+  "id": "eastron.modbus",
+  "version": "1.3.0",
+  "compatibility": ">=12.4.0",
+  "sdk": 3,
+  "brandColor": "#003399",
+  "icon": {
+    "light": "/assets/images/icon-light.png",
+    "dark": "/assets/images/icon-dark.png"
+  },
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Eastron",
+    "nl": "Eastron",
+    "de": "Eastron"
+  },
+  "description": {
+    "en": "Advanced Energy Monitoring with DIN Rail Meters over Modbus TCP",
+    "nl": "Geavanceerde energie monitoring met DIN rail meters via Modbus TCP",
+    "de": "Erweiterte Energieüberwachung mit Hutschienenmessgeräten über Modbus TCP"
+  },
+  "category": [
+    "energy"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Rob Hagemann",
+    "email": "rob@hagemann.nl"
+  },
+  "bugs": {
+    "url": "https://github.com/Rob2011/Homey.Eastron.modbus/issues"
+  },
+  "source": "https://github.com/Rob2011/Homey.Eastron.modbus",
+  "support": "https://community.homey.app/t/app-pro-eastron-advanced-energy-monitoring-with-din-rail-meters-over-modbus-tcp/147339",
+  "homeyCommunityTopicId": 147339
+}

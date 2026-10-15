@@ -1,0 +1,22 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Neutral Current",
+    "nl": "Nulstroom",
+    "de": "Neutralstrom"
+  },
+  "decimals": 2,
+  "units": {
+    "en": "A"
+  },
+  "desc": {
+    "en": "Neutral Current in Amperes (A)",
+    "nl": "Nulstroom in Amperes (A)"
+  },
+  "chartType": "spline",
+  "insights": true,
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "icon": "/assets/measure_current.svg"
+}

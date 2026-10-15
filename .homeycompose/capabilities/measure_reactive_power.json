@@ -1,0 +1,23 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Reactive Power",
+    "nl": "Blind vermogen",
+    "de": "Blindleistung"
+  },
+  "units": {
+    "en": "VAr"
+  },
+  "insights": true,
+  "desc": {
+    "en": "Reactive Power in volt-ampere reactive (VAr)",
+    "nl": "Blind vermogen in voltampère blind (VAr)",
+    "de": "Blindleistung in Voltampere Blind (VAr)"
+  },
+  "chartType": "stepLine",
+  "decimals": 0,
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "icon": "/assets/measure_power.svg"
+}

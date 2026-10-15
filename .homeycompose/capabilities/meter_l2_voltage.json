@@ -1,0 +1,23 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Voltage",
+    "nl": "Spanning",
+    "de": "Spannung"
+  },
+  "units": {
+    "en": "V"
+  },
+  "desc": {
+    "en": "Voltage (V)",
+    "nl": "Spanning (V)",
+    "de": "Spannung (V)"
+  },
+  "insights": true,
+  "chartType": "stepLine",
+  "decimals": 2,
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "icon": "/assets/measure_voltage.svg"
+}

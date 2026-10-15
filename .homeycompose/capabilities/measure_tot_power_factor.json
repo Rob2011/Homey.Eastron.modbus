@@ -1,0 +1,17 @@
+{
+	"type": "number",
+	"title": {
+		"en": "Power Factor",
+		"nl": "Arbeidsfactor",
+		"de": "Leistungsfaktor"
+	},
+	"getable": true,
+	"setable": false,
+	"units": {
+		"en": "",
+		"nl": "",
+		"de": ""
+	},
+	"decimals": 1,
+  "icon": "/assets/measure_factor.svg"
+}

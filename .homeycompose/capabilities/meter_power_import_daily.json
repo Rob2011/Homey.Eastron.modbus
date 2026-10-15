@@ -1,0 +1,23 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Daily Yield",
+    "nl": "Dagelijks verbruik",
+    "de": "Gesamtertrag"
+  },
+  "decimals": 2,
+  "units": {
+    "en": "kWh"
+  },
+  "desc": {
+    "en": "Energy usage Daily in kilowatt-hour (kWh)",
+    "nl": "Energie verbruik per dag in kilowattuur (kWh)",
+    "de": "Verbrauchte Energie per tag in Kilowattstunden (kWh)"
+  },
+  "chartType": "spline",
+  "insights": true,
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "icon": "/assets/powergrid_feed_in.svg"
+}

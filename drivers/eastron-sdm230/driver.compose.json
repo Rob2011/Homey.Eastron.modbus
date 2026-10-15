@@ -15,7 +15,10 @@
     "meter_power_import_daily",
     "meter_power_export_daily",
     "meter_frequency",
-    "measure_tot_power_factor"
+    "measure_power_factor",
+    "measure_phase_angle",
+    "measure_apparent_power",
+    "measure_reactive_power"
   ],
   "capabilitiesOptions": {
     "measure_power": {
@@ -80,13 +83,6 @@
         "nl": "Netfrequentie",
         "de": "Netzfrequenz"
       }
-    },
-    "measure_tot_power_factor": {
-      "title": {
-        "en": "Power Factor",
-        "nl": "Vermogensfactor",
-        "de": "Leistungsfaktor"
-      }
     }
   },
   "platforms": [
@@ -100,56 +96,56 @@
     "large": "{{driverAssetsPath}}/images/large.png"
   },
   "pair": [
-  {
-    "id": "start"
-  }
-],
-"settings": [
-  {
-    "type": "group",
-    "label": {
-      "en": "Modbus TCP settings",
-      "nl": "Modbus TCP instellingen",
-      "de": "Modbus TCP Einstellungen"
-    },
-    "children": [
-      {
-        "id": "address",
-        "type": "text",
-        "value": "0.0.0.0",
-        "label": {
-          "en": "IP Address",
-          "nl": "IP-adres",
-          "de": "IP-Adresse"
-        }
+    {
+      "id": "start"
+    }
+  ],
+  "settings": [
+    {
+      "type": "group",
+      "label": {
+        "en": "Modbus TCP settings",
+        "nl": "Modbus TCP instellingen",
+        "de": "Modbus TCP Einstellungen"
       },
-      {
-        "id": "port",
-        "type": "number",
-        "value": 502,
-        "step": 1,
-        "label": {
-          "en": "Port",
-          "nl": "Poort",
-          "de": "Port"
-        }
-      },
-      {
-        "id": "id",
-        "type": "number",
-        "value": 1,
-        "step": 1,
-        "attr": {
-          "min": 0,
-          "max": 50
+      "children": [
+        {
+          "id": "address",
+          "type": "text",
+          "value": "0.0.0.0",
+          "label": {
+            "en": "IP Address",
+            "nl": "IP-adres",
+            "de": "IP-Adresse"
+          }
         },
-        "label": {
-          "en": "Modbus device ID",
-          "nl": "Modbus apparaat ID",
-          "de": "Modbus Geräte-ID"
+        {
+          "id": "port",
+          "type": "number",
+          "value": 502,
+          "step": 1,
+          "label": {
+            "en": "Port",
+            "nl": "Poort",
+            "de": "Port"
+          }
+        },
+        {
+          "id": "id",
+          "type": "number",
+          "value": 1,
+          "step": 1,
+          "attr": {
+            "min": 0,
+            "max": 50
+          },
+          "label": {
+            "en": "Modbus device ID",
+            "nl": "Modbus apparaat ID",
+            "de": "Modbus Geräte-ID"
+          }
         }
-      }
-    ]
-  }
-]
+      ]
+    }
+  ]
 }

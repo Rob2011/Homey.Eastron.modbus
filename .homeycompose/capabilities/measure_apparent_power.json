@@ -1,0 +1,23 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Apparent Power",
+    "nl": "Schijnbaar vermogen",
+    "de": "Leistung"
+  },
+  "units": {
+    "en": "VA"
+  },
+  "insights": true,
+  "desc": {
+    "en": "Apparent Power in volt-ampere (VA)",
+    "nl": "Schijnbaar vermogen in voltampère (VA)",
+    "de": "Leistung in Voltampere (VA)"
+  },
+  "chartType": "stepLine",
+  "decimals": 0,
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "icon": "/assets/measure_power.svg"
+}

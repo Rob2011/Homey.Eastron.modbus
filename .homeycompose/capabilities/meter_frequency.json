@@ -1,0 +1,13 @@
+{
+	"type": "number",
+	"title": {
+		"en": "Phase frequency"
+	},
+	"getable": true,
+	"setable": false,
+	"units": {
+		"en": "Hz"
+	},
+	"decimals": 2,
+  "icon": "/assets/measure_frequency.svg" 
+}

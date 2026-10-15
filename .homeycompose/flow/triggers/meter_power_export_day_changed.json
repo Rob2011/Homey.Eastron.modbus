@@ -1,0 +1,56 @@
+{
+  "title": {
+    "en": "Meter Power Export Day Changed",
+    "nl": "Energie export kWh per dag is veranderd",
+    "de": "Tagesertrag Export geändert"
+  },
+  "titleFormatted": {
+    "en": "Daily export of [[device]] changed by at least [[delta]] kWh",
+    "nl": "Energie export per dag van [[device]] is minstens [[delta]] kWh veranderd",
+    "de": "Tagesertrag Export von [[device]] hat sich um mindestens [[delta]] kWh geändert"
+  },
+  "hint": {
+    "en": "Daily Export changed",
+    "nl": "Energie export is veranderd",
+    "de": "Tagesertrag Export geändert"
+  },
+  "tokens": [
+    {
+      "name": "meter_power_export_daily",
+      "title": {
+        "en": "Energy",
+        "nl": "Energie",
+        "de": "Energie"
+      },
+      "type": "number",
+      "example": 25
+    }
+  ],
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": {
+        "capabilities": [
+          "meter_power_export_daily"
+        ]
+      }
+    },
+    {
+      "type": "number",
+      "name": "delta",
+      "title": {
+        "en": "Delta kWh",
+        "nl": "Delta kWh",
+        "de": "Delta kWh"
+      },
+      "example": 2,
+      "min": 0,
+      "placeholder": {
+        "en": "Minimum change in kWh",
+        "nl": "Minimale verandering in kWh",
+        "de": "Minimale Änderung in kWh"
+      }
+    }
+  ]
+}

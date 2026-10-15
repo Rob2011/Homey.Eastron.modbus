@@ -1,0 +1,21 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Daily Yield",
+    "nl": "Dagelijks terug geleverd vermogen"
+  },
+  "decimals": 2,
+  "units": {
+    "en": "kWh"
+  },
+  "desc": {
+    "en": "Energy returned daily in kilowatt-hour (kWh)",
+    "nl": "Terug geleverd vermogen per dag in kilowattuur (kWh)"
+  },
+  "chartType": "spline",
+  "insights": true,
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "icon": "/assets/powergrid_feed_ex.svg"
+}

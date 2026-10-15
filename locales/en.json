@@ -46,7 +46,9 @@
     "check_success": "Successfully connected to device!",
     "check_fail": "Unable to connect to the device. Please check the settings.",
     "invalid_settings": "Invalid settings, please check.",
-    "device_unreachable": "The device is not reachable, please check the connection."
+    "device_unreachable": "The device is not reachable, please check the connection.",
+    "title_sdm630mct": "Eastron SDM630MCT",
+    "title_sdm630mct_rc": "Eastron SDM630MCT-RC (Rogowski)"
   },
   "Unreachable": "Unreachable",
   "Device_unavailable": "The device is not available",

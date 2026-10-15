@@ -1,0 +1,59 @@
+{
+  "title": {
+    "en": "Power changed",
+    "nl": "Vermogen is veranderd",
+    "de": "Leistung hat sich geändert"
+  },
+  "titleFormatted": {
+    "en": "Power of [[device]] changed by at least [[delta]] W",
+    "nl": "Vermogen van [[device]] is minstens [[delta]] W veranderd",
+    "de": "Leistung von [[device]] hat sich um mindestens [[delta]] W geändert"
+  },
+  "args": [
+    {
+      "name": "device",
+      "type": "device",
+      "filter": {
+        "capabilities": [
+          "measure_power"
+        ]
+      }
+    },
+    {
+      "type": "number",
+      "name": "delta",
+      "title": {
+        "en": "Delta W",
+        "nl": "Delta W",
+        "de": "Delta W"
+      },
+      "example": 10,
+      "min": 0,
+      "placeholder": {
+        "en": "Minimum change in W",
+        "nl": "Minimale verandering in W",
+        "de": "Minimale Änderung in W"
+      }
+    }
+  ],
+  "tokens": [
+    {
+      "name": "power",
+      "type": "number",
+      "title": {
+        "en": "Watt",
+        "nl": "Watt"
+      },
+      "example": 850
+    },
+    {
+      "name": "power_delta",
+      "type": "number",
+      "title": {
+        "en": "+- W",
+        "nl": "+- W"
+      },
+      "example": 18
+    }
+  ]
+}

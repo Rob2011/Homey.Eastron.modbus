@@ -46,7 +46,9 @@
     "check_success": "Verbinding met apparaat succesvol!",
     "check_fail": "Kan geen verbinding maken met het apparaat. Controleer de instellingen.",
     "invalid_settings": "Ongeldige instellingen, controleer a.u.b.",
-    "device_unreachable": "Apparaat niet bereikbaar, controleer de verbinding."
+    "device_unreachable": "Apparaat niet bereikbaar, controleer de verbinding.",
+    "title_sdm630mct": "Eastron SDM630MCT",
+    "title_sdm630mct_rc": "Eastron SDM630MCT-RC (Rogowski)"
   },
   "Unreachable": "niet bereikbaar",
   "device_unreachable": "Apparaat niet bereikbaar, controleer de verbinding.",

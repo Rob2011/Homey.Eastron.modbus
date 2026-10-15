@@ -32,7 +32,8 @@
           function (error, result) {
             if (error) {
               $('.powermeter-error').show();
-              $('.powermeter-error-msg').html(error.message || error.toString());
+              $('.powermeter-error-msg').text(error.message || error.toString());
+              return;
             }
             $('.powermeter-error').hide();
 

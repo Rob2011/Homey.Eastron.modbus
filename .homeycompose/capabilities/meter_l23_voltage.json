@@ -1,0 +1,23 @@
+{
+  "type": "number",
+  "title": {
+    "en": "Voltage L2-L3",
+    "nl": "Spanning L2-L3",
+    "de": "Spannung L2-L3"
+  },
+  "units": {
+    "en": "V"
+  },
+  "desc": {
+    "en": "Line to line voltage L2-L3 (V)",
+    "nl": "Lijnspanning L2-L3 (V)",
+    "de": "Leiterspannung L2-L3 (V)"
+  },
+  "insights": true,
+  "chartType": "stepLine",
+  "decimals": 2,
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "icon": "/assets/measure_voltage.svg"
+}

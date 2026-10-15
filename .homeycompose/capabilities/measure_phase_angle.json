@@ -1,0 +1,18 @@
+{
+	"type": "number",
+	"title": {
+		"en": "Phase Angle",
+		"nl": "Fasehoek",
+		"de": "Phasenwinkel"
+	},
+	"getable": true,
+	"setable": false,
+	"units": {
+		"en": "Degrees",
+		"nl": "Graden",
+		"de": "Grad"
+	},
+	"decimals": 1,
+      "uiComponent": "sensor",
+	"icon": "/assets/measure_factor.svg"
+}

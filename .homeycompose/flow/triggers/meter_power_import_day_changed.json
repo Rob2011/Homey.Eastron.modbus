@@ -1,0 +1,56 @@
+{
+  "title": {
+    "en": "Meter Power Import Day Changed",
+    "nl": "Energie import kWh per dag is veranderd",
+    "de": "Tagesertrag Import geändert"
+  },
+  "titleFormatted": {
+    "en": "Daily import of [[device]] changed by at least [[delta]] kWh",
+    "nl": "Energie import per dag van [[device]] is minstens [[delta]] kWh veranderd",
+    "de": "Tagesertrag Import von [[device]] hat sich um mindestens [[delta]] kWh geändert"
+  },
+  "hint": {
+    "en": "Daily Import changed",
+    "nl": "Energie import is veranderd",
+    "de": "Tagesertrag Import geändert"
+  },
+  "tokens": [
+    {
+      "name": "meter_power_import_daily",
+      "title": {
+        "en": "Energy",
+        "nl": "Energie",
+        "de": "Energie"
+      },
+      "type": "number",
+      "example": 25
+    }
+  ],
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "filter": {
+        "capabilities": [
+          "meter_power_import_daily"
+        ]
+      }
+    },
+    {
+      "type": "number",
+      "name": "delta",
+      "title": {
+        "en": "Delta kWh",
+        "nl": "Delta kWh",
+        "de": "Delta kWh"
+      },
+      "example": 2,
+      "min": 0,
+      "placeholder": {
+        "en": "Minimum change in kWh",
+        "nl": "Minimale verandering in kWh",
+        "de": "Minimale Änderung in kWh"
+      }
+    }
+  ]
+}
